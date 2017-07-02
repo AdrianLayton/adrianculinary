@@ -1,6 +1,10 @@
 a {
 	text-decoration:none !important;
 }
+hr {
+	display: inline-block;
+	color: blue;
+}
 
 .site-branding {
 	height: 15rem;
@@ -20,6 +24,7 @@ a {
 	padding-top: 2rem;	
 	padding-bottom: 2rem;
 	border-radius: 15px 50px;
+	border:1em dashed #192B33;
 }
 
 nav>ul {
@@ -34,6 +39,7 @@ nav>ul {
 	font-weight: 700rem;
 
 }
+/*SECTION ITEMS*/
 
 .main-sctn {
 	height: 90%;
@@ -43,6 +49,20 @@ nav>ul {
 	margin-right: 5%; 
 	margin-bottom: 5em;
 }
+
+.sign-up {
+	background-color: rgba(146, 197, 68, 0.6);
+	width: 25em;
+	padding: 4em 6em;
+	margin: 0 auto;
+	border-radius: 175px;
+}
+
+input {
+	margin-bottom: 4em;
+	display: block;
+}
+
 
 .slideshow-container {
 	width: 56%;
@@ -67,14 +87,23 @@ nav>ul {
 }
 
 
+
+
+/*FOOTER ITEMS*/
+img.insta-logo {
+	width: 50%;
+	height: 50%;
+}
+
 footer.footer-primary {
-	background-color: #8fb259;
+	
+	background-color: #FFD933;
 	width: 80%;
 	margin-top: 7rem;
 	margin-left: 10%;
 	margin-right: 10%;
-	padding-top: 2em;
-	padding-bottom: 2em;
+	padding-top: 4em;
+	padding-bottom: 4em;
 	border-radius: 35px 35px 10px 10px;
 }
 
@@ -83,8 +112,4 @@ footer.footer-primary {
 	width: 30%;
 	padding-left: 3%;
 
-}
-
-.holder {
-	
 }

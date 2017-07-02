@@ -9,6 +9,7 @@ import Footer from './components/footer.jsx';
 
 
 
+
 export default class Content extends React.Component {
 	constructor() {
 		super();

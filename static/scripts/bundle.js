@@ -7,22 +7,14 @@ webpackJsonp([0],{
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(10);
+var _react = __webpack_require__(13);
 
 var _react2 = _interopRequireDefault(_react);
-
-var _rightarrow = __webpack_require__(91);
-
-var _rightarrow2 = _interopRequireDefault(_rightarrow);
-
-var _leftarrow = __webpack_require__(90);
-
-var _leftarrow2 = _interopRequireDefault(_leftarrow);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -33,123 +25,128 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Slideshow = function (_React$Component) {
-	_inherits(Slideshow, _React$Component);
+  _inherits(Slideshow, _React$Component);
 
-	function Slideshow() {
-		_classCallCheck(this, Slideshow);
+  function Slideshow(props) {
+    _classCallCheck(this, Slideshow);
 
-		// this.state = {slideCount: 0}
-		var _this = _possibleConstructorReturn(this, (Slideshow.__proto__ || Object.getPrototypeOf(Slideshow)).call(this));
+    var _this = _possibleConstructorReturn(this, (Slideshow.__proto__ || Object.getPrototypeOf(Slideshow)).call(this, props));
 
-		_this.nextSlide = _this.nextSlide.bind(_this);
-		_this.previousSlide = _this.previousSlide.bind(_this);
-		_this.showSlides = _this.showSlides.bind(_this);
-		return _this;
-	}
+    _this.state = { slideIndex: 0 };
+    _this.slides = [{
+      image: './img/DSC_0312.jpg',
+      caption: 'Caption One'
+    }, {
+      image: './img/IMG_0239.JPG',
+      caption: 'Caption Two'
+    }, {
+      image: './img/IMG_0828.JPG',
+      caption: 'Caption Three'
+    }];
+    return _this;
+  }
 
-	_createClass(Slideshow, [{
-		key: 'nextSlide',
-		value: function nextSlide() {
-			this.setState({ slideCount: this.state.slideCount + 1 });
-		}
-	}, {
-		key: 'previousSlide',
-		value: function previousSlide() {
-			this.setState({ slideCount: this.state.slideCount - 1 });
-		}
-	}, {
-		key: 'showSlides',
-		value: function showSlides(n) {
-			var slideCount = 0;
-			var slides = document.getElementsByClassName("mySlides");
-			var dots = document.getElementsByClassName("dot");
-			if (n > slides.length) {
-				this.setState({ slideCount: 0 });
-			}
-			if (n < slides.length) {
-				this.setState({ slideCount: 0 });
-				slideCount = slides.length - 1;
-			}
-			for (var i = 0; i < slides.length; i++) {
-				slides[i].style.display = "none";
-			}
-			for (var i = 0; i < dots.length; i++) {
-				dots[i].className = dots[i].className.replace(" active", "");
-			}
-			slides[slideCount].style.display = "block";
-			dots[slideCount].className = "active";
-		}
-	}, {
-		key: 'render',
-		value: function render() {
+  _createClass(Slideshow, [{
+    key: 'plusSlides',
+    value: function plusSlides(n) {
+      this.setCurrentSlide(this.state.slideIndex + n);
+    }
+  }, {
+    key: 'setCurrentSlide',
+    value: function setCurrentSlide(slideIndex) {
+      if (slideIndex >= this.slides.length) {
+        slideIndex = 0;
+      }
+      if (slideIndex < 0) {
+        slideIndex = this.slides.length - 1;
+      }
+      this.setState({ slideIndex: slideIndex });
+    }
+  }, {
+    key: 'renderSlides',
+    value: function renderSlides() {
+      var _this2 = this;
 
-			return _react2.default.createElement(
-				'div',
-				null,
-				_react2.default.createElement(
-					'div',
-					{ className: 'slideshow-container' },
-					_react2.default.createElement(
-						'div',
-						{ className: 'mySlides fade' },
-						_react2.default.createElement(
-							'div',
-							{ className: 'numbertext' },
-							'1 / 3'
-						),
-						_react2.default.createElement('img', { src: './img/DSC_0312.jpg', className: 'slide-img' }),
-						_react2.default.createElement(
-							'div',
-							{ className: 'text' },
-							'Caption Text'
-						)
-					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'mySlides fade' },
-						_react2.default.createElement(
-							'div',
-							{ className: 'numbertext' },
-							'2 / 3'
-						),
-						_react2.default.createElement('img', { src: './img/IMG_0239.JPG', className: 'slide-img' }),
-						_react2.default.createElement(
-							'div',
-							{ className: 'text' },
-							'Caption Two'
-						)
-					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'mySlides fade' },
-						_react2.default.createElement(
-							'div',
-							{ className: 'numbertext' },
-							'3 / 3'
-						),
-						_react2.default.createElement('img', { src: './img/IMG_0828.JPG', className: 'slide-img' }),
-						_react2.default.createElement(
-							'div',
-							{ className: 'text' },
-							'Caption Three'
-						)
-					),
-					_react2.default.createElement(_leftarrow2.default, null),
-					_react2.default.createElement(_rightarrow2.default, null)
-				),
-				_react2.default.createElement('br', null),
-				_react2.default.createElement(
-					'div',
-					{ className: 'slideshow-dot' },
-					_react2.default.createElement('span', { className: 'dot', onClick: 'currentSlide(1)' }),
-					_react2.default.createElement('span', { className: 'dot', onClick: 'currentSlide(2)' }),
-					_react2.default.createElement('span', { className: 'dot', onClick: 'currentSlide(3)' })
-				)
-			);
-		}
-	}]);
+      var visible = function visible(index) {
+        return index == _this2.state.slideIndex ? 'block' : 'none';
+      };
 
-	return Slideshow;
+      return this.slides.map(function (slide, index) {
+        return _react2.default.createElement(
+          'div',
+          { className: 'mySlides fade', style: { display: visible(index) } },
+          _react2.default.createElement(
+            'div',
+            { className: 'numbertext' },
+            index + 1,
+            ' / ',
+            _this2.slides.length
+          ),
+          _react2.default.createElement('img', { src: slide.image, style: { width: '100%' } }),
+          _react2.default.createElement(
+            'div',
+            { className: 'text' },
+            slide.caption
+          )
+        );
+      });
+    }
+  }, {
+    key: 'renderDots',
+    value: function renderDots() {
+      var _this3 = this;
+
+      var active = function active(index) {
+        return index == _this3.state.slideIndex ? 'active' : '';
+      };
+
+      return this.slides.map(function (slide, index) {
+        return _react2.default.createElement('span', { className: 'dot ' + active(index),
+          onClick: function onClick() {
+            return _this3.setCurrentSlide(index);
+          } });
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this4 = this;
+
+      return _react2.default.createElement(
+        'div',
+        { className: 'slideshow' },
+        _react2.default.createElement(
+          'div',
+          { className: 'slideshow-container' },
+          this.renderSlides(),
+          _react2.default.createElement(
+            'a',
+            { className: 'prev',
+              onClick: function onClick() {
+                return _this4.plusSlides(-1);
+              } },
+            '\u276E'
+          ),
+          _react2.default.createElement(
+            'a',
+            { className: 'next',
+              onClick: function onClick() {
+                return _this4.plusSlides(1);
+              } },
+            '\u276F'
+          )
+        ),
+        _react2.default.createElement('br', null),
+        _react2.default.createElement(
+          'div',
+          { className: 'navigation', style: { textAlign: 'center' } },
+          this.renderDots()
+        )
+      );
+    }
+  }]);
+
+  return Slideshow;
 }(_react2.default.Component);
 
 exports.default = Slideshow;
@@ -168,7 +165,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(10);
+var _react = __webpack_require__(13);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -214,7 +211,17 @@ var Coming = function (_React$Component) {
 					{ className: 'lead-text' },
 					' You\'ll get 2 exclusive recipies before the public '
 				),
-				_react2.default.createElement('input', null)
+				_react2.default.createElement(
+					'form',
+					{ className: 'sign-up', action: '/', method: 'POST' },
+					_react2.default.createElement('input', { type: 'text', name: 'name', placeholder: 'Name' }),
+					_react2.default.createElement('input', { type: 'text', name: 'email', placeholder: 'Email' }),
+					_react2.default.createElement(
+						'button',
+						null,
+						' Submit '
+					)
+				)
 			);
 		}
 	}]);
@@ -233,12 +240,12 @@ exports.default = Coming;
 
 
 Object.defineProperty(exports, "__esModule", {
-		value: true
+	value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(10);
+var _react = __webpack_require__(13);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -251,40 +258,55 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Nav = function (_React$Component) {
-		_inherits(Nav, _React$Component);
+	_inherits(Nav, _React$Component);
 
-		function Nav() {
-				_classCallCheck(this, Nav);
+	function Nav() {
+		_classCallCheck(this, Nav);
 
-				return _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).apply(this, arguments));
+		return _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).apply(this, arguments));
+	}
+
+	_createClass(Nav, [{
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(
+				"footer",
+				{ className: "footer-primary" },
+				_react2.default.createElement(
+					"div",
+					{ className: "footer-items" },
+					"PlaceHolder Icon"
+				),
+				_react2.default.createElement(
+					"div",
+					{ className: "footer-items" },
+					_react2.default.createElement(
+						"p",
+						null,
+						" ",
+						_react2.default.createElement(
+							"strong",
+							null,
+							" Follow my Instagram "
+						),
+						" "
+					),
+					_react2.default.createElement(
+						"a",
+						{ href: "https://www.instagram.com/adrianculinary/" },
+						_react2.default.createElement("img", { src: "./img/instagram.png", className: "insta-logo" })
+					)
+				),
+				_react2.default.createElement(
+					"div",
+					{ className: "footer-items" },
+					" PlaceHolder  "
+				)
+			);
 		}
+	}]);
 
-		_createClass(Nav, [{
-				key: "render",
-				value: function render() {
-						return _react2.default.createElement(
-								"footer",
-								{ className: "footer-primary" },
-								_react2.default.createElement(
-										"div",
-										{ className: "footer-items" },
-										" PlaceHolder Icon "
-								),
-								_react2.default.createElement(
-										"div",
-										{ className: "footer-items" },
-										" PlaceHolder Social Media "
-								),
-								_react2.default.createElement(
-										"div",
-										{ className: "footer-items" },
-										" PlaceHolder  "
-								)
-						);
-				}
-		}]);
-
-		return Nav;
+	return Nav;
 }(_react2.default.Component);
 
 exports.default = Nav;
@@ -303,7 +325,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(10);
+var _react = __webpack_require__(13);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -354,7 +376,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(10);
+var _react = __webpack_require__(13);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -452,7 +474,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(10);
+var _react = __webpack_require__(13);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -521,64 +543,6 @@ exports.default = Content;
 var contentNode = document.getElementById('contents');
 
 _reactDom2.default.render(_react2.default.createElement(Content, null), contentNode);
-
-/***/ }),
-
-/***/ 90:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _react = __webpack_require__(10);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var LeftArrow = function LeftArrow(props) {
-	return _react2.default.createElement(
-		"a",
-		{ className: "prev", onClick: props.previousSlide },
-		"\u276E"
-	);
-};
-
-exports.default = LeftArrow;
-
-/***/ }),
-
-/***/ 91:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _react = __webpack_require__(10);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var RightArrow = function RightArrow(props) {
-	return _react2.default.createElement(
-		"a",
-		{ className: "next", onClick: function onClick() {
-				return props.nextSlide(props.slideCount);
-			} },
-		"\u276F"
-	);
-};
-
-exports.default = RightArrow;
 
 /***/ })
 

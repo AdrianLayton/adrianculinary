@@ -11,16 +11,6 @@
     display: none;
 }
 
-/* Slide Images */
-
-.slide-img {
-  width: 100%;
-}
-
-.dot-control {
-  text-align: center;
-}
-
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
