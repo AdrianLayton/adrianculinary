@@ -1,18 +1,21 @@
 import React from 'react';
 
-export default class Slideshow extends React.Component {
+export default class SlideShow extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = { slideIndex: 0 };
 		this.slides = [{
 			image: './img/DSC_0312.jpg',
-			caption: 'Caption One'
+			caption: 'Caption One',
+      key: 1
 		}, {
 			image: './img/IMG_0239.JPG',
-			caption: 'Caption Two'
+			caption: 'Caption Two',
+      key: 2
 		}, {
 			image: './img/IMG_0828.JPG',
-			caption: 'Caption Three'
+			caption: 'Caption Three',
+      key: 3
 		}];
 	}
 

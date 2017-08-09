@@ -1,17 +1,18 @@
 import React from 'react';
+import Nav from './nav.jsx'
 
-
-
-export default class Header extends React.Component {
-		render () {		
-			return (
-
+	const Header = () => {
+		return (
+			<div>
 				<header >
-					<img className="site-branding" src="./img/logo.png" />
+					
 				</header>
+				<Nav />
+			</div>
+			)
+	}
+		
+	
+export default Header;
 
-				)
-
-		}}
-
-
+// <img className="site-branding" src="./img/logo.png" />

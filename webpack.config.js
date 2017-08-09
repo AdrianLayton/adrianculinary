@@ -2,8 +2,8 @@ const webpack = require('webpack');
 
 module.exports = {
 	entry: {
-		app: './src/app.jsx',
-		vendor: ['react','react-dom','whatwg-fetch'],
+		app: './src/index.jsx',
+		vendor: ['react','react-dom','whatwg-fetch','react-router-dom'],
 	},
 	output: {
 		path: __dirname + '/static/scripts',

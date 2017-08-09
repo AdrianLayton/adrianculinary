@@ -1,18 +1,21 @@
 a {
 	text-decoration:none !important;
 }
-hr {
-	display: inline-block;
-	color: blue;
+
+a:visited {
+	color: #609;
+}
+
+.main {
+	width: 100%;
+	height: 100%;
 }
 
 .site-branding {
-	height: 15rem;
-	width: 30%;
-	margin-left: 35%;
-	margin-right: 35%;
-	display: block;
-	padding-bottom: 3rem;
+	font-family: 'Oleo Script', cursive;
+	font-weight: bold;
+	font-size: 3em;
+	text-align: center;
 }
 
 .nav-primary {
@@ -24,7 +27,7 @@ hr {
 	padding-top: 2rem;	
 	padding-bottom: 2rem;
 	border-radius: 15px 50px;
-	border:1em dashed #192B33;
+	border:.20em solid #192B33;
 }
 
 nav>ul {
@@ -32,13 +35,22 @@ nav>ul {
 	list-style: none;
 }
 
+
 .nav-items {
 	text-decoration-style: none;
 	display: inline-block; 
-	padding-left: 5rem;
-	font-weight: 700rem;
-
+	margin-left: 7em;
+	font-weight: 900rem;
+	font-size: 1.5em;
 }
+
+
+.active {
+	background-color: #CCCC52;
+	height: 2em;
+	width: 3em;
+}
+
 /*SECTION ITEMS*/
 
 .main-sctn {
@@ -50,18 +62,36 @@ nav>ul {
 	margin-bottom: 5em;
 }
 
-.sign-up {
+form.sign-up {
 	background-color: rgba(146, 197, 68, 0.6);
+	height: 20em;
 	width: 25em;
 	padding: 4em 6em;
 	margin: 0 auto;
-	border-radius: 175px;
+	border-radius: 5%;
 }
 
 input {
 	margin-bottom: 4em;
 	display: block;
+	height: 2em;
+	width: 14rem;
 }
+
+button.button {
+	color: #fff;
+	background-color: #dc3545;
+	border-color: #dc3545;
+	height: 3em;
+	width: 7em;
+}
+
+.button:hover {
+	color: #fff;
+	background-color: #c82333;
+	border-color: #bd2130;
+}
+
 
 
 .slideshow-container {
@@ -78,26 +108,157 @@ input {
 	text-align: center;
 }
 
-.block {
+
+/*ABOUT PAGE*/
+
+.about {
+	width: 85%;
+	margin: auto;
+	margin-top: 10em;
+	
+	height: 60em;
+}
+
+.about-description {
+	line-height: 2em;
+}
+
+.row {
+	margin-bottom: 1.5em;
+}
+
+.about-cook {
+	position: relative;
+	float: left;
+	max-height: 18em;
+	width: 83%;
+	background-color: #F2B37A;
+	margin-top: 3em;
+	margin-left: 3em;
+	margin-bottom: 3em;
+	padding-bottom: .75em;
+	padding-left: 15em;
+	z-index: 1;
 	display: block;
+	border-radius: 7.5em 1em 1em 7.5em;
+	font-size: 1.33em;
+
 }
 
-.none {
-	display: none;
+.about-cook::after {
+	content: "";
+	display: block;
+	clear: both;
+
 }
 
+.cook-media {
+	position: absolute;
+	float: left;
+	height: 20em;
+	min-height: 16em;
+	width: 20em;
+	background-color: #773600;
+	margin-bottom: 1em;
+	border-radius: 100%;
+	padding-bottom: .75em;
+	z-index: 2;
 
+}
 
+.about-site {
+	position: relative;
+	float: right;
+	max-height: 18em;
+	width: 83%;
+	background-color: #F2B37A;
+	margin-top: 3em;
+	margin-right: 3em;
+	margin-bottom: 3em;
+	padding-bottom: .75em;
+	padding-right: 15em;
+	z-index: 1;
+	display: block;
+	border-radius: 1em 7.5em 7.5em 1em;
+	font-size: 1.33em;
+	/*float: right;
+	min-height: 14em;
+	height: 20em;
+	width: 83%;
+	background-color: #773600;
+	padding-bottom: .75em; 
+	z-index: 3;
+	border-radius: 1em 7.5em 7.5em 1em;*/
+}
 
-/*FOOTER ITEMS*/
-img.insta-logo {
+.site-media {
+	float: right;
+	position: relative;
+	height: 20em;
+	min-height: 16em;
+	width: 20em;
+	background-color: #773600;
+	margin-bottom: 1em;
+	border-radius: 0%;
+	padding-bottom: .75em;
+	z-index: 2;
+	margin-left: 61%;
+	/*position: relative;
+	border-radius: 5%;
+	float: right;
+	width: 20em;
+	height: 20em;
+	min-height: 14em;
+	background-color: #F2B37A;
+	padding-bottom: .75em;
+	z-index: 2;*/
+}
+
+.knife-gif {
+	height: 18em;
+	width: 18em;
+	border-radius: 100%;
+	margin-left: 1em;
+	margin-top: 1em;
+	opacity: .85;
+
+}
+
+/*FOOTER ITEMS SECOND ITERATION*/
+hr.footer-divider {
+	box-shadow: inset 1em 5em gold;
+	display: block;
+	width: 95%;
+    margin-top: 10em;
+    margin-bottom: 3.25em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+h4.developer-name {
+	font-size: 1.5em;
+	font-weight: bold;
+	float: right;
+	margin-right: 7em: 
+}
+
+div.sm-instagram > i.fa-instagram {
+	font-size: 7em;
+	margin-left: 1.85em;
+}
+
+/*FOOTER ITEMS FIRST ITERATION*/
+/*img.insta-logo {
 	width: 50%;
 	height: 50%;
+	width: 50%;
 }
 
 footer.footer-primary {
 	
-	background-color: #FFD933;
+	background-color: #FF7F00;
 	width: 80%;
 	margin-top: 7rem;
 	margin-left: 10%;
@@ -105,6 +266,7 @@ footer.footer-primary {
 	padding-top: 4em;
 	padding-bottom: 4em;
 	border-radius: 35px 35px 10px 10px;
+	border: 5em solid #192B33;
 }
 
 .footer-items {
@@ -112,4 +274,4 @@ footer.footer-primary {
 	width: 30%;
 	padding-left: 3%;
 
-}
+}*/
