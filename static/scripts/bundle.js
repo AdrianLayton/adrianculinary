@@ -17,7 +17,38 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var CookWare = function CookWare() {
-	return _react2.default.createElement('div', { className: 'cookware' });
+	return _react2.default.createElement(
+		'div',
+		{ className: 'affil-main' },
+		_react2.default.createElement(
+			'h1',
+			null,
+			' CookWare Page'
+		),
+		_react2.default.createElement(
+			'div',
+			{ className: 'product-container' },
+			_react2.default.createElement(
+				'div',
+				{ className: 'product clearfix' },
+				_react2.default.createElement(
+					'div',
+					{ className: 'product-image' },
+					_react2.default.createElement(
+						'a',
+						{ target: '_blank', href: 'https://www.amazon.com/gp/product/B008M5U1C2/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B008M5U1C2&linkCode=as2&tag=drianulinary-20&linkId=7bc955c92b7b552eaf182c2df29d4aff' },
+						_react2.default.createElement('img', { src: 'https://s3.amazonaws.com/www.adrianculinary.com/img/affil-knife.jpg' })
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'product-snippet' },
+					'Blog fixie DIY direct trade jean shorts. Woke yuccie pug tacos next level flexitarian bicycle rights ennui church-key bitters subway tile vegan asymmetrical. Selfies jean shorts wolf stumptown. Semiotics literally photo booth narwhal. Asymmetrical shabby chic try-hard farm-to-table edison bulb, migas austin. Polaroid raw denim kombucha, offal pinterest plaid hexagon butcher yuccie salvia lyft. Adaptogen gastropub vape kale chips'
+				)
+			),
+			_react2.default.createElement('div', { className: 'product-description' })
+		)
+	);
 };
 
 exports.default = CookWare;
@@ -247,7 +278,7 @@ var Nav = function (_React$Component) {
 					{ className: 'nav-primary' },
 					_react2.default.createElement(
 						'h3',
-						{ className: 'site-branding nax items' },
+						{ className: 'site-branding' },
 						' ',
 						_react2.default.createElement(
 							'bold',
@@ -261,34 +292,34 @@ var Nav = function (_React$Component) {
 						null,
 						_react2.default.createElement(
 							_reactRouterDom.NavLink,
-							{ exact: true, to: '/' },
+							{ className: 'nav-items', exact: true, to: '/' },
 							' ',
 							_react2.default.createElement(
 								'li',
-								{ className: 'nav-items' },
+								null,
 								' Home '
 							),
 							' '
 						),
 						_react2.default.createElement(
 							_reactRouterDom.NavLink,
-							{ to: '/about' },
+							{ className: 'nav-items', to: '/about' },
 							' ',
 							_react2.default.createElement(
 								'li',
-								{ className: 'nav-items' },
+								null,
 								' About '
 							),
 							' '
 						),
 						_react2.default.createElement(
 							_reactRouterDom.NavLink,
-							{ to: '/CookWare' },
+							{ className: 'nav-items', to: '/CookWare' },
 							' ',
 							_react2.default.createElement(
 								'li',
-								{ className: 'nav-items' },
-								'  CookWare '
+								null,
+								'  Cooking Resources  '
 							),
 							' '
 						)
@@ -594,7 +625,7 @@ var Content = function (_React$Component) {
 						null,
 						_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _home2.default }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/about', component: _about2.default }),
-						_react2.default.createElement(_reactRouterDom.Route, { path: '/kitchenware', component: _cookware2.default }),
+						_react2.default.createElement(_reactRouterDom.Route, { path: '/CookWare', component: _cookware2.default }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/thankyou', component: _thankyou2.default })
 					),
 					_react2.default.createElement(_footer2.default, null)
@@ -633,16 +664,6 @@ var About = function About() {
 		_react2.default.createElement(
 			'div',
 			{ className: 'about-cook' },
-			_react2.default.createElement(
-				'h4',
-				null,
-				' About the Chef '
-			),
-			_react2.default.createElement(
-				'h6',
-				null,
-				' How it All Started '
-			),
 			_react2.default.createElement(
 				'p',
 				{ className: 'about-description' },

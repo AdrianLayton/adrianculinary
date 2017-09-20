@@ -6,11 +6,11 @@ export default class Nav extends React.Component {
 			return (
 		<div>
 			<nav className="nav-primary">
-				<h3 className="site-branding nax items"> <bold> Adrian Culinary </bold> </h3>
+				<h3 className="site-branding"> <bold> Adrian Culinary </bold> </h3>
 				<ul>
-					<NavLink exact to="/"> <li className="nav-items"> Home </li> </NavLink>
-					<NavLink to="/about"> <li className="nav-items"> About </li> </NavLink>
-					<NavLink to="/CookWare"> <li className="nav-items">  CookWare </li> </NavLink>
+					<NavLink className="nav-items" exact to="/"> <li > Home </li> </NavLink>
+					<NavLink className="nav-items" to="/about"> <li > About </li> </NavLink>
+					<NavLink className="nav-items" to="/CookWare"> <li >  Cooking Resources  </li> </NavLink>
 				</ul>
 			</nav>
 		</div>

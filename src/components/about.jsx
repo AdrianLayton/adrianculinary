@@ -4,8 +4,6 @@ const About = () => {
 	return (
 		<div className='about'> 
 				<div className='about-cook'>
-				<h4> About the Chef </h4>
-				<h6> How it All Started </h6>
 				
 				<p className='about-description'> It all started with a whimsical story. Of my mother leaving me home alone at 11 and me making my first meal using google, and some chicken from the fridge. My mom wasn't to happen about the chicken when she came home, but I learned in over a decade in cooking is you don't have to be  a genius to cook a 5-star meal. This site is about luxury cooking for the everday person   </p>
 				</div>

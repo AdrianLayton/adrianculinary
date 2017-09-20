@@ -2,16 +2,25 @@ a {
 	text-decoration:none !important;
 }
 
-a:visited {
-	color: #609;
-}
+
+/*PAGE FORMATS*/
 
 .main {
 	width: 100%;
 	height: 100%;
+	margin-bottom: 4em;
+}
+.affil-main {
+	width: 70%;
+	margin-left: 15%;
 }
 
 .site-branding {
+	background-color: white;
+	width: 55%;
+	border-radius: .55em;
+	padding: .6em 1em; 
+	margin: .7em auto;
 	font-family: 'Oleo Script', cursive;
 	font-weight: bold;
 	font-size: 3em;
@@ -33,41 +42,60 @@ a:visited {
 nav>ul {
 	text-decoration: none;
 	list-style: none;
+	width: 90%;
+	margin: 0 auto;
 }
 
 
 .nav-items {
 	text-decoration-style: none;
 	display: inline-block; 
-	margin-left: 7em;
-	font-weight: 900rem;
+	padding: 1em 1.5em;
+	margin-left: 3em;
+	margin-right: 3em;
+	font-weight: bold;
 	font-size: 1.5em;
+	text-transform: capitalize;
+	text-align: center; 
+	/*margin: 0 2em;*/
+	/*width: 30%;*/
+}
+
+.nav-items li {
+	width: 30%;
+	text-align: center;
 }
 
 
-.active {
-	background-color: #CCCC52;
-	height: 2em;
-	width: 3em;
+
+a:hover,
+a.active {
+	background-color: black;
+	color: white;	
+	border-radius: 5em;
 }
 
 /*SECTION ITEMS*/
 
 .main-sctn {
 	height: 90%;
-	width: 90%;
+	width: 36%;
+	margin: 5em 32%; 
+	border: .5em solid #192B33;
+	background-color: #8FB259;
 	text-align: center;
-	margin-left: 5%;
-	margin-right: 5%; 
-	margin-bottom: 5em;
+	padding: 4em 5em;
+	border-radius: 5%;
+
 }
 
 form.sign-up {
-	background-color: rgba(146, 197, 68, 0.6);
+
+	background-color: rgba(255, 127, 0, 0.9);
 	height: 20em;
 	width: 25em;
-	padding: 4em 6em;
-	margin: 0 auto;
+	padding: 4em 1.5em;
+	margin: 2em auto;
 	border-radius: 5%;
 }
 
@@ -94,21 +122,6 @@ button.button {
 
 
 
-.slideshow-container {
-	width: 56%;
-	margin-left: 22%;
-	margin-right: 22%;
-}
-
-.slide-img {
-	width: 100%;
-}
-
-.slideshow-dot {
-	text-align: center;
-}
-
-
 /*ABOUT PAGE*/
 
 .about {
@@ -128,6 +141,7 @@ button.button {
 }
 
 .about-cook {
+	word-wrap:  break-word;
 	position: relative;
 	float: left;
 	max-height: 18em;
@@ -181,6 +195,7 @@ button.button {
 	display: block;
 	border-radius: 1em 7.5em 7.5em 1em;
 	font-size: 1.33em;
+	overflow: auto;
 	/*float: right;
 	min-height: 14em;
 	height: 20em;
@@ -224,12 +239,54 @@ button.button {
 
 }
 
+/*COOKWARE AND RESOURCES PAGE*/
+.cookware {
+	height: 100%;
+	width: 100%;
+}
+
+.product-snippet {
+	display: inline-block;
+	width: 64%;
+
+
+}
+.product-image img {
+	width: 36%;
+	display: block;
+	width: 25em;
+	height: 20em; 
+	padding-bottom: 4em;
+}
+.product {
+	position: relative;
+	margin: 0 0 1.5em 0;
+	padding: 1em 0em .70em;
+	border-left: 1px solid #ccc;
+	clear: both;
+}
+
+
+
+.clearfix:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	font-size: 0;
+}
+
+
 /*FOOTER ITEMS SECOND ITERATION*/
+/*footer {
+	display: block;
+}*/
+
 hr.footer-divider {
 	box-shadow: inset 1em 5em gold;
 	display: block;
 	width: 95%;
-    margin-top: 10em;
+    margin-top: 4em;
     margin-bottom: 3.25em;
     margin-left: auto;
     margin-right: auto;
@@ -241,14 +298,19 @@ h4.developer-name {
 	font-size: 1.5em;
 	font-weight: bold;
 	float: right;
-	margin-right: 7em: 
+	margin-right: 5em;
 }
 
 div.sm-instagram > i.fa-instagram {
 	font-size: 7em;
 	margin-left: 1.85em;
+	padding-bottom: .25em;
 }
 
+footer {
+	background-color: #FF7F00;
+	border: 1em solid #192B33;
+}
 /*FOOTER ITEMS FIRST ITERATION*/
 /*img.insta-logo {
 	width: 50%;

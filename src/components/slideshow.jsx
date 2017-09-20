@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class SlideShow extends React.Component {
+export default class Slideshow extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = { slideIndex: 0 };

@@ -31,7 +31,7 @@ export default class Content extends React.Component {
 				  		<Switch>
 					  		<Route exact path="/" component={Home} />
 					  		<Route path="/about" component={About} />
-					  		<Route path="/kitchenware" component={CookWare} />
+					  		<Route path="/CookWare" component={CookWare} />
 					  		<Route path="/thankyou" component={ThankYou} />
 					  	</Switch>
 					<Footer />
