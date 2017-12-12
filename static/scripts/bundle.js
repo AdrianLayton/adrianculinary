@@ -360,13 +360,13 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var SlideShow = function (_React$Component) {
-  _inherits(SlideShow, _React$Component);
+var Slideshow = function (_React$Component) {
+  _inherits(Slideshow, _React$Component);
 
-  function SlideShow(props) {
-    _classCallCheck(this, SlideShow);
+  function Slideshow(props) {
+    _classCallCheck(this, Slideshow);
 
-    var _this = _possibleConstructorReturn(this, (SlideShow.__proto__ || Object.getPrototypeOf(SlideShow)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Slideshow.__proto__ || Object.getPrototypeOf(Slideshow)).call(this, props));
 
     _this.state = { slideIndex: 0 };
     _this.slides = [{
@@ -385,7 +385,7 @@ var SlideShow = function (_React$Component) {
     return _this;
   }
 
-  _createClass(SlideShow, [{
+  _createClass(Slideshow, [{
     key: 'plusSlides',
     value: function plusSlides(n) {
       this.setCurrentSlide(this.state.slideIndex + n);
@@ -485,10 +485,10 @@ var SlideShow = function (_React$Component) {
     }
   }]);
 
-  return SlideShow;
+  return Slideshow;
 }(_react2.default.Component);
 
-exports.default = SlideShow;
+exports.default = Slideshow;
 
 /***/ }),
 
