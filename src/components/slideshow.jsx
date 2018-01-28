@@ -6,15 +6,15 @@ export default class Slideshow extends React.Component {
 		this.state = { slideIndex: 0 };
 		this.slides = [{
 			image: './img/DSC_0312.jpg',
-			caption: 'Caption One',
+			caption: 'Meals Under 2$',
       key: 1
 		}, {
 			image: './img/IMG_0239.JPG',
-			caption: 'Caption Two',
+			caption: 'Sheperd\'s Pie',
       key: 2
 		}, {
 			image: './img/IMG_0828.JPG',
-			caption: 'Caption Three',
+			caption: 'Mandarin Orange Chicken',
       key: 3
 		}];
 	}

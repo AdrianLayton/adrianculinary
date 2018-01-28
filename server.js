@@ -1,9 +1,10 @@
 const express = require ('express');
 const bodyParser = require('body-parser');
 const path = require('path');
+const AWS = require('aws-sdk')
 const app = express();
-const mongoose = require('mongoose');
 
+var dbFunc = require("./dbfunc");
  
 
 app.use(express.static('static'));
@@ -12,42 +13,43 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-// SCHEMA SETUP
-const EmailSchema = new mongoose.Schema({
-	name: String,
-	email: String
+// ******** AWS STUFF ********
+AWS.config.update({
+	region: 'us-east-1'
 });
+AWS.config.dynamodb = {
+	endpoint: 'dynamodb.us-east-1.amazonaws.com'
+};
 
-const db = mongoose.connect("mongodb://127.0.0.1/emailList",function(err) {
-	if(err) {throw err}
-	else {
-		console.log("emailList database has been connected");
-	}
-});
 
-const emailDb = db.collection
 
-const emailList = mongoose.model("emailList", EmailSchema);
+let docClient = new AWS.DynamoDB.DocumentClient();
+	
+// ******** UNCOMMENTED IN PRODUCTION ********
+// let myCredential = AWS.config.getCredentials(function(err) {
+//   if (err) console.log(err.stack); 
+//   else console.log('Access Key and SecretAccessKey Obtained');
+// });
+
 
 app.get('*', (req,res) => {
 	res.sendFile(path.resolve(__dirname + '/static/index.html' ));
 })
 
 app.post('/', (req,res) => {
+	var table = "AC-Eml"
 	var name = req.body.name;
 	var email = req.body.email;
 	var newEmail = {name: name, email: email};
-	emailList.create(newEmail, (err,emailAdd) => {
-		if(err) {
-			console.log(err);
-		}
-		else {
-			console.log("email added");
-			console.log(emailAdd);
-
-		}
+	dbFunc.makeParams(newEmail, table)
+	
+	console.log(`Adding ${email}`);		
+	docClient.put(params, (err, data) => {
+		if (err) console.log(err)
+			else console.log(`Email:${data.Item.email} has been added`);
 	})
 })
+
 // res.redirect("/");
 app.listen(3000,() => {
 	console.log('App has started on port 3000')

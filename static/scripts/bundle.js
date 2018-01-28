@@ -18,35 +18,52 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var CookWare = function CookWare() {
 	return _react2.default.createElement(
-		'div',
-		{ className: 'affil-main' },
-		_react2.default.createElement(
-			'h1',
-			null,
-			' CookWare Page'
-		),
+		'section',
+		{ className: 'affiliate-col' },
 		_react2.default.createElement(
 			'div',
-			{ className: 'product-container' },
+			{ className: 'product-highlight' },
+			_react2.default.createElement(
+				'h4',
+				{ className: 'label' },
+				'Best Value'
+			),
 			_react2.default.createElement(
 				'div',
-				{ className: 'product clearfix' },
+				{ className: 'product-group' },
 				_react2.default.createElement(
 					'div',
-					{ className: 'product-image' },
+					{ className: 'product-img' },
 					_react2.default.createElement(
 						'a',
 						{ target: '_blank', href: 'https://www.amazon.com/gp/product/B008M5U1C2/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B008M5U1C2&linkCode=as2&tag=drianulinary-20&linkId=7bc955c92b7b552eaf182c2df29d4aff' },
-						_react2.default.createElement('img', { src: 'https://s3.amazonaws.com/www.adrianculinary.com/img/affil-knife.jpg' })
+						_react2.default.createElement('img', { src: 'https://s3.amazonaws.com/www.adrianculinary.com/img/affil-knife.jpg', className: 'product-img' })
 					)
 				),
 				_react2.default.createElement(
 					'div',
-					{ className: 'product-snippet' },
-					'Blog fixie DIY direct trade jean shorts. Woke yuccie pug tacos next level flexitarian bicycle rights ennui church-key bitters subway tile vegan asymmetrical. Selfies jean shorts wolf stumptown. Semiotics literally photo booth narwhal. Asymmetrical shabby chic try-hard farm-to-table edison bulb, migas austin. Polaroid raw denim kombucha, offal pinterest plaid hexagon butcher yuccie salvia lyft. Adaptogen gastropub vape kale chips'
+					{ className: 'product-metadata' },
+					_react2.default.createElement(
+						'h3',
+						{ className: 'product-title' },
+						' Product Name '
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						' Product Description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo'
+					),
+					_react2.default.createElement(
+						'a',
+						{ target: '_blank', href: 'https://www.amazon.com/gp/product/B008M5U1C2/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B008M5U1C2&linkCode=as2&tag=drianulinary-20&linkId=7bc955c92b7b552eaf182c2df29d4aff' },
+						_react2.default.createElement(
+							'button',
+							{ className: 'affil-button' },
+							' Buy on Amazon '
+						)
+					)
 				)
-			),
-			_react2.default.createElement('div', { className: 'product-description' })
+			)
 		)
 	);
 };
@@ -73,19 +90,49 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Footer = function Footer() {
 	return _react2.default.createElement(
-		'footer',
+		"div",
 		null,
-		_react2.default.createElement('hr', { className: 'footer-divider' }),
 		_react2.default.createElement(
-			'h4',
-			{ className: 'developer-name' },
-			' Designed and Developed by [ Adrian Layton ] '
+			"div",
+			{ className: "newsletter" },
+			_react2.default.createElement(
+				"div",
+				{ className: "newsletter-row" },
+				_react2.default.createElement(
+					"div",
+					{ className: "newsletter-tagline" },
+					_react2.default.createElement(
+						"h3",
+						{ className: "newsletter-heading" },
+						" Never have a boring meal again"
+					),
+					_react2.default.createElement(
+						"p",
+						{ "class": "tagline" },
+						" Get weekly recipies and our first course free"
+					)
+				),
+				_react2.default.createElement("div", { className: "form-container" })
+			)
 		),
 		_react2.default.createElement(
-			'div',
-			{ className: 'sm-instagram' },
-			_react2.default.createElement('a', { href: 'https://www.instagram.com/adrianculinary' }),
-			_react2.default.createElement('i', { className: 'fa fa-instagram' })
+			"footer",
+			null,
+			_react2.default.createElement("div", { className: "footer-top" }),
+			_react2.default.createElement(
+				"div",
+				{ className: "footer-bottom" },
+				_react2.default.createElement(
+					"a",
+					{ href: "https://www.instagram.com/adrianculinary", className: "sm-icon" },
+					_react2.default.createElement("i", { className: "fa fa-instagram fa-2x" })
+				),
+				_react2.default.createElement(
+					"a",
+					{ href: "#", className: "sm-icon" },
+					_react2.default.createElement("i", { className: "fa fa-facebook fa-2x", "aria-hidden": "true" })
+				)
+			)
 		)
 	);
 };
@@ -118,8 +165,11 @@ var Header = function Header() {
 	return _react2.default.createElement(
 		'div',
 		null,
-		_react2.default.createElement('header', null),
-		_react2.default.createElement(_nav2.default, null)
+		_react2.default.createElement(
+			'header',
+			null,
+			_react2.default.createElement(_nav2.default, null)
+		)
 	);
 };
 
@@ -145,7 +195,7 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _slideshow = __webpack_require__(105);
+var _slideshow = __webpack_require__(106);
 
 var _slideshow2 = _interopRequireDefault(_slideshow);
 
@@ -163,62 +213,47 @@ var Coming = function (_React$Component) {
 	function Coming(props) {
 		_classCallCheck(this, Coming);
 
-		var _this = _possibleConstructorReturn(this, (Coming.__proto__ || Object.getPrototypeOf(Coming)).call(this, props));
+		return _possibleConstructorReturn(this, (Coming.__proto__ || Object.getPrototypeOf(Coming)).call(this, props
+		// 	this.state = {
+		// 		name: '',
+		// 		email: '',
+		// 	}
 
-		_this.state = {
-			name: '',
-			email: ''
-		};
+		// }
+		// handleChange(event) {
+		//    this.setState({value: event.target.value});
+		//    console.log(event);
+		// }
 
-		return _this;
+		// handleSubmit(event) {
+		// 	document.forms.signup.reset();
+
+		));
 	}
 
 	_createClass(Coming, [{
-		key: 'handleChange',
-		value: function handleChange(event) {
-			this.setState({ value: event.target.value });
-			console.log(event);
-		}
-	}, {
-		key: 'handleSubmit',
-		value: function handleSubmit(event) {
-			document.forms.signup.reset();
-		}
-	}, {
 		key: 'render',
 		value: function render() {
 			return _react2.default.createElement(
 				'div',
-				null,
+				{ className: 'section' },
 				_react2.default.createElement(_slideshow2.default, null),
 				_react2.default.createElement(
-					'section',
-					{ className: 'main-sctn' },
+					'div',
+					{ className: 'info-display' },
 					_react2.default.createElement(
-						'h1',
-						{ className: 'headline' },
-						' Coming August 15th '
-					),
+						'h3',
+						null,
+						' Latest Recipies '
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'info-display' },
 					_react2.default.createElement(
-						'p',
-						{ className: 'lead-text' },
-						' Sign Up for Email List '
-					),
-					_react2.default.createElement(
-						'p',
-						{ className: 'lead-text' },
-						' You\'ll get 2 exclusive recipies before the public '
-					),
-					_react2.default.createElement(
-						'form',
-						{ className: 'sign-up', action: '/', method: 'POST', name: 'signup', onSubmit: this.handleSubmit },
-						_react2.default.createElement('input', { type: 'text', name: 'name', placeholder: 'Name', value: this.state.name, onChange: this.handleChange }),
-						_react2.default.createElement('input', { type: 'text', name: 'email', placeholder: 'Email', value: this.state.email, onChange: this.handleChange }),
-						_react2.default.createElement(
-							'button',
-							{ className: 'button', value: 'Submit' },
-							'Submit'
-						)
+						'h3',
+						null,
+						' Best Culinary Products '
 					)
 				)
 			);
@@ -272,24 +307,18 @@ var Nav = function (_React$Component) {
 		value: function render() {
 			return _react2.default.createElement(
 				'div',
-				null,
+				{ className: 'header' },
+				_react2.default.createElement(
+					'div',
+					{ className: 'logo-container' },
+					_react2.default.createElement('img', { id: 'nav-logo', src: './img/logo2.png' })
+				),
 				_react2.default.createElement(
 					'nav',
 					{ className: 'nav-primary' },
 					_react2.default.createElement(
-						'h3',
-						{ className: 'site-branding' },
-						' ',
-						_react2.default.createElement(
-							'bold',
-							null,
-							' Adrian Culinary '
-						),
-						' '
-					),
-					_react2.default.createElement(
 						'ul',
-						null,
+						{ className: 'menu' },
 						_react2.default.createElement(
 							_reactRouterDom.NavLink,
 							{ className: 'nav-items', exact: true, to: '/' },
@@ -336,7 +365,7 @@ exports.default = Nav;
 
 /***/ }),
 
-/***/ 105:
+/***/ 106:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -371,15 +400,15 @@ var Slideshow = function (_React$Component) {
     _this.state = { slideIndex: 0 };
     _this.slides = [{
       image: './img/DSC_0312.jpg',
-      caption: 'Caption One',
+      caption: 'Meals Under 2$',
       key: 1
     }, {
       image: './img/IMG_0239.JPG',
-      caption: 'Caption Two',
+      caption: 'Sheperd\'s Pie',
       key: 2
     }, {
       image: './img/IMG_0828.JPG',
-      caption: 'Caption Three',
+      caption: 'Mandarin Orange Chicken',
       key: 3
     }];
     return _this;
@@ -492,7 +521,7 @@ exports.default = Slideshow;
 
 /***/ }),
 
-/***/ 106:
+/***/ 107:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -516,7 +545,7 @@ exports.default = ThankYou;
 
 /***/ }),
 
-/***/ 107:
+/***/ 108:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -580,7 +609,7 @@ var _cookware = __webpack_require__(100);
 
 var _cookware2 = _interopRequireDefault(_cookware);
 
-var _thankyou = __webpack_require__(106);
+var _thankyou = __webpack_require__(107);
 
 var _thankyou2 = _interopRequireDefault(_thankyou);
 
@@ -596,9 +625,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 // import Nav from './nav.jsx';
-
-// import Slideshow from './slideshow.jsx';
-// import Modal from './modal.jsx';
 
 
 var Content = function (_React$Component) {
@@ -662,8 +688,18 @@ var About = function About() {
 		'div',
 		{ className: 'about' },
 		_react2.default.createElement(
+			'h1',
+			{ className: 'about-title' },
+			'Origins of Adrian Culinary'
+		),
+		_react2.default.createElement(
 			'div',
 			{ className: 'about-cook' },
+			_react2.default.createElement(
+				'div',
+				{ className: 'cook-media' },
+				_react2.default.createElement('img', { className: 'knife-gif', src: 'https://s3.amazonaws.com/www.adrianculinary.com/img/knifeskills.gif' })
+			),
 			_react2.default.createElement(
 				'p',
 				{ className: 'about-description' },
@@ -701,12 +737,8 @@ var About = function About() {
 						' '
 					)
 				)
-			)
-		),
-		_react2.default.createElement(
-			'div',
-			{ className: 'cook-media' },
-			_react2.default.createElement('img', { className: 'knife-gif', src: 'https://s3.amazonaws.com/www.adrianculinary.com/img/knifeskills.gif' })
+			),
+			_react2.default.createElement('div', { id: 'chef-pic' })
 		)
 	);
 };
@@ -715,4 +747,4 @@ exports.default = About;
 
 /***/ })
 
-},[107]);
+},[108]);

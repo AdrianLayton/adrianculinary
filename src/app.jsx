@@ -8,6 +8,7 @@ import {
 
 import Header from './components/header.jsx'
 import Nav from './components/nav.jsx';
+import newNav from './components/newNav.jsx'
 import Home from './components/home.jsx';
 import Slideshow from './components/slideshow.jsx';
 import Modal from './components/modal.jsx';

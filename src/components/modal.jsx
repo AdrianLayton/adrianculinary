@@ -1,7 +1,7 @@
 import React from 'react';
 
-export default class Modal extends React.Component {
     close(e) {
+export default class Modal extends React.Component {
       e.preventDefault()
 
       if (this.props.onClose) {

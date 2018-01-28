@@ -9,8 +9,6 @@ import {
 import Header from './header.jsx';
 // import Nav from './nav.jsx';
 import Home from './home.jsx';
-// import Slideshow from './slideshow.jsx';
-// import Modal from './modal.jsx';
 import Footer from './footer.jsx';
 
 import CookWare from './cookware.jsx';
