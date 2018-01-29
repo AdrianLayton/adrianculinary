@@ -422,7 +422,7 @@ var Slideshow = function (_React$Component) {
     _this.state = { slideIndex: 0 };
     _this.slides = [{
       image: './img/DSC_0312.jpg',
-      caption: 'Meals Under 2$',
+      caption: 'Meals Under $2',
       key: 1
     }, {
       image: './img/IMG_0239.JPG',

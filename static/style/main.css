@@ -395,7 +395,8 @@ footer {
 }
 
 div.newsletter {
-	background-color: rgb(245,245,245);
+	/*background-color: rgb(245,245,245);*/
+	background-color: #FFCC25;
 	padding: 2.5em 1.25em;
 	border-radius: 2em 2em 0em 0em;
 	display: block;
@@ -424,7 +425,7 @@ div.newsletter-row {
 	flex-basis: 0%;
 	flex-grow: 1;
 	flex-shrink: 1;
-
+	color: rgb(30,30,30);
 	
 }
 
@@ -435,6 +436,7 @@ div.newsletter-row {
 	font-size: 1.5625em;
 	line-height: 1.2em;
 	margin-bottom: .7em;
+	color: rgb(30,30,30);
 }
 
 
@@ -484,7 +486,7 @@ div.newsletter-row {
 .around-form
 .sign-up
 .form-submit {
-	background-color: orange;
+	background-color: #FF4C4C;
 	padding: 0.75em 2em;
 	flex-grow: 0.5;
 	flex-shrink: 1;
