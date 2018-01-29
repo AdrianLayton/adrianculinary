@@ -7,10 +7,18 @@ const Footer = () => {
 						<div className="newsletter-row">
 							<div className="newsletter-tagline">
 								<h3 className="newsletter-heading"> Never have a boring meal again</h3>
-								<p class="tagline"> Get weekly recipies and our first course free</p>
+								<p className="tagline"> Get weekly recipies and our first course free</p>
 							</div>
-							<div className="form-container">
-								
+							<div className="around-form">
+								<form method="post" action="/" className="sign-up"> 
+									<div className="input-container">
+										<input type="email" name="email" className="newsletter-email" placeholder="name@example.com" /> 
+										<button type="submit" className="form-submit"> Subscribe</button>
+									</div>
+								</form>
+								<p aria-hidden="true"> 
+									Thank you! We've sent you a confirmation email 
+								</p>
 							</div>
 						</div>
 					</div>

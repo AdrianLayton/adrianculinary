@@ -108,11 +108,33 @@ var Footer = function Footer() {
 					),
 					_react2.default.createElement(
 						"p",
-						{ "class": "tagline" },
+						{ className: "tagline" },
 						" Get weekly recipies and our first course free"
 					)
 				),
-				_react2.default.createElement("div", { className: "form-container" })
+				_react2.default.createElement(
+					"div",
+					{ className: "around-form" },
+					_react2.default.createElement(
+						"form",
+						{ method: "post", action: "/", className: "sign-up" },
+						_react2.default.createElement(
+							"div",
+							{ className: "input-container" },
+							_react2.default.createElement("input", { type: "email", name: "email", className: "newsletter-email", placeholder: "name@example.com" }),
+							_react2.default.createElement(
+								"button",
+								{ type: "submit", className: "form-submit" },
+								" Subscribe"
+							)
+						)
+					),
+					_react2.default.createElement(
+						"p",
+						{ "aria-hidden": "true" },
+						"Thank you! We've sent you a confirmation email"
+					)
+				)
 			)
 		),
 		_react2.default.createElement(
@@ -195,7 +217,7 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _slideshow = __webpack_require__(106);
+var _slideshow = __webpack_require__(105);
 
 var _slideshow2 = _interopRequireDefault(_slideshow);
 
@@ -365,7 +387,7 @@ exports.default = Nav;
 
 /***/ }),
 
-/***/ 106:
+/***/ 105:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -521,7 +543,7 @@ exports.default = Slideshow;
 
 /***/ }),
 
-/***/ 107:
+/***/ 106:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -545,7 +567,7 @@ exports.default = ThankYou;
 
 /***/ }),
 
-/***/ 108:
+/***/ 107:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -609,7 +631,7 @@ var _cookware = __webpack_require__(100);
 
 var _cookware2 = _interopRequireDefault(_cookware);
 
-var _thankyou = __webpack_require__(107);
+var _thankyou = __webpack_require__(106);
 
 var _thankyou2 = _interopRequireDefault(_thankyou);
 
@@ -747,4 +769,4 @@ exports.default = About;
 
 /***/ })
 
-},[108]);
+},[107]);
