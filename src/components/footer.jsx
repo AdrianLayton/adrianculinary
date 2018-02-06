@@ -24,8 +24,18 @@ const Footer = () => {
 					</div>
 					<footer>
 						<div className="footer-top">
-
-							
+							<div className="footer-container">
+								<div className="footer-item">
+									<h2 className="written-logo"> Adrian Culinary </h2>
+								</div>
+								<div className="footer-item">
+									<ul className="site-links">
+										<li> Latest Recipies</li>
+										<li> About </li>
+										<li> Cooking Resources </li>
+									</ul>
+								</div>
+							</div>	
 						</div>
 
 						<div className='footer-bottom'>
@@ -33,8 +43,13 @@ const Footer = () => {
 								<i className="fa fa-instagram fa-2x"></i>
 							</a>
 							<a href="#" className="sm-icon">
-								<i className="fa fa-facebook fa-2x" aria-hidden="true"></i>
+								<i className="fa fa-facebook fa-2x"></i>
 							</a>
+							<ul className="utility-links">
+								<li><a href="#"></a> Terms of Use</li>
+								<li><a href="#"></a> Privacy Policy</li>
+								<li>© 2018 AdrianCulinary</li>
+							</ul>
 						</div>
 					</footer>
 				</div>

@@ -3,30 +3,47 @@ import React from 'react';
 const About = () => {
 	return (
 		<div className='about'> 
-			<h1 className="about-title"> 
-				Origins of Adrian Culinary
-			</h1>
-			<div className='about-cook'>
-				<div className='cook-media'>
-					<img className='knife-gif' src="https://s3.amazonaws.com/www.adrianculinary.com/img/knifeskills.gif"/>
+			<div id="abt-desc">
+				<h2 className="lead-title lead-underline" >
+					Reasons to cook
+				</h2>
+				<div id="container">
+					<div className="desc-section">
+						<i className="fa fa-money fa-3x about-icon" ></i>
+						<h3 className="under-title"> Savings</h3>
+						<p className="lead-desc">I want to use this website to empower people through cooking, and open people's eyes to the vast benefits it offers </p>
+					</div>
+					<div className="desc-section">
+						<i className="fa fa-heartbeat fa-3x about-icon" ></i>
+						<h3 className="under-title"> Health</h3>
+						<p className="lead-desc">	You will save anywhere from 50%-70% on food. For a savings of up to $3000 per year. </p>
+					</div>
+					<div className="desc-section">
+						<i className="fa fa-th fa-3x about-icon" ></i>
+						<h3 className="under-title"> Variety and Excitmemt</h3>
+						<p className="lead-desc"> Your food is infintely more customizable then when you go out to eat </p>
+						<p className="lead-desc">  You'll become healthier. Resteraunts often use the cheaper ingredients(canola,soybean oil, malodextrin, MSG, sugar) to get the maximum profits. By cutting these out you can see the pounds drop, skin look healthier and more energy during the day.  </p>
+					</div>
 				</div>
-				<p className='about-description'> It all started with a whimsical story. Of my mother leaving me home alone at 11 and me making my first meal using google, and some chicken from the fridge. My mom wasn't to happen about the chicken when she came home, but I learned in over a decade in cooking is you don't have to be  a genius to cook a 5-star meal. This site is about luxury cooking for the everday person   </p>
-			</div>
-			<div className='about-site'>
-				<p className='about-description'>
-					I want to use this website to empower people through cooking, and open people's eyes to the vast benefits it offers 
-					<ul>
-						<li>You will save anywhere from 50%-70% on food. For a savings of up to $3000 per year. </li>
-						<li>Your food is infintely more customizable then when you go out to eat</li>
-						<li> You'll become healthier. Resteraunts often use the cheaper ingredients(canola,soybean oil, malodextrin, MSG, sugar) to get the maximum profits. By cutting these out you can see the pounds drop, skin look healthier and more energy during the day. </li>
-						<li> </li>
-					</ul>
-				</p>
- 				<div id="chef-pic">
+				<div className="container-2">
+					<div className="desc-section-2">
+						<i className="fa fa-money fa-3x about-icon" ></i>
+						<h2 className="under-title" >
+						The Mission
+						</h2>
+						<h3 className="under-title"> Whimsical Origins</h3>
+						<p className="lead-desc">I want to use this website to empower people through cooking, and open people's eyes to the vast benefits it offers </p>
+					</div>
+					<div className="desc-section-2">
+						<i className="fa fa-money fa-3x about-icon" ></i>
+						<h2 className="under-title" >
+						The Mission
+						</h2>
+						<p className="lead-desc">I want to use this website to empower people through cooking, and open people's eyes to the vast benefits it offers </p>
+					</div>
+				</div>
 
-				</div>
 			</div>
-			
 		</div>
 		)
 }

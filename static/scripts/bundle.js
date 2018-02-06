@@ -51,7 +51,7 @@ var CookWare = function CookWare() {
 					_react2.default.createElement(
 						'p',
 						null,
-						' Product Description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo'
+						' Whether this is your first proper chef\'s knife, or you experienced and want a knife that dosen\'t cost a fortune. Under $30 and it\'s actually the exact same steel as the much more expensive $100+ Wusthof knife.'
 					),
 					_react2.default.createElement(
 						'a',
@@ -140,7 +140,46 @@ var Footer = function Footer() {
 		_react2.default.createElement(
 			"footer",
 			null,
-			_react2.default.createElement("div", { className: "footer-top" }),
+			_react2.default.createElement(
+				"div",
+				{ className: "footer-top" },
+				_react2.default.createElement(
+					"div",
+					{ className: "footer-container" },
+					_react2.default.createElement(
+						"div",
+						{ className: "footer-item" },
+						_react2.default.createElement(
+							"h2",
+							{ className: "written-logo" },
+							" Adrian Culinary "
+						)
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "footer-item" },
+						_react2.default.createElement(
+							"ul",
+							{ className: "site-links" },
+							_react2.default.createElement(
+								"li",
+								null,
+								" Latest Recipies"
+							),
+							_react2.default.createElement(
+								"li",
+								null,
+								" About "
+							),
+							_react2.default.createElement(
+								"li",
+								null,
+								" Cooking Resources "
+							)
+						)
+					)
+				)
+			),
 			_react2.default.createElement(
 				"div",
 				{ className: "footer-bottom" },
@@ -152,7 +191,28 @@ var Footer = function Footer() {
 				_react2.default.createElement(
 					"a",
 					{ href: "#", className: "sm-icon" },
-					_react2.default.createElement("i", { className: "fa fa-facebook fa-2x", "aria-hidden": "true" })
+					_react2.default.createElement("i", { className: "fa fa-facebook fa-2x" })
+				),
+				_react2.default.createElement(
+					"ul",
+					{ className: "utility-links" },
+					_react2.default.createElement(
+						"li",
+						null,
+						_react2.default.createElement("a", { href: "#" }),
+						" Terms of Use"
+					),
+					_react2.default.createElement(
+						"li",
+						null,
+						_react2.default.createElement("a", { href: "#" }),
+						" Privacy Policy"
+					),
+					_react2.default.createElement(
+						"li",
+						null,
+						"\xA9 2018 AdrianCulinary"
+					)
 				)
 			)
 		)
@@ -186,12 +246,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Header = function Header() {
 	return _react2.default.createElement(
 		'div',
-		null,
-		_react2.default.createElement(
-			'header',
-			null,
-			_react2.default.createElement(_nav2.default, null)
-		)
+		{ className: 'absolute-header' },
+		_react2.default.createElement(_nav2.default, null)
 	);
 };
 
@@ -646,8 +702,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-// import Nav from './nav.jsx';
-
 
 var Content = function (_React$Component) {
 	_inherits(Content, _React$Component);
@@ -673,7 +727,7 @@ var Content = function (_React$Component) {
 						null,
 						_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _home2.default }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/about', component: _about2.default }),
-						_react2.default.createElement(_reactRouterDom.Route, { path: '/CookWare', component: _cookware2.default }),
+						_react2.default.createElement(_reactRouterDom.Route, { path: '/cookWare', component: _cookware2.default }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/thankyou', component: _thankyou2.default })
 					),
 					_react2.default.createElement(_footer2.default, null)
@@ -710,57 +764,106 @@ var About = function About() {
 		'div',
 		{ className: 'about' },
 		_react2.default.createElement(
-			'h1',
-			{ className: 'about-title' },
-			'Origins of Adrian Culinary'
-		),
-		_react2.default.createElement(
 			'div',
-			{ className: 'about-cook' },
+			{ id: 'abt-desc' },
 			_react2.default.createElement(
-				'div',
-				{ className: 'cook-media' },
-				_react2.default.createElement('img', { className: 'knife-gif', src: 'https://s3.amazonaws.com/www.adrianculinary.com/img/knifeskills.gif' })
+				'h2',
+				{ className: 'lead-title lead-underline' },
+				'Reasons to cook'
 			),
 			_react2.default.createElement(
-				'p',
-				{ className: 'about-description' },
-				' It all started with a whimsical story. Of my mother leaving me home alone at 11 and me making my first meal using google, and some chicken from the fridge. My mom wasn\'t to happen about the chicken when she came home, but I learned in over a decade in cooking is you don\'t have to be  a genius to cook a 5-star meal. This site is about luxury cooking for the everday person   '
-			)
-		),
-		_react2.default.createElement(
-			'div',
-			{ className: 'about-site' },
-			_react2.default.createElement(
-				'p',
-				{ className: 'about-description' },
-				'I want to use this website to empower people through cooking, and open people\'s eyes to the vast benefits it offers',
+				'div',
+				{ id: 'container' },
 				_react2.default.createElement(
-					'ul',
-					null,
+					'div',
+					{ className: 'desc-section' },
+					_react2.default.createElement('i', { className: 'fa fa-money fa-3x about-icon' }),
 					_react2.default.createElement(
-						'li',
-						null,
-						'You will save anywhere from 50%-70% on food. For a savings of up to $3000 per year. '
+						'h3',
+						{ className: 'under-title' },
+						' Savings'
 					),
 					_react2.default.createElement(
-						'li',
-						null,
-						'Your food is infintely more customizable then when you go out to eat'
+						'p',
+						{ className: 'lead-desc' },
+						'I want to use this website to empower people through cooking, and open people\'s eyes to the vast benefits it offers '
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'desc-section' },
+					_react2.default.createElement('i', { className: 'fa fa-heartbeat fa-3x about-icon' }),
+					_react2.default.createElement(
+						'h3',
+						{ className: 'under-title' },
+						' Health'
 					),
 					_react2.default.createElement(
-						'li',
-						null,
-						' You\'ll become healthier. Resteraunts often use the cheaper ingredients(canola,soybean oil, malodextrin, MSG, sugar) to get the maximum profits. By cutting these out you can see the pounds drop, skin look healthier and more energy during the day. '
+						'p',
+						{ className: 'lead-desc' },
+						' You will save anywhere from 50%-70% on food. For a savings of up to $3000 per year. '
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'desc-section' },
+					_react2.default.createElement('i', { className: 'fa fa-th fa-3x about-icon' }),
+					_react2.default.createElement(
+						'h3',
+						{ className: 'under-title' },
+						' Variety and Excitmemt'
 					),
 					_react2.default.createElement(
-						'li',
-						null,
-						' '
+						'p',
+						{ className: 'lead-desc' },
+						' Your food is infintely more customizable then when you go out to eat '
+					),
+					_react2.default.createElement(
+						'p',
+						{ className: 'lead-desc' },
+						'  You\'ll become healthier. Resteraunts often use the cheaper ingredients(canola,soybean oil, malodextrin, MSG, sugar) to get the maximum profits. By cutting these out you can see the pounds drop, skin look healthier and more energy during the day.  '
 					)
 				)
 			),
-			_react2.default.createElement('div', { id: 'chef-pic' })
+			_react2.default.createElement(
+				'div',
+				{ className: 'container-2' },
+				_react2.default.createElement(
+					'div',
+					{ className: 'desc-section-2' },
+					_react2.default.createElement('i', { className: 'fa fa-money fa-3x about-icon' }),
+					_react2.default.createElement(
+						'h2',
+						{ className: 'under-title' },
+						'The Mission'
+					),
+					_react2.default.createElement(
+						'h3',
+						{ className: 'under-title' },
+						' Whimsical Origins'
+					),
+					_react2.default.createElement(
+						'p',
+						{ className: 'lead-desc' },
+						'I want to use this website to empower people through cooking, and open people\'s eyes to the vast benefits it offers '
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'desc-section-2' },
+					_react2.default.createElement('i', { className: 'fa fa-money fa-3x about-icon' }),
+					_react2.default.createElement(
+						'h2',
+						{ className: 'under-title' },
+						'The Mission'
+					),
+					_react2.default.createElement(
+						'p',
+						{ className: 'lead-desc' },
+						'I want to use this website to empower people through cooking, and open people\'s eyes to the vast benefits it offers '
+					)
+				)
+			)
 		)
 	);
 };

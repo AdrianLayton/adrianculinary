@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom';
 
 import Header from './header.jsx';
-// import Nav from './nav.jsx';
+
 import Home from './home.jsx';
 import Footer from './footer.jsx';
 
@@ -29,7 +29,7 @@ export default class Content extends React.Component {
 				  		<Switch>
 					  		<Route exact path="/" component={Home} />
 					  		<Route path="/about" component={About} />
-					  		<Route path="/CookWare" component={CookWare} />
+					  		<Route path="/cookWare" component={CookWare} />
 					  		<Route path="/thankyou" component={ThankYou} />
 					  	</Switch>
 					<Footer />

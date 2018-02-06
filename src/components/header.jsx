@@ -4,11 +4,8 @@ import Nav from './nav.jsx'
 
 	const Header = () => {
 		return (
-			<div>
-				<header >
+			<div className="absolute-header">
 					<Nav />
-				</header>
-				
 			</div>
 			)
 	}

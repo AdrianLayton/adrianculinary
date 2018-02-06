@@ -16,9 +16,8 @@ const CookWare = () => {
 						</div>
 						<div className="product-metadata">
 							<h3 className="product-title"> Product Name </h3>
-							<p> Product Description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							<p> Whether this is your first proper chef's knife, or you experienced and want a knife that dosen't cost a fortune.
+							Under $30 and it's actually the exact same steel as the much more expensive $100+ Wusthof knife.
 							</p>
 							<a target="_blank" href="https://www.amazon.com/gp/product/B008M5U1C2/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B008M5U1C2&linkCode=as2&tag=drianulinary-20&linkId=7bc955c92b7b552eaf182c2df29d4aff">
 								<button className="affil-button"> Buy on Amazon </button>
