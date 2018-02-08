@@ -150,6 +150,7 @@ button.button {
 
 .desc-section {
 	width: 30%;
+	flex-wrap: wrap;
 	flex-basis: 30%;
 	margin: 0 1.5%;
 	display: inline-block;
@@ -180,6 +181,7 @@ button.button {
 .desc-section-2 {
 	width: 45%;
 	flex-basis: 45%;
+	flex-wrap: wrap;
 	margin: 0 2.5%;
 	display: inline-block;
 	border: 1px #ccc solid;
@@ -661,23 +663,75 @@ a.sm-icon:visited < i {
 	color:rgba(0,0,0. 0.80);
 }
 
+/********************* Recipie *********************/
+
+.block-wrapper {
+
+}
+
+.block-wrapper::after {
+	clear: both;
+	content: " ";
+	display: table;
+}
+
+.recipie-container {
+	position: relative;
+	padding: .5%;
+	width: 32.5%;
+	background-color: #d7d9db;
+}
+
+.img-container {
+	width: 100%;
+	overflow: hidden;
+}
+
+
+.img-container > img {
+
+}
+
+.metadata-container {
+	position: relative;
+	min-height: 8em;
+	padding-bottom: 1.5em;
+}
+
+.metadata-container
+.metadata-title {
+	padding: 1.5em 1em .5em;
+}
+
+.metadata-container > p {
+	display: inline-block;
+
+}
+
+/********************* Media Queries *********************/
 
 @media (min-width: 300px) and (max-width: 768px) {
 	.header {
 		min-height: 30em;
+	}
+	.header
+	.logo-container {
+		margin-left: 7%;
+	}
 
-	}	
+
 	.nav-primary {
 		position: relative;
 		top: auto;
-		left: 35%;
+		left: 0%;
 		margin-bottom: auto;
 
 	}
 	.nav-primary
 	.menu {
 		display: block;
-		padding-left: auto;
+		padding-left: none;
+		margin: 0 auto;
 	}
 	.nav-primary
 	.menu 
@@ -685,6 +739,14 @@ a.sm-icon:visited < i {
 		float: auto;
 		display: block;
 		text-align: center;	
+		margin-left: 15%;
+	}
+
+	.nav-primary
+	.menu 
+	.nav-items:nth-child(3)
+	li {
+		margin-left: -40%;
 	}
 
 	.mySlides > img {
@@ -695,11 +757,21 @@ a.sm-icon:visited < i {
 	.slideshow-container
 	.mySlides
 	.text {
-		padding: 2em 3.7em 1.35em .9em;
-		top: 17%;
+		padding: 1em 3.7em 1em .9em;
+		/*top: 44%;*/
+		top: 24%;
+		left: 1%;
 		width: 23%;
-		margin-left: 37%;
+		/*margin-left: 37%;*/
 		font-size: 1.5em;
+		border-radius: 1.5em .2em 1.5em .2em;
+	}
+
+	.slideshow
+	.slideshow-container
+	.mySlides
+	.numbertext {
+		left: 45%;
 	}
 
 
@@ -721,5 +793,14 @@ a.sm-icon:visited < i {
 	.slideshow 
 	.navigation {
 		display: none;
+	}
+
+	.about {
+		height: auto;
+		margin-bottom: 3em;
+	}
+	.desc-section {
+		width: 95%;
+		flex-basis: 95%;	
 	}
 }

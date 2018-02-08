@@ -1,5 +1,6 @@
 import React from 'react';
 import Slideshow from './slideshow.jsx'
+import Recipies from './recipies.jsx'
 
 export default class Coming extends React.Component{
 		constructor(props) {
@@ -23,12 +24,7 @@ export default class Coming extends React.Component{
 	return(
 		<div className="section">
 			<Slideshow />
-				<div className="info-display">
-				<h3> Latest Recipies </h3>
-				</div>
-				<div className="info-display">
-				<h3> Best Culinary Products </h3>
-				</div>
+			<Recipies />
 		</div>
 		)
 }
