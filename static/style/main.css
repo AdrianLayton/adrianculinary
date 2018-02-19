@@ -20,6 +20,11 @@ ul.menu a:hover{
 	padding-bottom: 3em;
 	border-radius: 2em;
 	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: space-between;
 	min-height: auto;
 }
 
@@ -30,9 +35,11 @@ ul.menu a:hover{
 
 div.logo-container  {
 	display: block;
-	position: relative;
+	margin-top: 2em;
+	/*position: relative;*/
 	top: 1.5em;
-	margin-left: 8.5em;
+	/*margin-left: 8.5em;*/
+	flex-basis: 305px;
 
 }
 
@@ -41,11 +48,11 @@ div.logo-container > img {
 }
 
 .nav-primary {
-	position: absolute;
+	/*position: absolute;
 	top: 1em;
 	left: 2.5em;
 	right: 2.5em;
-	margin-bottom: 5em;
+	margin-bottom: 5em;*/
 	padding-bottom: 1.25rem;
 } 
 .nav-primary
@@ -666,7 +673,10 @@ a.sm-icon:visited < i {
 /********************* Recipie *********************/
 
 .block-wrapper {
-
+	margin: 4em 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly; 
 }
 
 .block-wrapper::after {
@@ -675,11 +685,17 @@ a.sm-icon:visited < i {
 	display: table;
 }
 
-.recipie-container {
+.recipie-wrapper {
+	display: inline-block;
 	position: relative;
-	padding: .5%;
-	width: 32.5%;
-	background-color: #d7d9db;
+	padding: .18%;
+	width: 30%;
+	flex-basis: 30%;
+	background-color: rgba(246,250,255,.95);
+	border: .15em solid #fff;
+	-moz-box-shadow:    .1225em .1225em .125em .375em #ccc;
+   -webkit-box-shadow: .1225em .1225em .125em .375em #ccc;
+   box-shadow: .1225em .1225em .3125em .175em #ccc;
 }
 
 .img-container {
@@ -696,16 +712,56 @@ a.sm-icon:visited < i {
 	position: relative;
 	min-height: 8em;
 	padding-bottom: 1.5em;
+	background-color: inherit;
+	
+}
+
+.metadata-container
+.catg-link {
+	position: absolute;
+	bottom: 102%;
+}
+
+.metadata-container
+.catg-link
+.recipie-icon {
+	color: white;
+	padding: .55em;
+	background-color: #FF7021;
+	max-height: 38px;
+}
+
+.metadata-container
+.catg-link
+.recipie-category{
+	padding: .55em;
+	margin-left: .085em;
+	background-color: #FF7021;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 96%;
+	max-height: 32px;
+}
+
+.metadata-container
+.catg-link
+li {
+
 }
 
 .metadata-container
 .metadata-title {
-	padding: 1.5em 1em .5em;
+	padding: 1.5em 1em .35em;
+	font-size: 130%;
+	font-family: sans-serif;
 }
 
-.metadata-container > p {
+.metadata-container 
+.metadata-description {
 	display: inline-block;
-
+	margin
+	margin-left: 1.33em;
 }
 
 /********************* Media Queries *********************/
@@ -716,21 +772,22 @@ a.sm-icon:visited < i {
 	}
 	.header
 	.logo-container {
-		margin-left: 7%;
+
 	}
 
 
 	.nav-primary {
-		position: relative;
-		top: auto;
-		left: 0%;
+		position: static;
+		margin-left: 5%;
 		margin-bottom: auto;
 
 	}
 	.nav-primary
 	.menu {
-		display: block;
-		padding-left: none;
+		display: flex;
+		flex-flow: column wrap;	
+		justify-content: center;
+		padding-left: 0;
 		margin: 0 auto;
 	}
 	.nav-primary
@@ -740,13 +797,6 @@ a.sm-icon:visited < i {
 		display: block;
 		text-align: center;	
 		margin-left: 15%;
-	}
-
-	.nav-primary
-	.menu 
-	.nav-items:nth-child(3)
-	li {
-		margin-left: -40%;
 	}
 
 	.mySlides > img {
@@ -790,6 +840,20 @@ a.sm-icon:visited < i {
 
 	}
 
+	.block-wrapper {
+
+	}
+
+	.recipie-wrapper {
+		width: 98%;
+		flex-basis: 98%;
+		margin-top:2.5em;
+	}
+
+	.img-container > img {
+		width: 100%;
+	}
+
 	.slideshow 
 	.navigation {
 		display: none;
@@ -802,5 +866,38 @@ a.sm-icon:visited < i {
 	.desc-section {
 		width: 95%;
 		flex-basis: 95%;	
+	}
+
+	.footer-top {
+		height: auto;
+	}
+
+	.footer-top .footer-container {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+		height: 17.5em;
+	}
+
+	.footer-top .footer-container .footer-item {
+		flex-basis: 98%;
+		width: 98%;
+	}
+
+	.footer-top .footer-container .footer-item .written-logo {
+		width: 45%;
+		flex-basis: 45%;
+	}
+
+	.footer-top .footer-container .footer-item .site-links {
+		margin-right: 4em;
+	}
+
+	.footer-bottom {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-content: flex-end;
 	}
 }

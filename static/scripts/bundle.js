@@ -184,34 +184,42 @@ var Footer = function Footer() {
 				"div",
 				{ className: "footer-bottom" },
 				_react2.default.createElement(
-					"a",
-					{ href: "https://www.instagram.com/adrianculinary", className: "sm-icon" },
-					_react2.default.createElement("i", { className: "fa fa-instagram fa-2x" })
-				),
-				_react2.default.createElement(
-					"a",
-					{ href: "#", className: "sm-icon" },
-					_react2.default.createElement("i", { className: "fa fa-facebook fa-2x" })
-				),
-				_react2.default.createElement(
-					"ul",
-					{ className: "utility-links" },
+					"div",
+					{ className: "scl-media" },
 					_react2.default.createElement(
-						"li",
-						null,
-						_react2.default.createElement("a", { href: "#" }),
-						" Terms of Use"
+						"a",
+						{ href: "https://www.instagram.com/adrianculinary", className: "sm-icon" },
+						_react2.default.createElement("i", { className: "fa fa-instagram fa-2x" })
 					),
 					_react2.default.createElement(
-						"li",
-						null,
-						_react2.default.createElement("a", { href: "#" }),
-						" Privacy Policy"
-					),
+						"a",
+						{ href: "#", className: "sm-icon" },
+						_react2.default.createElement("i", { className: "fa fa-facebook fa-2x" })
+					)
+				),
+				_react2.default.createElement(
+					"div",
+					null,
 					_react2.default.createElement(
-						"li",
-						null,
-						"\xA9 2018 AdrianCulinary"
+						"ul",
+						{ className: "utility-links" },
+						_react2.default.createElement(
+							"li",
+							null,
+							_react2.default.createElement("a", { href: "#" }),
+							" Terms of Use"
+						),
+						_react2.default.createElement(
+							"li",
+							null,
+							_react2.default.createElement("a", { href: "#" }),
+							" Privacy Policy"
+						),
+						_react2.default.createElement(
+							"li",
+							null,
+							"\xA9 2018 AdrianCulinary"
+						)
 					)
 				)
 			)
@@ -244,11 +252,7 @@ var _nav2 = _interopRequireDefault(_nav);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Header = function Header() {
-	return _react2.default.createElement(
-		'div',
-		{ className: 'absolute-header' },
-		_react2.default.createElement(_nav2.default, null)
-	);
+	return _react2.default.createElement(_nav2.default, null);
 };
 
 exports.default = Header;
@@ -273,11 +277,11 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _slideshow = __webpack_require__(105);
+var _slideshow = __webpack_require__(106);
 
 var _slideshow2 = _interopRequireDefault(_slideshow);
 
-var _recipies = __webpack_require__(235);
+var _recipies = __webpack_require__(105);
 
 var _recipies2 = _interopRequireDefault(_recipies);
 
@@ -379,7 +383,7 @@ var Nav = function (_React$Component) {
 					_react2.default.createElement('img', { id: 'nav-logo', src: './img/logo2.png' })
 				),
 				_react2.default.createElement(
-					'nav',
+					'div',
 					{ className: 'nav-primary' },
 					_react2.default.createElement(
 						'ul',
@@ -431,6 +435,170 @@ exports.default = Nav;
 /***/ }),
 
 /***/ 105:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Recipies = function (_React$Component) {
+	_inherits(Recipies, _React$Component);
+
+	function Recipies() {
+		_classCallCheck(this, Recipies);
+
+		return _possibleConstructorReturn(this, (Recipies.__proto__ || Object.getPrototypeOf(Recipies)).apply(this, arguments));
+	}
+
+	_createClass(Recipies, [{
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(
+				"div",
+				{ className: "block-wrapper" },
+				_react2.default.createElement(
+					"div",
+					{ className: "recipie-wrapper" },
+					_react2.default.createElement("a", { href: "#" }),
+					_react2.default.createElement(
+						"div",
+						{ className: "img-container" },
+						_react2.default.createElement("img", { src: "./img/IMG_0239.JPG" })
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "metadata-container" },
+						_react2.default.createElement(
+							"a",
+							{ href: "#", className: "catg-link" },
+							_react2.default.createElement(
+								"span",
+								null,
+								_react2.default.createElement("i", { className: "recipie-icon fa fa-cutlery", "aria-hidden": "true" })
+							),
+							_react2.default.createElement(
+								"span",
+								{ className: "recipie-category" },
+								"Recipie"
+							)
+						),
+						_react2.default.createElement(
+							"h4",
+							{ className: "metadata-title" },
+							" The Best Sheperd's Pie "
+						),
+						_react2.default.createElement(
+							"p",
+							{ className: "metadata-description" },
+							" $0.50 p/serving "
+						)
+					)
+				),
+				_react2.default.createElement(
+					"div",
+					{ className: "recipie-wrapper" },
+					_react2.default.createElement("a", { href: "#" }),
+					_react2.default.createElement(
+						"div",
+						{ className: "img-container" },
+						_react2.default.createElement("img", { src: "./img/IMG_0239.JPG" })
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "metadata-container" },
+						_react2.default.createElement(
+							"a",
+							{ href: "#", className: "catg-link" },
+							_react2.default.createElement(
+								"span",
+								null,
+								_react2.default.createElement("i", { className: "recipie-icon fa fa-cutlery", "aria-hidden": "true" })
+							),
+							_react2.default.createElement(
+								"span",
+								{ className: "recipie-category" },
+								"Recipie"
+							)
+						),
+						_react2.default.createElement(
+							"h4",
+							{ className: "metadata-title" },
+							" The Best Sheperd's Pie "
+						),
+						_react2.default.createElement(
+							"p",
+							{ className: "metadata-description" },
+							" $0.50 p/serving "
+						)
+					)
+				),
+				_react2.default.createElement(
+					"div",
+					{ className: "recipie-wrapper" },
+					_react2.default.createElement("a", { href: "#" }),
+					_react2.default.createElement(
+						"div",
+						{ className: "img-container" },
+						_react2.default.createElement("img", { src: "./img/IMG_0239.JPG" })
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "metadata-container" },
+						_react2.default.createElement(
+							"a",
+							{ href: "#", className: "catg-link" },
+							_react2.default.createElement(
+								"span",
+								null,
+								_react2.default.createElement("i", { className: "recipie-icon fa fa-cutlery", "aria-hidden": "true" })
+							),
+							_react2.default.createElement(
+								"span",
+								{ className: "recipie-category" },
+								"Recipie"
+							)
+						),
+						_react2.default.createElement(
+							"h4",
+							{ className: "metadata-title" },
+							" The Best Sheperd's Pie "
+						),
+						_react2.default.createElement(
+							"p",
+							{ className: "metadata-description" },
+							" $0.50 p/serving "
+						)
+					)
+				)
+			);
+		}
+	}]);
+
+	return Recipies;
+}(_react2.default.Component);
+
+exports.default = Recipies;
+
+/***/ }),
+
+/***/ 106:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -586,7 +754,7 @@ exports.default = Slideshow;
 
 /***/ }),
 
-/***/ 106:
+/***/ 107:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -610,7 +778,7 @@ exports.default = ThankYou;
 
 /***/ }),
 
-/***/ 107:
+/***/ 108:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -633,80 +801,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var contentNode = document.getElementById('contents');
 
 _reactDom2.default.render(_react2.default.createElement(_app2.default, null), contentNode);
-
-/***/ }),
-
-/***/ 235:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Recipies = function (_React$Component) {
-	_inherits(Recipies, _React$Component);
-
-	function Recipies() {
-		_classCallCheck(this, Recipies);
-
-		return _possibleConstructorReturn(this, (Recipies.__proto__ || Object.getPrototypeOf(Recipies)).apply(this, arguments));
-	}
-
-	_createClass(Recipies, [{
-		key: "render",
-		value: function render() {
-			return _react2.default.createElement(
-				"div",
-				{ className: "block-wrapper" },
-				_react2.default.createElement(
-					"div",
-					{ className: "recipie-wrapper" },
-					_react2.default.createElement("a", { href: "#" }),
-					_react2.default.createElement(
-						"div",
-						{ className: "img-container" },
-						_react2.default.createElement("img", { src: "./img/IMG_0239.JPG" })
-					),
-					_react2.default.createElement(
-						"div",
-						{ className: "metadata-container" },
-						_react2.default.createElement(
-							"h4",
-							{ className: "metadata-title" },
-							" The Best Sheperd's Pie "
-						),
-						_react2.default.createElement(
-							"p",
-							{ className: "metaname-description" },
-							" $0.50 p/serving "
-						)
-					)
-				)
-			);
-		}
-	}]);
-
-	return Recipies;
-}(_react2.default.Component);
-
-exports.default = Recipies;
 
 /***/ }),
 
@@ -748,7 +842,7 @@ var _cookware = __webpack_require__(100);
 
 var _cookware2 = _interopRequireDefault(_cookware);
 
-var _thankyou = __webpack_require__(106);
+var _thankyou = __webpack_require__(107);
 
 var _thankyou2 = _interopRequireDefault(_thankyou);
 
@@ -933,4 +1027,4 @@ exports.default = About;
 
 /***/ })
 
-},[107]);
+},[108]);

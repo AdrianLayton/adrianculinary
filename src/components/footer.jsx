@@ -39,17 +39,21 @@ const Footer = () => {
 						</div>
 
 						<div className='footer-bottom'>
-							<a href="https://www.instagram.com/adrianculinary" className="sm-icon">
-								<i className="fa fa-instagram fa-2x"></i>
-							</a>
-							<a href="#" className="sm-icon">
-								<i className="fa fa-facebook fa-2x"></i>
-							</a>
-							<ul className="utility-links">
-								<li><a href="#"></a> Terms of Use</li>
-								<li><a href="#"></a> Privacy Policy</li>
-								<li>© 2018 AdrianCulinary</li>
-							</ul>
+							<div className="scl-media">
+								<a href="https://www.instagram.com/adrianculinary" className="sm-icon">
+									<i className="fa fa-instagram fa-2x"></i>
+								</a>
+								<a href="#" className="sm-icon">
+									<i className="fa fa-facebook fa-2x"></i>
+								</a>
+							</div>
+							<div>
+								<ul className="utility-links">
+									<li><a href="#"></a> Terms of Use</li>
+									<li><a href="#"></a> Privacy Policy</li>
+									<li>© 2018 AdrianCulinary</li>
+								</ul>
+							</div>
 						</div>
 					</footer>
 				</div>

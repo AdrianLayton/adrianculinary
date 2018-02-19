@@ -4,9 +4,7 @@ import Nav from './nav.jsx'
 
 	const Header = () => {
 		return (
-			<div className="absolute-header">
 					<Nav />
-			</div>
 			)
 	}
 		

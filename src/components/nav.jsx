@@ -8,12 +8,12 @@ export default class Nav extends React.Component {
 					<div className="logo-container">
 						<img id="nav-logo" src="./img/logo2.png" />
 					</div>
-					<nav className="nav-primary">
+					<div className="nav-primary">
 						<ul className="menu">
 							<NavLink className="nav-items" exact to="/"> <li > Home </li> </NavLink>
 							<NavLink className="nav-items" to="/about"> <li > About </li> </NavLink>
 							<NavLink className="nav-items" to="/CookWare"> <li >  Cooking Resources  </li> </NavLink>
 						</ul>
-					</nav>
+					</div>
 				</div>
 				)}}
