@@ -32,7 +32,7 @@ let myCredential = AWS.config.getCredentials(function(err) {
 });
 
 
-app.get('*', (req,res) => {
+app.get('/', (req,res) => {
 	res.sendFile(path.resolve(__dirname + '/static/index.html' ));
 })
 
@@ -46,7 +46,7 @@ app.post('/', (req,res) => {
 		if (err) console.log(err)
 			else console.log(`Email:${data.Item.email} has been added`);
 	})
-	res.redirect(path.resolve(__dirname + '/static/index.html'));
+	res.redirect("/");
 })
 
 
