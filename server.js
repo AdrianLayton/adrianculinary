@@ -45,7 +45,8 @@ app.post('/', (req,res) => {
 		TableName: table,
 		Item: {
 		email: email,
-	}		
+	};
+
 	docClient.put(params, (err, data) => {
 		if (err) console.log(err)
 			else console.log(`Email:${data.Item.email} has been added`);
