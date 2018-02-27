@@ -41,7 +41,7 @@ app.post('/', (req,res) => {
 	var email = req.body.email;
 	console.log(email + table);
 
-	const params = {
+	var params = {
 		TableName: table,
 		Item: {
 		email: email,
