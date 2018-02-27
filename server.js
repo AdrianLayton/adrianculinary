@@ -39,7 +39,12 @@ app.get('/', (req,res) => {
 app.post('/', (req,res) => {
 	var table = "AC-Eml"
 	var email = req.body.email;
-	const params = dbFunc.makeParams(req.body.email, table)
+	const email = newEmail;
+		const params = {
+			TableName: table,
+			Item: {
+			email: email,
+		}
 	console.log(email + table);
 	console.log(`Adding ${email}`);		
 	docClient.put(params, (err, data) => {
