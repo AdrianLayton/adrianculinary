@@ -39,13 +39,13 @@ app.get('/', (req,res) => {
 app.post('/', (req,res) => {
 	var table = "AC-Eml"
 	var email = req.body.email;
-		const params = {
-			TableName: table,
-			Item: {
-			email: email,
-		}
 	console.log(email + table);
-	console.log(`Adding ${email}`);		
+
+	const params = {
+		TableName: table,
+		Item: {
+		email: email,
+	}		
 	docClient.put(params, (err, data) => {
 		if (err) console.log(err)
 			else console.log(`Email:${data.Item.email} has been added`);
@@ -54,7 +54,6 @@ app.post('/', (req,res) => {
 })
 
 
-// res.redirect("/");
 app.listen(3000,() => {
 	console.log('App has started on port 3000')
 });
