@@ -39,7 +39,6 @@ app.get('/', (req,res) => {
 app.post('/', (req,res) => {
 	var table = "AC-Eml"
 	var email = req.body.email;
-	const email = newEmail;
 		const params = {
 			TableName: table,
 			Item: {
