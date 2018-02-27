@@ -46,7 +46,7 @@ var CookWare = function CookWare() {
 					_react2.default.createElement(
 						'h3',
 						{ className: 'product-title' },
-						' Product Name '
+						'Victorinox Fibrox Pro Chef\'s Knife, 8-Inch Chef\'s '
 					),
 					_react2.default.createElement(
 						'p',
@@ -507,7 +507,7 @@ var Recipies = function (_React$Component) {
 						_react2.default.createElement(
 							"p",
 							{ className: "metadata-description" },
-							" $0.50 p/serving "
+							" Jan 13 "
 						)
 					)
 				),
@@ -518,7 +518,7 @@ var Recipies = function (_React$Component) {
 					_react2.default.createElement(
 						"div",
 						{ className: "img-container" },
-						_react2.default.createElement("img", { src: "./img/IMG_0239.JPG" })
+						_react2.default.createElement("img", { src: "./img/DSC_0225.jpg" })
 					),
 					_react2.default.createElement(
 						"div",
@@ -540,12 +540,12 @@ var Recipies = function (_React$Component) {
 						_react2.default.createElement(
 							"h4",
 							{ className: "metadata-title" },
-							" The Best Sheperd's Pie "
+							" Amazing Breakfast Sandwiches "
 						),
 						_react2.default.createElement(
 							"p",
 							{ className: "metadata-description" },
-							" $0.50 p/serving "
+							" Jan 20 "
 						)
 					)
 				),
@@ -556,7 +556,7 @@ var Recipies = function (_React$Component) {
 					_react2.default.createElement(
 						"div",
 						{ className: "img-container" },
-						_react2.default.createElement("img", { src: "./img/IMG_0239.JPG" })
+						_react2.default.createElement("img", { src: "./img/IMG_1666.JPG" })
 					),
 					_react2.default.createElement(
 						"div",
@@ -578,12 +578,12 @@ var Recipies = function (_React$Component) {
 						_react2.default.createElement(
 							"h4",
 							{ className: "metadata-title" },
-							" The Best Sheperd's Pie "
+							" 5 Star Steak "
 						),
 						_react2.default.createElement(
 							"p",
 							{ className: "metadata-description" },
-							" $0.50 p/serving "
+							" February 3rd "
 						)
 					)
 				)

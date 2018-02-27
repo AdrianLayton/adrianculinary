@@ -26,10 +26,10 @@ AWS.config.dynamodb = {
 let docClient = new AWS.DynamoDB.DocumentClient();
 	
 // ******** UNCOMMENTED IN PRODUCTION ********
-// let myCredential = AWS.config.getCredentials(function(err) {
-//   if (err) console.log(err.stack); 
-//   else console.log('Access Key and SecretAccessKey Obtained');
-// });
+let myCredential = AWS.config.getCredentials(function(err) {
+  if (err) console.log(err.stack); 
+  else console.log('Access Key and SecretAccessKey Obtained');
+});
 
 
 app.get('*', (req,res) => {
@@ -38,9 +38,8 @@ app.get('*', (req,res) => {
 
 app.post('/', (req,res) => {
 	var table = "AC-Eml"
-	var name = req.body.name;
 	var email = req.body.email;
-	var newEmail = {name: name, email: email};
+	var newEmail = {email: email};
 	dbFunc.makeParams(newEmail, table)
 	
 	console.log(`Adding ${email}`);		

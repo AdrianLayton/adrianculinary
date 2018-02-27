@@ -15,7 +15,8 @@ const CookWare = () => {
 							</a>
 						</div>
 						<div className="product-metadata">
-							<h3 className="product-title"> Product Name </h3>
+							<h3 className="product-title"> 
+Victorinox Fibrox Pro Chef's Knife, 8-Inch Chef's </h3>
 							<p> Whether this is your first proper chef's knife, or you experienced and want a knife that dosen't cost a fortune.
 							Under $30 and it's actually the exact same steel as the much more expensive $100+ Wusthof knife.
 							</p>
