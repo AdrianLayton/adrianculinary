@@ -39,6 +39,7 @@ app.get('/', (req,res) => {
 app.post('/', (req,res) => {
 	var table = "AC-Eml"
 	var email = req.body.email;
+	email.toString();
 	console.log(email + table);
 
 	var params = {
