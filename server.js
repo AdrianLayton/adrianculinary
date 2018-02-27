@@ -40,7 +40,7 @@ app.post('/', (req,res) => {
 	var table = "AC-Eml"
 	var email = req.body.email;
 	var newEmail = {email: email};
-	dbFunc.makeParams(newEmail, table)
+	const params = dbFunc.makeParams(newEmail, table)
 	
 	console.log(`Adding ${email}`);		
 	docClient.put(params, (err, data) => {
