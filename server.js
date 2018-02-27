@@ -47,7 +47,11 @@ app.post('/', (req,res) => {
 		if (err) console.log(err)
 			else console.log(`Email:${data.Item.email} has been added`);
 	})
-})
+	res.redirect(
+		res.sendFile(path.resolve(__dirname + '/static/index.html')
+			);
+)})
+
 
 // res.redirect("/");
 app.listen(3000,() => {
