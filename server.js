@@ -46,6 +46,7 @@ app.post('/', (req,res) => {
 		Item: {
 		email: email,
 	}
+}
 
 	docClient.put(params, (err, data) => {
 		if (err) console.log(err)
