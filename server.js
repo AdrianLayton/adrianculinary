@@ -23,7 +23,7 @@ AWS.config.dynamodb = {
 
 
 
-let docClient = new AWS.DynamoDB.DocumentClient();
+
 	
 // ******** UNCOMMENTED IN PRODUCTION ********
 let myCredential = AWS.config.getCredentials(function(err) {
@@ -39,20 +39,19 @@ app.get('/', (req,res) => {
 app.post('/', (req,res) => {
 	var table = "AC-Eml"
 	var email = req.body.email;
-	email.toString();
+	var user = {email: email};
 	console.log(email + table);
 
-	var params = {
-		TableName: table,
-		Item: {
-		email: email,
-	}
-}
+	const docClient = new AWS.DynamoDB.DocumentClient();
 
-	docClient.put(params, (err, data) => {
-		if (err) console.log(err)
-			else console.log(`Email:${data.Item.email} has been added`);
-	})
+
+	docClient.put(dbFunc.makeParams(user, table), function(err, data) {
+      if (err) {
+          console.error("Unable to add item. Error JSON:", JSON.stringify(err, null, 2));
+      } else {
+          console.log("Added item:", JSON.stringify(data, null, 2));
+    }
+    })
 	res.redirect("/");
 })
 

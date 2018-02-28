@@ -1,12 +1,13 @@
 module.exports = {
-	makeParams: (newEmail, tableName) => {
+	makeParams: (user, tableName) => {
+		const emailEntry = user.email;
 
-		const email = newEmail;
 		const table = tableName;
 		const params = {
 			TableName: table,
 			Item: {
-			email: email,
+			email: emailEntry,
+		}
 		}
 		}
 	return params
