@@ -7,9 +7,8 @@ module.exports = {
 			TableName: table,
 			Item: {
 			email: emailEntry,
+			}
 		}
+		return params
 		}
-		}
-	return params
-	},
-}
+	}
