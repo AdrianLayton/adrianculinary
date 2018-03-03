@@ -32,11 +32,11 @@ let myCredential = AWS.config.getCredentials(function(err) {
 });
 
 
-app.get('/', (req,res) => {
+app.get('*', (req,res) => {
 	res.sendFile(path.resolve(__dirname + '/static/index.html' ));
 })
 
-app.post('/', (req,res) => {
+app.post('*', (req,res) => {
 	var table = "AC-Eml"
 	var email = req.body.email;
 	var user = {email: email};
