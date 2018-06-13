@@ -6,18 +6,18 @@ import {
   Switch 
 } from 'react-router-dom';
 
-import Header from './components/header.jsx'
-import Nav from './components/nav.jsx';
-import newNav from './components/newNav.jsx'
-import Home from './components/home.jsx';
-import Slideshow from './components/slideshow.jsx';
-import Modal from './components/modal.jsx';
-import Footer from './components/footer.jsx';
-import About from './components/about.jsx';
+import Header from './header.jsx';
+
+import Home from './home.jsx';
+import Footer from './footer.jsx';
+
+import CookWare from './cookware.jsx';
+import ThankYou from './thankyou.jsx';
+import About from './about.jsx';
 
 
 
-class Content extends React.Component {
+export default class Content extends React.Component {
 	constructor(props) {
 		super(props);
 	}
@@ -29,16 +29,12 @@ class Content extends React.Component {
 				  		<Switch>
 					  		<Route exact path="/" component={Home} />
 					  		<Route path="/about" component={About} />
-					  		<Route path="/kitchenware" component={Kitchenware} />
+					  		<Route path="/cookWare" component={CookWare} />
 					  		<Route path="/thankyou" component={ThankYou} />
 					  	</Switch>
+					<Footer />
 				</div>
 			</BrowserRouter>
 			)
 	}
 }
-
-const contentNode = document.getElementById('contents');
-
-ReactDOM.render(<Content /> , contentNode);
-

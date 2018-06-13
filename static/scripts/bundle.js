@@ -285,6 +285,10 @@ var _recipies = __webpack_require__(105);
 
 var _recipies2 = _interopRequireDefault(_recipies);
 
+var _dR = __webpack_require__(236);
+
+var _dR2 = _interopRequireDefault(_dR);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -299,22 +303,7 @@ var Coming = function (_React$Component) {
 	function Coming(props) {
 		_classCallCheck(this, Coming);
 
-		return _possibleConstructorReturn(this, (Coming.__proto__ || Object.getPrototypeOf(Coming)).call(this, props
-		// 	this.state = {
-		// 		name: '',
-		// 		email: '',
-		// 	}
-
-		// }
-		// handleChange(event) {
-		//    this.setState({value: event.target.value});
-		//    console.log(event);
-		// }
-
-		// handleSubmit(event) {
-		// 	document.forms.signup.reset();
-
-		));
+		return _possibleConstructorReturn(this, (Coming.__proto__ || Object.getPrototypeOf(Coming)).call(this, props));
 	}
 
 	_createClass(Coming, [{
@@ -324,6 +313,7 @@ var Coming = function (_React$Component) {
 				'div',
 				{ className: 'section' },
 				_react2.default.createElement(_slideshow2.default, null),
+				_react2.default.createElement(_dR2.default, null),
 				_react2.default.createElement(_recipies2.default, null)
 			);
 		}
@@ -507,7 +497,7 @@ var Recipies = function (_React$Component) {
 						_react2.default.createElement(
 							"p",
 							{ className: "metadata-description" },
-							" Jan 13 "
+							" Coming Soon "
 						)
 					)
 				),
@@ -545,7 +535,7 @@ var Recipies = function (_React$Component) {
 						_react2.default.createElement(
 							"p",
 							{ className: "metadata-description" },
-							" Jan 20 "
+							" Coming Soon "
 						)
 					)
 				),
@@ -583,7 +573,7 @@ var Recipies = function (_React$Component) {
 						_react2.default.createElement(
 							"p",
 							{ className: "metadata-description" },
-							" February 3rd "
+							" Coming Soon "
 						)
 					)
 				)
@@ -801,6 +791,67 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var contentNode = document.getElementById('contents');
 
 _reactDom2.default.render(_react2.default.createElement(_app2.default, null), contentNode);
+
+/***/ }),
+
+/***/ 236:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Display1 = function Display1() {
+	return _react2.default.createElement(
+		"div",
+		{ className: "recipie-wrapper" },
+		_react2.default.createElement("a", { href: "#" }),
+		_react2.default.createElement(
+			"div",
+			{ className: "img-container" },
+			_react2.default.createElement("img", { src: "./img/IMG_0239.JPG" })
+		),
+		_react2.default.createElement(
+			"div",
+			{ className: "metadata-container" },
+			_react2.default.createElement(
+				"a",
+				{ href: "#", className: "catg-link" },
+				_react2.default.createElement(
+					"span",
+					null,
+					_react2.default.createElement("i", { className: "recipie-icon fa fa-cutlery", "aria-hidden": "true" })
+				),
+				_react2.default.createElement(
+					"span",
+					{ className: "recipie-category" },
+					"Recipie"
+				)
+			),
+			_react2.default.createElement(
+				"h4",
+				{ className: "metadata-title" },
+				" The Best Sheperd's Pie "
+			),
+			_react2.default.createElement(
+				"p",
+				{ className: "metadata-description" },
+				" Coming Soon "
+			)
+		)
+	);
+};
+
+exports.default = Display1;
 
 /***/ }),
 

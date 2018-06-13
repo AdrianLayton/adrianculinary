@@ -26,10 +26,10 @@ AWS.config.dynamodb = {
 
 	
 // ******** UNCOMMENTED IN PRODUCTION ********
-let myCredential = AWS.config.getCredentials(function(err) {
-  if (err) console.log(err.stack); 
-  else console.log('Access Key and SecretAccessKey Obtained');
-});
+// let myCredential = AWS.config.getCredentials(function(err) {
+//   if (err) console.log(err.stack); 
+//   else console.log('Access Key and SecretAccessKey Obtained');
+// });
 
 
 app.get('*', (req,res) => {

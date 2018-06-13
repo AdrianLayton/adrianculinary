@@ -19,7 +19,7 @@ export default class Recipies extends React.Component {
 						</span>
 					</a>
 					<h4 className="metadata-title"> The Best Sheperd's Pie </h4>
-					<p className="metadata-description"> Jan 13 </p>
+					<p className="metadata-description"> Coming Soon </p>
 				</div>
 			</div>
 			<div className="recipie-wrapper">
@@ -37,7 +37,7 @@ export default class Recipies extends React.Component {
 						</span>
 					</a>
 					<h4 className="metadata-title"> Amazing Breakfast Sandwiches </h4>
-					<p className="metadata-description"> Jan 20 </p>
+					<p className="metadata-description"> Coming Soon </p>
 				</div>
 			</div>
 			<div className="recipie-wrapper">
@@ -55,7 +55,7 @@ export default class Recipies extends React.Component {
 						</span>
 					</a>
 					<h4 className="metadata-title"> 5 Star Steak </h4>
-					<p className="metadata-description"> February 3rd </p>
+					<p className="metadata-description"> Coming Soon </p>
 				</div>
 			</div>
 		</div>
