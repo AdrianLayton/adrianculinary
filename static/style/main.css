@@ -109,6 +109,12 @@ div.logo-container  {
 	border-radius: 2em;
 }
 
+/*First Row Display Home Page*/
+
+.main-display {
+	min-width: 100%;
+}
+
 /*SECTION ITEMS*/
 
 div.info-display {
