@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Content from './components/app.jsx'
+import Content from './app.jsx'
 
 const contentNode = document.getElementById('contents');
 

@@ -1,14 +1,19 @@
 import React from 'react';
-import Nav from './nav.jsx'
+import { NavLink } from 'react-router-dom';
 
-
-	const Header = () => {
-		return (
-					<Nav />
-			)
-	}
-		
-	
-export default Header;
-
-// <img className="site-branding" src="./img/logo.png" />
+export default class Header extends React.Component {
+		render () {		
+			return (
+				<div className="header">
+					<div className="logo-container">
+						<img id="nav-logo" src="./img/logo.png" />
+					</div>
+					<div className="nav-primary">
+						<ul className="menu">
+							<NavLink className="nav-items" exact to="/"> <li > Home </li> </NavLink>
+							<NavLink className="nav-items" to="/about"> <li > About </li> </NavLink>
+							<NavLink className="nav-items" to="/CookWare"> <li >  Cooking Resources  </li> </NavLink>
+						</ul>
+					</div>
+				</div>
+)}}

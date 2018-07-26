@@ -10,8 +10,10 @@ export default class Coming extends React.Component{
 	render() {
 	return(
 		<div className="section">
-			<Slideshow />
-			<Display1 />
+			<section className="main-display">
+				<Slideshow />
+				<Display1 />
+			</section>
 			<Recipies />
 		</div>
 		)

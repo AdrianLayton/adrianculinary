@@ -6,9 +6,9 @@ a {
 
 ul.menu a.active,
 ul.menu a:hover{
-	color: rgb(250,250,250);
+	color: #3d414a;
 	background-color: #FF7021;
-	border-radius: 2em;
+	border-radius: .5em;
 	text-decoration: underline;
 	text-decoration-color: orange;
 }
@@ -16,7 +16,7 @@ ul.menu a:hover{
 
 .header {
 	/*background-color: rgb(247,247,247);*/
-	background-color: rgba(246,250,255,1);
+	background-color: #3d414a;
 	padding-bottom: 1.25em;
 	border-radius: 0em;
 	min-width: 110%;
@@ -42,21 +42,13 @@ ul.menu a:hover{
 div.logo-container  {
 	display: block;
 	margin-top: 2em;
-	/*position: relative;*/
-	top: 1.5em;
-
-	/*margin-left: 8.5em;*/
-	flex-basis: 305px;
+	top: 1.5em;	
+	/*flex-basis: 305px;*/
+	background-color: rgb(250,250,250);
 
 }
 
-.logo-container
-.logo
-#nav-logo {
-	width: 10em;
-	max-height: 5em;
-	border-radius: 2em;
-}
+
 
 .nav-primary {
 	/*position: absolute;
@@ -102,17 +94,22 @@ div.logo-container  {
 }
 
 .header
+.logo-container {
+	border-radius: 5em;
+}
+
+.header
 .logo-container
 #nav-logo {
-	height: 5em;
-	width: 10em;
-	border-radius: 2em;
+	height: 7.5em;
+	width: 11em;
+	
 }
 
 /*First Row Display Home Page*/
 
 .main-display {
-	min-width: 100%;
+	min-width: 100%;how top: 
 }
 
 /*SECTION ITEMS*/

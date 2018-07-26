@@ -6,14 +6,12 @@ import {
   Switch 
 } from 'react-router-dom';
 
-import Header from './header.jsx';
-
-import Home from './home.jsx';
-import Footer from './footer.jsx';
-
-import CookWare from './cookware.jsx';
-import ThankYou from './thankyou.jsx';
-import About from './about.jsx';
+import Header from './components/header.jsx';
+import Home from './components/home.jsx';
+import Footer from './components/footer.jsx';
+import CookWare from './components/cookware.jsx';
+import ThankYou from './components/thankyou.jsx';
+import About from './components/about.jsx';
 
 
 
