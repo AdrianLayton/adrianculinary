@@ -10,7 +10,7 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _react = __webpack_require__(5);
+var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -82,7 +82,68 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _react = __webpack_require__(5);
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Display1 = function Display1() {
+	return _react2.default.createElement(
+		"div",
+		{ className: "tool-wrapper" },
+		_react2.default.createElement("a", { href: "#" }),
+		_react2.default.createElement(
+			"div",
+			{ className: "img-container" },
+			_react2.default.createElement("img", { src: "./img/moneyVsTime.jpeg" })
+		),
+		_react2.default.createElement(
+			"div",
+			{ className: "metadata-container" },
+			_react2.default.createElement(
+				"a",
+				{ href: "#", className: "catg-link" },
+				_react2.default.createElement(
+					"span",
+					null,
+					_react2.default.createElement("i", { className: "recipe-icon fa fa-wrench", "aria-hidden": "true" })
+				),
+				_react2.default.createElement(
+					"span",
+					{ className: "recipe-category" },
+					"Tools"
+				)
+			),
+			_react2.default.createElement(
+				"h4",
+				{ className: "metadata-title" },
+				" The Best Sheperd's Pie "
+			),
+			_react2.default.createElement(
+				"p",
+				{ className: "metadata-description" },
+				" Coming Soon "
+			)
+		)
+	);
+};
+
+exports.default = Display1;
+
+/***/ }),
+
+/***/ 102:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -109,7 +170,7 @@ var Footer = function Footer() {
 					_react2.default.createElement(
 						"p",
 						{ className: "tagline" },
-						" Get weekly recipies and our first course free"
+						" Get weekly recipes and our first course free"
 					)
 				),
 				_react2.default.createElement(
@@ -164,7 +225,7 @@ var Footer = function Footer() {
 							_react2.default.createElement(
 								"li",
 								null,
-								" Latest Recipies"
+								" Latest recipes"
 							),
 							_react2.default.createElement(
 								"li",
@@ -231,7 +292,7 @@ exports.default = Footer;
 
 /***/ }),
 
-/***/ 102:
+/***/ 103:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -243,7 +304,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(5);
+var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -329,7 +390,7 @@ exports.default = Header;
 
 /***/ }),
 
-/***/ 103:
+/***/ 104:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -341,19 +402,19 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(5);
+var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _slideshow = __webpack_require__(235);
+var _slideshow = __webpack_require__(106);
 
 var _slideshow2 = _interopRequireDefault(_slideshow);
 
-var _recipies = __webpack_require__(234);
+var _recipe = __webpack_require__(236);
 
-var _recipies2 = _interopRequireDefault(_recipies);
+var _recipe2 = _interopRequireDefault(_recipe);
 
-var _dR = __webpack_require__(233);
+var _dR = __webpack_require__(101);
 
 var _dR2 = _interopRequireDefault(_dR);
 
@@ -386,7 +447,7 @@ var Coming = function (_React$Component) {
 					_react2.default.createElement(_slideshow2.default, null),
 					_react2.default.createElement(_dR2.default, null)
 				),
-				_react2.default.createElement(_recipies2.default, null)
+				_react2.default.createElement(_recipe2.default, null)
 			);
 		}
 	}]);
@@ -398,282 +459,7 @@ exports.default = Coming;
 
 /***/ }),
 
-/***/ 104:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _react = __webpack_require__(5);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var ThankYou = function ThankYou() {
-	return _react2.default.createElement('div', { className: 'thank-you' });
-};
-
-exports.default = ThankYou;
-
-/***/ }),
-
-/***/ 105:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _react = __webpack_require__(5);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(29);
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-var _app = __webpack_require__(97);
-
-var _app2 = _interopRequireDefault(_app);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var contentNode = document.getElementById('contents');
-
-_reactDom2.default.render(_react2.default.createElement(_app2.default, null), contentNode);
-
-/***/ }),
-
-/***/ 233:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _react = __webpack_require__(5);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Display1 = function Display1() {
-	return _react2.default.createElement(
-		"div",
-		{ className: "recipie-wrapper" },
-		_react2.default.createElement("a", { href: "#" }),
-		_react2.default.createElement(
-			"div",
-			{ className: "img-container" },
-			_react2.default.createElement("img", { src: "./img/IMG_0239.JPG" })
-		),
-		_react2.default.createElement(
-			"div",
-			{ className: "metadata-container" },
-			_react2.default.createElement(
-				"a",
-				{ href: "#", className: "catg-link" },
-				_react2.default.createElement(
-					"span",
-					null,
-					_react2.default.createElement("i", { className: "recipie-icon fa fa-cutlery", "aria-hidden": "true" })
-				),
-				_react2.default.createElement(
-					"span",
-					{ className: "recipie-category" },
-					"Recipie"
-				)
-			),
-			_react2.default.createElement(
-				"h4",
-				{ className: "metadata-title" },
-				" The Best Sheperd's Pie "
-			),
-			_react2.default.createElement(
-				"p",
-				{ className: "metadata-description" },
-				" Coming Soon "
-			)
-		)
-	);
-};
-
-exports.default = Display1;
-
-/***/ }),
-
-/***/ 234:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(5);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Recipies = function (_React$Component) {
-	_inherits(Recipies, _React$Component);
-
-	function Recipies() {
-		_classCallCheck(this, Recipies);
-
-		return _possibleConstructorReturn(this, (Recipies.__proto__ || Object.getPrototypeOf(Recipies)).apply(this, arguments));
-	}
-
-	_createClass(Recipies, [{
-		key: "render",
-		value: function render() {
-			return _react2.default.createElement(
-				"div",
-				{ className: "block-wrapper" },
-				_react2.default.createElement(
-					"div",
-					{ className: "recipie-wrapper" },
-					_react2.default.createElement("a", { href: "#" }),
-					_react2.default.createElement(
-						"div",
-						{ className: "img-container" },
-						_react2.default.createElement("img", { src: "./img/IMG_0239.JPG" })
-					),
-					_react2.default.createElement(
-						"div",
-						{ className: "metadata-container" },
-						_react2.default.createElement(
-							"a",
-							{ href: "#", className: "catg-link" },
-							_react2.default.createElement(
-								"span",
-								null,
-								_react2.default.createElement("i", { className: "recipie-icon fa fa-cutlery", "aria-hidden": "true" })
-							),
-							_react2.default.createElement(
-								"span",
-								{ className: "recipie-category" },
-								"Recipie"
-							)
-						),
-						_react2.default.createElement(
-							"h4",
-							{ className: "metadata-title" },
-							" The Best Sheperd's Pie "
-						),
-						_react2.default.createElement(
-							"p",
-							{ className: "metadata-description" },
-							" Coming Soon "
-						)
-					)
-				),
-				_react2.default.createElement(
-					"div",
-					{ className: "recipie-wrapper" },
-					_react2.default.createElement("a", { href: "#" }),
-					_react2.default.createElement(
-						"div",
-						{ className: "img-container" },
-						_react2.default.createElement("img", { src: "./img/DSC_0225.jpg" })
-					),
-					_react2.default.createElement(
-						"div",
-						{ className: "metadata-container" },
-						_react2.default.createElement(
-							"a",
-							{ href: "#", className: "catg-link" },
-							_react2.default.createElement(
-								"span",
-								null,
-								_react2.default.createElement("i", { className: "recipie-icon fa fa-cutlery", "aria-hidden": "true" })
-							),
-							_react2.default.createElement(
-								"span",
-								{ className: "recipie-category" },
-								"Recipie"
-							)
-						),
-						_react2.default.createElement(
-							"h4",
-							{ className: "metadata-title" },
-							" Amazing Breakfast Sandwiches "
-						),
-						_react2.default.createElement(
-							"p",
-							{ className: "metadata-description" },
-							" Coming Soon "
-						)
-					)
-				),
-				_react2.default.createElement(
-					"div",
-					{ className: "recipie-wrapper" },
-					_react2.default.createElement("a", { href: "#" }),
-					_react2.default.createElement(
-						"div",
-						{ className: "img-container" },
-						_react2.default.createElement("img", { src: "./img/IMG_1666.JPG" })
-					),
-					_react2.default.createElement(
-						"div",
-						{ className: "metadata-container" },
-						_react2.default.createElement(
-							"a",
-							{ href: "#", className: "catg-link" },
-							_react2.default.createElement(
-								"span",
-								null,
-								_react2.default.createElement("i", { className: "recipie-icon fa fa-cutlery", "aria-hidden": "true" })
-							),
-							_react2.default.createElement(
-								"span",
-								{ className: "recipie-category" },
-								"Recipie"
-							)
-						),
-						_react2.default.createElement(
-							"h4",
-							{ className: "metadata-title" },
-							" 5 Star Steak "
-						),
-						_react2.default.createElement(
-							"p",
-							{ className: "metadata-description" },
-							" Coming Soon "
-						)
-					)
-				)
-			);
-		}
-	}]);
-
-	return Recipies;
-}(_react2.default.Component);
-
-exports.default = Recipies;
-
-/***/ }),
-
-/***/ 235:
+/***/ 106:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -685,7 +471,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(5);
+var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -829,6 +615,220 @@ exports.default = Slideshow;
 
 /***/ }),
 
+/***/ 107:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ThankYou = function ThankYou() {
+	return _react2.default.createElement('div', { className: 'thank-you' });
+};
+
+exports.default = ThankYou;
+
+/***/ }),
+
+/***/ 108:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(29);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _app = __webpack_require__(97);
+
+var _app2 = _interopRequireDefault(_app);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var contentNode = document.getElementById('contents');
+
+_reactDom2.default.render(_react2.default.createElement(_app2.default, null), contentNode);
+
+/***/ }),
+
+/***/ 236:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Recipe = function (_React$Component) {
+	_inherits(Recipe, _React$Component);
+
+	function Recipe() {
+		_classCallCheck(this, Recipe);
+
+		return _possibleConstructorReturn(this, (Recipe.__proto__ || Object.getPrototypeOf(Recipe)).apply(this, arguments));
+	}
+
+	_createClass(Recipe, [{
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(
+				"div",
+				{ className: "block-wrapper" },
+				_react2.default.createElement(
+					"div",
+					{ className: "recipe-wrapper" },
+					_react2.default.createElement("a", { href: "#" }),
+					_react2.default.createElement(
+						"div",
+						{ className: "img-container" },
+						_react2.default.createElement("img", { src: "./img/IMG_0239.JPG" })
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "metadata-container" },
+						_react2.default.createElement(
+							"a",
+							{ href: "#", className: "catg-link" },
+							_react2.default.createElement(
+								"span",
+								null,
+								_react2.default.createElement("i", { className: "recipe-icon fa fa-cutlery", "aria-hidden": "true" })
+							),
+							_react2.default.createElement(
+								"span",
+								{ className: "recipe-category" },
+								"Recipe"
+							)
+						),
+						_react2.default.createElement(
+							"h4",
+							{ className: "metadata-title" },
+							" The Best Sheperd's Pie "
+						),
+						_react2.default.createElement(
+							"p",
+							{ className: "metadata-description" },
+							" Coming Soon "
+						)
+					)
+				),
+				_react2.default.createElement(
+					"div",
+					{ className: "recipe-wrapper" },
+					_react2.default.createElement("a", { href: "#" }),
+					_react2.default.createElement(
+						"div",
+						{ className: "img-container" },
+						_react2.default.createElement("img", { src: "./img/DSC_0225.jpg" })
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "metadata-container" },
+						_react2.default.createElement(
+							"a",
+							{ href: "#", className: "catg-link" },
+							_react2.default.createElement(
+								"span",
+								null,
+								_react2.default.createElement("i", { className: "recipe-icon fa fa-cutlery", "aria-hidden": "true" })
+							),
+							_react2.default.createElement(
+								"span",
+								{ className: "recipe-category" },
+								"Recipe"
+							)
+						),
+						_react2.default.createElement(
+							"h4",
+							{ className: "metadata-title" },
+							" Amazing Breakfast Sandwiches "
+						),
+						_react2.default.createElement(
+							"p",
+							{ className: "metadata-description" },
+							" Coming Soon "
+						)
+					)
+				),
+				_react2.default.createElement(
+					"div",
+					{ className: "recipe-wrapper" },
+					_react2.default.createElement("a", { href: "#" }),
+					_react2.default.createElement(
+						"div",
+						{ className: "img-container" },
+						_react2.default.createElement("img", { src: "./img/IMG_1666.JPG" })
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "metadata-container" },
+						_react2.default.createElement(
+							"a",
+							{ href: "#", className: "catg-link" },
+							_react2.default.createElement(
+								"span",
+								null,
+								_react2.default.createElement("i", { className: "recipe-icon fa fa-cutlery", "aria-hidden": "true" })
+							),
+							_react2.default.createElement(
+								"span",
+								{ className: "recipe-category" },
+								"Recipe"
+							)
+						),
+						_react2.default.createElement(
+							"h4",
+							{ className: "metadata-title" },
+							" 5 Star Steak "
+						),
+						_react2.default.createElement(
+							"p",
+							{ className: "metadata-description" },
+							" Coming Soon "
+						)
+					)
+				)
+			);
+		}
+	}]);
+
+	return Recipe;
+}(_react2.default.Component);
+
+exports.default = Recipe;
+
+/***/ }),
+
 /***/ 97:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -841,7 +841,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(5);
+var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -851,15 +851,15 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 var _reactRouterDom = __webpack_require__(39);
 
-var _header = __webpack_require__(102);
+var _header = __webpack_require__(103);
 
 var _header2 = _interopRequireDefault(_header);
 
-var _home = __webpack_require__(103);
+var _home = __webpack_require__(104);
 
 var _home2 = _interopRequireDefault(_home);
 
-var _footer = __webpack_require__(101);
+var _footer = __webpack_require__(102);
 
 var _footer2 = _interopRequireDefault(_footer);
 
@@ -867,7 +867,7 @@ var _cookware = __webpack_require__(100);
 
 var _cookware2 = _interopRequireDefault(_cookware);
 
-var _thankyou = __webpack_require__(104);
+var _thankyou = __webpack_require__(107);
 
 var _thankyou2 = _interopRequireDefault(_thankyou);
 
@@ -933,7 +933,7 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _react = __webpack_require__(5);
+var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -1052,4 +1052,4 @@ exports.default = About;
 
 /***/ })
 
-},[105]);
+},[108]);

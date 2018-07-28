@@ -4,24 +4,23 @@ a {
 	text-decoration:none !important;
 }
 
-ul.menu a.active,
-ul.menu a:hover{
-	color: #3d414a;
-	background-color: #FF7021;
-	border-radius: .5em;
-	text-decoration: underline;
-	text-decoration-color: orange;
+a:hover {
+	border: .2em white solid;
+	transition-delay: .075s;
+	transition-duration: .3s;
+	transition-timing-function: ease-in-out;
 }
 
 
 .header {
 	/*background-color: rgb(247,247,247);*/
 	background-color: #3d414a;
-	padding-bottom: 1.25em;
+	padding-top: .75em;
+	padding-bottom: .75em;
+	margin: .5em auto;
 	border-radius: 0em;
-	min-width: 110%;
+	width: 100%;
 	/* max-width: 100%; */
-	margin: -0.5em -2em;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
@@ -73,7 +72,6 @@ div.logo-container  {
 
 .nav-items {
 	text-decoration-style: none;
-
 	padding: 1em 1.5em;
 	margin-left: 1em;
 	margin-right: 1em;
@@ -84,7 +82,12 @@ div.logo-container  {
 	top: 2em;
 	right: 1em;
 	text-align: center; 
-
+	color: #3d414a !important;
+	background-color: #FF7021 !important; 
+	border: .2em rgb(141,145,154) solid;
+	border-radius: .25em;
+	text-decoration-color: orange;
+	/*text-decoration: underline;*/
 }
 
 .nav-items li {
@@ -705,7 +708,7 @@ a.sm-icon:visited < i {
 	color:rgba(0,0,0. 0.80);
 }
 
-/********************* Recipie *********************/
+/********************* recipe *********************/
 
 .block-wrapper {
 	margin: 4em 0;
@@ -719,8 +722,19 @@ a.sm-icon:visited < i {
 	content: " ";
 	display: table;
 }
-
-.recipie-wrapper {
+.tool-wrapper {
+	display: inline-block;
+	position: relative;
+	padding: .18%;
+	width: 30%;
+	flex-basis: 30%;
+	background-color: rgba(246,250,255,.95);
+	border: .15em solid #fff;
+	-moz-box-shadow:    .1225em .1225em .125em .375em #ccc;
+   -webkit-box-shadow: .1225em .1225em .125em .375em #ccc;
+   box-shadow: .1225em .1225em .3125em .175em #ccc;
+}
+.recipe-wrapper {
 	display: inline-block;
 	position: relative;
 	padding: .18%;
@@ -738,6 +752,10 @@ a.sm-icon:visited < i {
 	overflow: hidden;
 }
 
+.tool-wrapper
+.img-container > img {
+	min-height: 17em;
+}
 
 .img-container > img {
 	width: 100%;
@@ -760,7 +778,7 @@ a.sm-icon:visited < i {
 
 .metadata-container
 .catg-link
-.recipie-icon {
+.recipe-icon {
 	color: white;
 	padding: .55em;
 	background-color: #FF7021;
@@ -769,7 +787,7 @@ a.sm-icon:visited < i {
 
 .metadata-container
 .catg-link
-.recipie-category{
+.recipe-category{
 	padding: .55em;
 	margin-left: .085em;
 	background-color: #FF7021;
@@ -885,31 +903,38 @@ li {
 	.block-wrapper {
 		justify-content: space-between;
 	}
-	.recipie-wrapper {
+
+/*	.tool-wrapper {
+		width: 48%;
+		flex-basis: 48%;
+		margin-top:2.5em;
+	}
+*/
+	.recipe-wrapper {
 		width: 48%;
 		flex-basis: 48%;
 		margin-top:2.5em;
 	}
 
-	.recipie-wrapper
+	.recipe-wrapper
 	.metadata-container
 	.metadata-title {
 		padding: 0.5em 0em 0.1em;
 	}
 
-	.recipie-wrapper
+	.recipe-wrapper
 	.metadata-container
 	.metadata-description {
 		margin: 0px;
 
 	}
 
-	.recipie-wrapper
+	.recipe-wrapper
 	.img-container {
 		max-height: 10em;
 	}
 
-	.recipie-wrapper
+	.recipe-wrapper
 	.img-container > img {
 		width: 100%;
 	}

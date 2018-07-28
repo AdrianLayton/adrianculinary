@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default class Recipies extends React.Component {
+export default class Recipe extends React.Component {
 	render() {
 	return(
 		<div className="block-wrapper">
-			<div className="recipie-wrapper">
+			<div className="recipe-wrapper">
 				<a href="#"></a>
 				<div className="img-container">
 					<img src="./img/IMG_0239.JPG" />
@@ -12,17 +12,17 @@ export default class Recipies extends React.Component {
 				<div className="metadata-container">
 					<a href="#" className="catg-link">
 						<span> 
-							<i className="recipie-icon fa fa-cutlery" aria-hidden="true"></i>
+							<i className="recipe-icon fa fa-cutlery" aria-hidden="true"></i>
 						</span>
-						<span className="recipie-category">
-							Recipie
+						<span className="recipe-category">
+							Recipe
 						</span>
 					</a>
 					<h4 className="metadata-title"> The Best Sheperd's Pie </h4>
 					<p className="metadata-description"> Coming Soon </p>
 				</div>
 			</div>
-			<div className="recipie-wrapper">
+			<div className="recipe-wrapper">
 				<a href="#"></a>
 				<div className="img-container">
 					<img src="./img/DSC_0225.jpg" />
@@ -30,17 +30,17 @@ export default class Recipies extends React.Component {
 				<div className="metadata-container">
 					<a href="#" className="catg-link">
 						<span> 
-							<i className="recipie-icon fa fa-cutlery" aria-hidden="true"></i>
+							<i className="recipe-icon fa fa-cutlery" aria-hidden="true"></i>
 						</span>
-						<span className="recipie-category">
-							Recipie
+						<span className="recipe-category">
+							Recipe
 						</span>
 					</a>
 					<h4 className="metadata-title"> Amazing Breakfast Sandwiches </h4>
 					<p className="metadata-description"> Coming Soon </p>
 				</div>
 			</div>
-			<div className="recipie-wrapper">
+			<div className="recipe-wrapper">
 				<a href="#"></a>
 				<div className="img-container">
 					<img src="./img/IMG_1666.JPG" />
@@ -48,10 +48,10 @@ export default class Recipies extends React.Component {
 				<div className="metadata-container">
 					<a href="#" className="catg-link">
 						<span> 
-							<i className="recipie-icon fa fa-cutlery" aria-hidden="true"></i>
+							<i className="recipe-icon fa fa-cutlery" aria-hidden="true"></i>
 						</span>
-						<span className="recipie-category">
-							Recipie
+						<span className="recipe-category">
+							Recipe
 						</span>
 					</a>
 					<h4 className="metadata-title"> 5 Star Steak </h4>

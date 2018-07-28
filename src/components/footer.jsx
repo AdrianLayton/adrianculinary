@@ -7,7 +7,7 @@ const Footer = () => {
 						<div className="newsletter-row">
 							<div className="newsletter-tagline">
 								<h3 className="newsletter-heading"> Never have a boring meal again</h3>
-								<p className="tagline"> Get weekly recipies and our first course free</p>
+								<p className="tagline"> Get weekly recipes and our first course free</p>
 							</div>
 							<div className="around-form">
 								<form method="post" action="/" className="sign-up"> 
@@ -30,7 +30,7 @@ const Footer = () => {
 								</div>
 								<div className="footer-item">
 									<ul className="site-links">
-										<li> Latest Recipies</li>
+										<li> Latest recipes</li>
 										<li> About </li>
 										<li> Cooking Resources </li>
 									</ul>
