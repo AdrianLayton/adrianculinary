@@ -726,10 +726,15 @@ a.sm-icon:visited < i {
 	display: inline-block;
 	position: relative;
 	padding: .18%;
-	width: 30%;
-	flex-basis: 30%;
+	width: 37%;
+	top: -12.8em;
+    margin-left: .8%;
+    margin-right: .5%;
+    margin-top: 1em;
+    flex-basis: 37%;
+    height: 31.5em;
 	background-color: rgba(246,250,255,.95);
-	border: .15em solid #fff;
+	border: .15em solid rgba(150,150,150,1);
 	-moz-box-shadow:    .1225em .1225em .125em .375em #ccc;
    -webkit-box-shadow: .1225em .1225em .125em .375em #ccc;
    box-shadow: .1225em .1225em .3125em .175em #ccc;
@@ -737,7 +742,7 @@ a.sm-icon:visited < i {
 .recipe-wrapper {
 	display: inline-block;
 	position: relative;
-	padding: .18%;
+	padding: .75em;
 	width: 30%;
 	flex-basis: 30%;
 	background-color: rgba(246,250,255,.95);
@@ -754,7 +759,7 @@ a.sm-icon:visited < i {
 
 .tool-wrapper
 .img-container > img {
-	min-height: 17em;
+	max-height: 15em;
 }
 
 .img-container > img {
