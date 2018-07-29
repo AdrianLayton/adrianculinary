@@ -16,8 +16,8 @@ const Display1 = () => {
 							Tools
 						</span>
 					</a>
-					<h4 className="metadata-title"> The Best Sheperd's Pie </h4>
-					<p className="metadata-description"> Coming Soon </p>
+					<h4 className="metadata-title"> Calculate Saving's from Home Cooking </h4>
+					<p className="metadata-description"> See how much money you would save based on sex,age, weight, acitivity level and cost of living where you live </p>
 				</div>
 			</div>
 			)

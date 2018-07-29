@@ -68,11 +68,7 @@ export default class Slideshow extends React.Component {
              onClick={ () => this.plusSlides(1) }>
             &#10095;
           </a>
-        </div>
-        <br/>
-        <div className="navigation" style={{textAlign:'center'}}>
-          { this.renderDots() }
-        </div>
+      </div>
       </div>
     )
   }

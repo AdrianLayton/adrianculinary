@@ -118,12 +118,12 @@ var Display1 = function Display1() {
 			_react2.default.createElement(
 				"h4",
 				{ className: "metadata-title" },
-				" The Best Sheperd's Pie "
+				" Calculate Saving's from Home Cooking "
 			),
 			_react2.default.createElement(
 				"p",
 				{ className: "metadata-description" },
-				" Coming Soon "
+				" See how much money you would save based on sex,age, weight, acitivity level and cost of living where you live "
 			)
 		)
 	);
@@ -410,7 +410,7 @@ var _slideshow = __webpack_require__(106);
 
 var _slideshow2 = _interopRequireDefault(_slideshow);
 
-var _recipe = __webpack_require__(236);
+var _recipe = __webpack_require__(105);
 
 var _recipe2 = _interopRequireDefault(_recipe);
 
@@ -459,213 +459,7 @@ exports.default = Coming;
 
 /***/ }),
 
-/***/ 106:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Slideshow = function (_React$Component) {
-  _inherits(Slideshow, _React$Component);
-
-  function Slideshow(props) {
-    _classCallCheck(this, Slideshow);
-
-    var _this = _possibleConstructorReturn(this, (Slideshow.__proto__ || Object.getPrototypeOf(Slideshow)).call(this, props));
-
-    _this.state = { slideIndex: 0 };
-    _this.slides = [{
-      image: './img/DSC_0312.jpg',
-      caption: 'Meals Under $2',
-      key: 1
-    }, {
-      image: './img/IMG_0239.JPG',
-      caption: 'Sheperd\'s Pie',
-      key: 2
-    }, {
-      image: './img/IMG_0828.JPG',
-      caption: 'Mandarin Orange Chicken',
-      key: 3
-    }];
-    return _this;
-  }
-
-  _createClass(Slideshow, [{
-    key: 'plusSlides',
-    value: function plusSlides(n) {
-      this.setCurrentSlide(this.state.slideIndex + n);
-    }
-  }, {
-    key: 'setCurrentSlide',
-    value: function setCurrentSlide(slideIndex) {
-      if (slideIndex >= this.slides.length) {
-        slideIndex = 0;
-      }
-      if (slideIndex < 0) {
-        slideIndex = this.slides.length - 1;
-      }
-      this.setState({ slideIndex: slideIndex });
-    }
-  }, {
-    key: 'renderSlides',
-    value: function renderSlides() {
-      var _this2 = this;
-
-      var visible = function visible(index) {
-        return index == _this2.state.slideIndex ? 'block' : 'none';
-      };
-
-      return this.slides.map(function (slide, index) {
-        return _react2.default.createElement(
-          'div',
-          { className: 'mySlides fade', style: { display: visible(index) } },
-          _react2.default.createElement(
-            'div',
-            { className: 'numbertext' },
-            index + 1,
-            ' / ',
-            _this2.slides.length
-          ),
-          _react2.default.createElement('img', { src: slide.image, style: { width: '100%' } }),
-          _react2.default.createElement(
-            'div',
-            { className: 'text' },
-            slide.caption
-          )
-        );
-      });
-    }
-  }, {
-    key: 'renderDots',
-    value: function renderDots() {
-      var _this3 = this;
-
-      var active = function active(index) {
-        return index == _this3.state.slideIndex ? 'active' : '';
-      };
-
-      return this.slides.map(function (slide, index) {
-        return _react2.default.createElement('span', { className: 'dot ' + active(index),
-          onClick: function onClick() {
-            return _this3.setCurrentSlide(index);
-          } });
-      });
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _this4 = this;
-
-      return _react2.default.createElement(
-        'div',
-        { className: 'slideshow' },
-        _react2.default.createElement(
-          'div',
-          { className: 'slideshow-container' },
-          this.renderSlides(),
-          _react2.default.createElement(
-            'a',
-            { className: 'prev',
-              onClick: function onClick() {
-                return _this4.plusSlides(-1);
-              } },
-            '\u276E'
-          ),
-          _react2.default.createElement(
-            'a',
-            { className: 'next',
-              onClick: function onClick() {
-                return _this4.plusSlides(1);
-              } },
-            '\u276F'
-          )
-        ),
-        _react2.default.createElement('br', null),
-        _react2.default.createElement(
-          'div',
-          { className: 'navigation', style: { textAlign: 'center' } },
-          this.renderDots()
-        )
-      );
-    }
-  }]);
-
-  return Slideshow;
-}(_react2.default.Component);
-
-exports.default = Slideshow;
-
-/***/ }),
-
-/***/ 107:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var ThankYou = function ThankYou() {
-	return _react2.default.createElement('div', { className: 'thank-you' });
-};
-
-exports.default = ThankYou;
-
-/***/ }),
-
-/***/ 108:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(29);
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-var _app = __webpack_require__(97);
-
-var _app2 = _interopRequireDefault(_app);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var contentNode = document.getElementById('contents');
-
-_reactDom2.default.render(_react2.default.createElement(_app2.default, null), contentNode);
-
-/***/ }),
-
-/***/ 236:
+/***/ 105:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -826,6 +620,206 @@ var Recipe = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Recipe;
+
+/***/ }),
+
+/***/ 106:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Slideshow = function (_React$Component) {
+  _inherits(Slideshow, _React$Component);
+
+  function Slideshow(props) {
+    _classCallCheck(this, Slideshow);
+
+    var _this = _possibleConstructorReturn(this, (Slideshow.__proto__ || Object.getPrototypeOf(Slideshow)).call(this, props));
+
+    _this.state = { slideIndex: 0 };
+    _this.slides = [{
+      image: './img/DSC_0312.jpg',
+      caption: 'Meals Under $2',
+      key: 1
+    }, {
+      image: './img/IMG_0239.JPG',
+      caption: 'Sheperd\'s Pie',
+      key: 2
+    }, {
+      image: './img/IMG_0828.JPG',
+      caption: 'Mandarin Orange Chicken',
+      key: 3
+    }];
+    return _this;
+  }
+
+  _createClass(Slideshow, [{
+    key: 'plusSlides',
+    value: function plusSlides(n) {
+      this.setCurrentSlide(this.state.slideIndex + n);
+    }
+  }, {
+    key: 'setCurrentSlide',
+    value: function setCurrentSlide(slideIndex) {
+      if (slideIndex >= this.slides.length) {
+        slideIndex = 0;
+      }
+      if (slideIndex < 0) {
+        slideIndex = this.slides.length - 1;
+      }
+      this.setState({ slideIndex: slideIndex });
+    }
+  }, {
+    key: 'renderSlides',
+    value: function renderSlides() {
+      var _this2 = this;
+
+      var visible = function visible(index) {
+        return index == _this2.state.slideIndex ? 'block' : 'none';
+      };
+
+      return this.slides.map(function (slide, index) {
+        return _react2.default.createElement(
+          'div',
+          { className: 'mySlides fade', style: { display: visible(index) } },
+          _react2.default.createElement(
+            'div',
+            { className: 'numbertext' },
+            index + 1,
+            ' / ',
+            _this2.slides.length
+          ),
+          _react2.default.createElement('img', { src: slide.image, style: { width: '100%' } }),
+          _react2.default.createElement(
+            'div',
+            { className: 'text' },
+            slide.caption
+          )
+        );
+      });
+    }
+  }, {
+    key: 'renderDots',
+    value: function renderDots() {
+      var _this3 = this;
+
+      var active = function active(index) {
+        return index == _this3.state.slideIndex ? 'active' : '';
+      };
+
+      return this.slides.map(function (slide, index) {
+        return _react2.default.createElement('span', { className: 'dot ' + active(index),
+          onClick: function onClick() {
+            return _this3.setCurrentSlide(index);
+          } });
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this4 = this;
+
+      return _react2.default.createElement(
+        'div',
+        { className: 'slideshow' },
+        _react2.default.createElement(
+          'div',
+          { className: 'slideshow-container' },
+          this.renderSlides(),
+          _react2.default.createElement(
+            'a',
+            { className: 'prev',
+              onClick: function onClick() {
+                return _this4.plusSlides(-1);
+              } },
+            '\u276E'
+          ),
+          _react2.default.createElement(
+            'a',
+            { className: 'next',
+              onClick: function onClick() {
+                return _this4.plusSlides(1);
+              } },
+            '\u276F'
+          )
+        )
+      );
+    }
+  }]);
+
+  return Slideshow;
+}(_react2.default.Component);
+
+exports.default = Slideshow;
+
+/***/ }),
+
+/***/ 107:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ThankYou = function ThankYou() {
+	return _react2.default.createElement('div', { className: 'thank-you' });
+};
+
+exports.default = ThankYou;
+
+/***/ }),
+
+/***/ 108:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(29);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _app = __webpack_require__(97);
+
+var _app2 = _interopRequireDefault(_app);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var contentNode = document.getElementById('contents');
+
+_reactDom2.default.render(_react2.default.createElement(_app2.default, null), contentNode);
 
 /***/ }),
 
