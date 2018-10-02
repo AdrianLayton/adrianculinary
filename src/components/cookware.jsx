@@ -1,4 +1,4 @@
-import React from 'react';
+bimport React from 'react';
 
 const CookWare = () => {
 	return (

@@ -1,0 +1,211 @@
+
+@media (min-width: 300px) and (max-width: 768px) {
+	.header {
+		height: auto;
+	}
+	.header
+	.logo-container {
+
+	}
+
+
+	.nav-primary {
+		position: static;
+		margin-left: 5%;
+		margin-bottom: auto;
+
+
+	}
+	.nav-primary
+	.menu {
+		display: flex;
+		flex-flow: column wrap;	
+		justify-content: center;
+		padding-left: 0;
+		margin: 0 auto;
+	}
+	.nav-primary
+	.menu 
+	.nav-items {
+		float: auto;
+		display: block;
+		text-align: center;	
+		margin-left: 15%;
+	}
+
+	.mySlides > img {
+		min-height: 17.5em;
+	}
+
+	.slideshow
+	.slideshow-container
+	.mySlides
+	.text {
+		padding: 1em 3.7em 1em .9em;
+		/*top: 44%;*/
+		top: 24%;
+		left: 1%;
+		width: 23%;
+		/*margin-left: 37%;*/
+		font-size: 1.5em;
+		border-radius: 0.5em .2em 0.5em .2em;
+	}
+
+	.slideshow
+	.slideshow-container
+	.mySlides
+	.numbertext {
+		left: 45%;
+	}
+
+
+	.slideshow-container
+	.prev, 
+	.slideshow-container
+	.next {
+		font-style: 46px;
+		top: 42%;
+
+	}		
+
+	.prev, .next {
+		font-size: 4em;
+	}
+
+	.slideshow
+	.slideshow-container {
+		min-height: 21em;
+
+	}
+
+	.section
+	.block-wrapper {
+		justify-content: space-between;
+	}
+
+/*	.tool-wrapper {
+		width: 48%;
+		flex-basis: 48%;
+		margin-top:2.5em;
+	}
+*/
+	.recipe-wrapper {
+		width: 48%;
+		flex-basis: 48%;
+		margin-top:2.5em;
+	}
+
+	.recipe-wrapper
+	.metadata-container
+	.metadata-title {
+		padding: 0.5em 0em 0.1em;
+	}
+
+	.recipe-wrapper
+	.metadata-container
+	.metadata-description {
+		margin: 0px;
+
+	}
+
+	.recipe-wrapper
+	.img-container {
+		max-height: 10em;
+	}
+
+	.recipe-wrapper
+	.img-container > img {
+		width: 100%;
+	}
+
+	.slideshow 
+	.navigation {
+		display: none;
+	}
+
+	/******************** COOKWARE SECTION *********************/
+	.product-highlight {
+		height: 35em;
+	}
+
+	/******************** ABOUT SECTION *********************/
+	.about {
+		height: auto;
+		margin-bottom: 3em;
+	}
+
+	.lead-title {
+		width: 80%;
+		margin: 0 10%;
+	}
+
+	#container {
+		flex-flow: column wrap;
+		justify-content: center;
+	}
+
+	#container 
+	.desc-section {
+		width: 95%;
+		flex-basis: 95%;	
+		margin: 2em 1.5%;
+	}
+
+	#abt-desc
+	.container-2 {
+		flex-flow: column wrap;
+		justify-content: center;
+	}
+
+	#abt-desc
+	.container-2
+	.desc-section-2 {
+		width: 95%;
+		flex-basis: 95%;	
+		margin: 2em 1.5%;
+	}
+/******** Footer ******/
+	.newsletter
+	.newsletter-row {
+		flex-flow: column wrap;
+		align-items: center;
+
+	}
+	.footer-top {
+		height: auto;
+	}
+
+	.footer-top .footer-container {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+		height: 17.5em;
+	}
+
+	.footer-top .footer-container .footer-item {
+		flex-basis: 48%;
+		width: 48%;
+	}
+
+	.footer-top .footer-container .footer-item .written-logo {
+		width: 45%;
+		flex-basis: 45%;
+	}
+
+	.footer-top .footer-container .footer-item .site-links {
+		margin-right: 4em;
+	}
+
+	.footer-bottom {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-content: center;
+	}
+
+	.footer-bottom
+	.scl-media {
+		margin: 0 auto;
+	}
+}

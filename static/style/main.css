@@ -1,15 +1,9 @@
-
+@import url("./style/phoneMq.css");
 
 a {
 	text-decoration:none !important;
 }
 
-a:hover {
-	border: .2em white solid;
-	transition-delay: .075s;
-	transition-duration: .3s;
-	transition-timing-function: ease-in-out;
-}
 
 
 .header {
@@ -88,6 +82,13 @@ div.logo-container  {
 	border-radius: .25em;
 	text-decoration-color: orange;
 	/*text-decoration: underline;*/
+}
+
+.nav-items:hover {
+	border: .2em white solid;
+	transition-delay: .075s;
+	transition-duration: .3s;
+	transition-timing-function: ease-in-out;
 }
 
 .nav-items li {
@@ -711,7 +712,7 @@ a.sm-icon:visited < i {
 /********************* recipe *********************/
 
 .block-wrapper {
-	margin: 0 0 3em 0;
+	margin: -4em 0 3em 0;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly; 
@@ -722,19 +723,20 @@ a.sm-icon:visited < i {
 	content: " ";
 	display: table;
 }
+
 .tool-wrapper {
 	display: inline-block;
 	position: relative;
 	padding: .18%;
 	width: 37%;
-	top: -6.85em;
+	top: -5.8em;
     margin-left: .8%;
     margin-right: .5%;
     margin-top: 1em;
     flex-basis: 37%;
     height: 31.5em;
 	background-color: rgba(246,250,255,.95);
-	border: .15em solid rgba(150,150,150,1);
+	border: .15em solid rgba(250,250,250,1);
 	-moz-box-shadow:    .1225em .1225em .125em .375em #ccc;
    -webkit-box-shadow: .1225em .1225em .125em .375em #ccc;
    box-shadow: .1225em .1225em .3125em .175em #ccc;
@@ -824,11 +826,11 @@ li {
 }
 
 /********************* Media Queries *********************/
-
 @media (min-width: 300px) and (max-width: 768px) {
 	.header {
 		height: auto;
 	}
+	 
 	.header
 	.logo-container {
 
@@ -861,6 +863,11 @@ li {
 
 	.mySlides > img {
 		min-height: 17.5em;
+	}
+
+	.slideshow {
+		width: 97%;
+		margin-left: 1.5%;
 	}
 
 	.slideshow
@@ -909,16 +916,26 @@ li {
 		justify-content: space-between;
 	}
 
-/*	.tool-wrapper {
-		width: 48%;
-		flex-basis: 48%;
-		margin-top:2.5em;
-	}
-*/
 	.recipe-wrapper {
 		width: 48%;
 		flex-basis: 48%;
 		margin-top:2.5em;
+	}
+
+	.tool-wrapper {
+		width: 75%;
+		margin-left: 12.5%;
+		margin-top: 3.5em;
+		height: 23.125em;
+	}
+
+	.img-container > img {
+		height: 8em;
+	}
+
+	.mySlides > img {
+		height: auto;
+		width: auto;
 	}
 
 	.recipe-wrapper
