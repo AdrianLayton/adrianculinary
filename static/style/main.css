@@ -827,6 +827,7 @@ li {
 
 /********************* Media Queries *********************/
 @media (min-width: 300px) and (max-width: 768px) {
+	/*********** NavBar and Logo ********** */
 	.header {
 		height: auto;
 	}
@@ -861,13 +862,18 @@ li {
 		margin-left: 15%;
 	}
 
+	.header-content {
+		width: 100%;
+		background-size: 100% 12em;
+		background-repeat: no-repeat;
+	}
+	/*********** 	SLIDESHOW ********** */
 	.mySlides > img {
 		min-height: 17.5em;
 	}
 
 	.slideshow {
-		width: 97%;
-		margin-left: 1.5%;
+		width: 100%;
 	}
 
 	.slideshow
@@ -907,7 +913,7 @@ li {
 
 	.slideshow
 	.slideshow-container {
-		min-height: 21em;
+		min-height: 17em;
 
 	}
 
