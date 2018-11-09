@@ -12,6 +12,7 @@ import Footer from './components/footer.jsx';
 import CookWare from './components/cookware.jsx';
 import ThankYou from './components/thankyou.jsx';
 import About from './components/about.jsx';
+import SavingCalc from './components/svngcalc.jsx';
 
 
 
@@ -29,6 +30,7 @@ export default class Content extends React.Component {
 					  		<Route path="/about" component={About} />
 					  		<Route path="/cookWare" component={CookWare} />
 					  		<Route path="/thankyou" component={ThankYou} />
+					  		<Route path="/svngcalc" component={SavingCalc} />
 					  	</Switch>
 					<Footer />
 				</div>

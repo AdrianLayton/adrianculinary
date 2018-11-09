@@ -1,12 +1,14 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const Display1 = () => {
 	return(
 		<div className="tool-wrapper">
-				<a href="#"></a>
-				<div className="img-container">
-					<img src="./img/moneyVsTime.jpeg" />
-				</div>
+				<Link to="svngcalc">
+					<div className="img-container">
+						<img src="./img/moneyVsTime.jpeg" />
+					</div>
+				</Link>
 				<div className="metadata-container">
 					<a href="#" className="catg-link">
 						<span> 

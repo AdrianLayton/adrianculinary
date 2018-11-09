@@ -86,44 +86,49 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactRouterDom = __webpack_require__(29);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Display1 = function Display1() {
 	return _react2.default.createElement(
-		"div",
-		{ className: "tool-wrapper" },
-		_react2.default.createElement("a", { href: "#" }),
+		'div',
+		{ className: 'tool-wrapper' },
 		_react2.default.createElement(
-			"div",
-			{ className: "img-container" },
-			_react2.default.createElement("img", { src: "./img/moneyVsTime.jpeg" })
+			_reactRouterDom.Link,
+			{ to: 'svngcalc' },
+			_react2.default.createElement(
+				'div',
+				{ className: 'img-container' },
+				_react2.default.createElement('img', { src: './img/moneyVsTime.jpeg' })
+			)
 		),
 		_react2.default.createElement(
-			"div",
-			{ className: "metadata-container" },
+			'div',
+			{ className: 'metadata-container' },
 			_react2.default.createElement(
-				"a",
-				{ href: "#", className: "catg-link" },
+				'a',
+				{ href: '#', className: 'catg-link' },
 				_react2.default.createElement(
-					"span",
+					'span',
 					null,
-					_react2.default.createElement("i", { className: "recipe-icon fa fa-wrench", "aria-hidden": "true" })
+					_react2.default.createElement('i', { className: 'recipe-icon fa fa-wrench', 'aria-hidden': 'true' })
 				),
 				_react2.default.createElement(
-					"span",
-					{ className: "recipe-category" },
-					"Tools"
+					'span',
+					{ className: 'recipe-category' },
+					'Tools'
 				)
 			),
 			_react2.default.createElement(
-				"h4",
-				{ className: "metadata-title" },
-				" Calculate Saving's from Home Cooking "
+				'h4',
+				{ className: 'metadata-title' },
+				' Calculate Saving\'s from Home Cooking '
 			),
 			_react2.default.createElement(
-				"p",
-				{ className: "metadata-description" },
-				" See how much money you would save based on sex,age, weight, acitivity level and cost of living where you live "
+				'p',
+				{ className: 'metadata-description' },
+				' See how much money you would save based on sex,age, weight, acitivity level and cost of living where you live '
 			)
 		)
 	);
@@ -308,7 +313,7 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(39);
+var _reactRouterDom = __webpack_require__(29);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -807,7 +812,7 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(29);
+var _reactDom = __webpack_require__(30);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -820,6 +825,111 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var contentNode = document.getElementById('contents');
 
 _reactDom2.default.render(_react2.default.createElement(_app2.default, null), contentNode);
+
+/***/ }),
+
+/***/ 236:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var SavingCalc = function (_React$Component) {
+	_inherits(SavingCalc, _React$Component);
+
+	function SavingCalc(props) {
+		_classCallCheck(this, SavingCalc);
+
+		return _possibleConstructorReturn(this, (SavingCalc.__proto__ || Object.getPrototypeOf(SavingCalc)).call(this, props));
+	}
+
+	_createClass(SavingCalc, [{
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(
+				"div",
+				{ className: "calculator-container" },
+				_react2.default.createElement(
+					"h1",
+					null,
+					" This is the placeholder for the savings calculator-container"
+				),
+				_react2.default.createElement(
+					"h1",
+					null,
+					" This is the placeholder for the savings calculator-container"
+				),
+				_react2.default.createElement(
+					"h1",
+					null,
+					" This is the placeholder for the savings calculator-container"
+				),
+				_react2.default.createElement(
+					"h1",
+					null,
+					" This is the placeholder for the savings calculator-container"
+				),
+				_react2.default.createElement(
+					"h1",
+					null,
+					" This is the placeholder for the savings calculator-container"
+				),
+				_react2.default.createElement(
+					"h1",
+					null,
+					" This is the placeholder for the savings calculator-container"
+				),
+				_react2.default.createElement(
+					"h1",
+					null,
+					" This is the placeholder for the savings calculator-container"
+				),
+				_react2.default.createElement(
+					"h1",
+					null,
+					" This is the placeholder for the savings calculator-container"
+				),
+				_react2.default.createElement(
+					"h1",
+					null,
+					" This is the placeholder for the savings calculator-container"
+				),
+				_react2.default.createElement(
+					"h1",
+					null,
+					" This is the placeholder for the savings calculator-container"
+				),
+				_react2.default.createElement(
+					"h1",
+					null,
+					" This is the placeholder for the savings calculator-container"
+				)
+			);
+		}
+	}]);
+
+	return SavingCalc;
+}(_react2.default.Component);
+
+exports.default = SavingCalc;
 
 /***/ }),
 
@@ -839,11 +949,11 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(29);
+var _reactDom = __webpack_require__(30);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactRouterDom = __webpack_require__(39);
+var _reactRouterDom = __webpack_require__(29);
 
 var _header = __webpack_require__(103);
 
@@ -868,6 +978,10 @@ var _thankyou2 = _interopRequireDefault(_thankyou);
 var _about = __webpack_require__(99);
 
 var _about2 = _interopRequireDefault(_about);
+
+var _svngcalc = __webpack_require__(236);
+
+var _svngcalc2 = _interopRequireDefault(_svngcalc);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -902,7 +1016,8 @@ var Content = function (_React$Component) {
 						_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _home2.default }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/about', component: _about2.default }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/cookWare', component: _cookware2.default }),
-						_react2.default.createElement(_reactRouterDom.Route, { path: '/thankyou', component: _thankyou2.default })
+						_react2.default.createElement(_reactRouterDom.Route, { path: '/thankyou', component: _thankyou2.default }),
+						_react2.default.createElement(_reactRouterDom.Route, { path: '/svngcalc', component: _svngcalc2.default })
 					),
 					_react2.default.createElement(_footer2.default, null)
 				)
