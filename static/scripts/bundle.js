@@ -788,56 +788,6 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var ThankYou = function ThankYou() {
-	return _react2.default.createElement('div', { className: 'thank-you' });
-};
-
-exports.default = ThankYou;
-
-/***/ }),
-
-/***/ 108:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(30);
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-var _app = __webpack_require__(97);
-
-var _app2 = _interopRequireDefault(_app);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var contentNode = document.getElementById('contents');
-
-_reactDom2.default.render(_react2.default.createElement(_app2.default, null), contentNode);
-
-/***/ }),
-
-/***/ 236:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(4);
@@ -868,59 +818,33 @@ var SavingCalc = function (_React$Component) {
 				"div",
 				{ className: "calculator-container" },
 				_react2.default.createElement(
-					"h1",
-					null,
-					" This is the placeholder for the savings calculator-container"
+					"div",
+					{ className: "takeout-input" },
+					_react2.default.createElement(
+						"label",
+						null,
+						"Takeout Frequency (per week)"
+					),
+					_react2.default.createElement("input", { type: "text", className: "calc-input" })
 				),
 				_react2.default.createElement(
-					"h1",
-					null,
-					" This is the placeholder for the savings calculator-container"
-				),
-				_react2.default.createElement(
-					"h1",
-					null,
-					" This is the placeholder for the savings calculator-container"
-				),
-				_react2.default.createElement(
-					"h1",
-					null,
-					" This is the placeholder for the savings calculator-container"
-				),
-				_react2.default.createElement(
-					"h1",
-					null,
-					" This is the placeholder for the savings calculator-container"
-				),
-				_react2.default.createElement(
-					"h1",
-					null,
-					" This is the placeholder for the savings calculator-container"
-				),
-				_react2.default.createElement(
-					"h1",
-					null,
-					" This is the placeholder for the savings calculator-container"
-				),
-				_react2.default.createElement(
-					"h1",
-					null,
-					" This is the placeholder for the savings calculator-container"
-				),
-				_react2.default.createElement(
-					"h1",
-					null,
-					" This is the placeholder for the savings calculator-container"
-				),
-				_react2.default.createElement(
-					"h1",
-					null,
-					" This is the placeholder for the savings calculator-container"
-				),
-				_react2.default.createElement(
-					"h1",
-					null,
-					" This is the placeholder for the savings calculator-container"
+					"div",
+					{ className: "ph" },
+					_react2.default.createElement(
+						"h1",
+						null,
+						" This is the placeholder for the savings calculator-container"
+					),
+					_react2.default.createElement(
+						"h1",
+						null,
+						" This is the placeholder for the savings calculator-container"
+					),
+					_react2.default.createElement(
+						"h1",
+						null,
+						" This is the placeholder for the savings calculator-container"
+					)
 				)
 			);
 		}
@@ -930,6 +854,56 @@ var SavingCalc = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = SavingCalc;
+
+/***/ }),
+
+/***/ 108:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ThankYou = function ThankYou() {
+	return _react2.default.createElement('div', { className: 'thank-you' });
+};
+
+exports.default = ThankYou;
+
+/***/ }),
+
+/***/ 109:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(30);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _app = __webpack_require__(97);
+
+var _app2 = _interopRequireDefault(_app);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var contentNode = document.getElementById('contents');
+
+_reactDom2.default.render(_react2.default.createElement(_app2.default, null), contentNode);
 
 /***/ }),
 
@@ -971,7 +945,7 @@ var _cookware = __webpack_require__(100);
 
 var _cookware2 = _interopRequireDefault(_cookware);
 
-var _thankyou = __webpack_require__(107);
+var _thankyou = __webpack_require__(108);
 
 var _thankyou2 = _interopRequireDefault(_thankyou);
 
@@ -979,7 +953,7 @@ var _about = __webpack_require__(99);
 
 var _about2 = _interopRequireDefault(_about);
 
-var _svngcalc = __webpack_require__(236);
+var _svngcalc = __webpack_require__(107);
 
 var _svngcalc2 = _interopRequireDefault(_svngcalc);
 
@@ -1161,4 +1135,4 @@ exports.default = About;
 
 /***/ })
 
-},[108]);
+},[109]);

@@ -759,14 +759,12 @@ a.sm-icon:visited < i {
 	overflow: hidden;
 }
 
+
+
 .tool-wrapper
 .img-container > img {
-	max-height: 15em;
-}
-
-.img-container > img {
 	width: 100%;
-	min-height: 15em;
+	height: 15em;
 }
 
 .metadata-container {
@@ -830,6 +828,10 @@ li {
 	/*********** NavBar and Logo ********** */
 	.header {
 		height: auto;
+		width: 98%;
+		margin: 0 auto;
+		padding-bottom: 3em;
+
 	}
 	 
 	.header
@@ -862,31 +864,24 @@ li {
 		margin-left: 15%;
 	}
 
-	.header-content {
-		width: 100%;
-		background-size: 100% 12em;
-		background-repeat: no-repeat;
-	}
 	/*********** 	SLIDESHOW ********** */
-	.mySlides > img {
-		min-height: 17.5em;
-	}
-
+	
 	.slideshow {
-		width: 100%;
+		width: 98%;
+		margin-left: 1%;
+		margin-right: 1%;
+
 	}
 
 	.slideshow
 	.slideshow-container
 	.mySlides
 	.text {
-		padding: 1em 3.7em 1em .9em;
-		/*top: 44%;*/
-		top: 24%;
-		left: 1%;
-		width: 23%;
-		/*margin-left: 37%;*/
-		font-size: 1.5em;
+		padding: .1em;
+		top: 64%;
+		right: 31%;
+		width: auto;
+		font-size: .95em;
 		border-radius: 0.5em .2em 0.5em .2em;
 	}
 
@@ -894,7 +889,10 @@ li {
 	.slideshow-container
 	.mySlides
 	.numbertext {
-		left: 45%;
+		left: 42%;
+		font-size: 1em;
+		padding: .75em;
+
 	}
 
 
@@ -902,8 +900,8 @@ li {
 	.prev, 
 	.slideshow-container
 	.next {
-		font-style: 46px;
-		top: 42%;
+		font-size: 1.65em;
+		top: 35%;
 
 	}		
 
@@ -911,9 +909,18 @@ li {
 		font-size: 4em;
 	}
 
-	.slideshow
+	/*.slideshow
 	.slideshow-container {
 		min-height: 17em;
+
+	}*/
+
+
+
+	.slideshow-container
+	.myslides > img {
+		min-height: 15em;
+		min-width: 100%;
 
 	}
 
@@ -929,14 +936,15 @@ li {
 	}
 
 	.tool-wrapper {
-		width: 75%;
-		margin-left: 12.5%;
+		width: 95%;
+		margin-left: 2.5%;
+		margin-right: 2.5%;
 		margin-top: 3.5em;
-		height: 23.125em;
+		height: auto;
 	}
 
 	.img-container > img {
-		height: 8em;
+		height: 10em;
 	}
 
 	.mySlides > img {
@@ -944,10 +952,10 @@ li {
 		width: auto;
 	}
 
-	.recipe-wrapper
-	.metadata-container
-	.metadata-title {
-		padding: 0.5em 0em 0.1em;
+	.metadata-container .metadata-title {
+		padding: .75em .75em 0.1em;
+		margin: 0;
+		text-align: center;
 	}
 
 	.recipe-wrapper
