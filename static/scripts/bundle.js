@@ -339,6 +339,11 @@ var Header = function (_React$Component) {
 				'div',
 				{ className: 'header' },
 				_react2.default.createElement(
+					'span',
+					{ className: 'preview' },
+					'This site is currently in preview it will be launched March 2018'
+				),
+				_react2.default.createElement(
 					'div',
 					{ className: 'logo-container' },
 					_react2.default.createElement('img', { id: 'nav-logo', src: './img/logo.png' })
@@ -824,6 +829,16 @@ var SavingCalc = function (_React$Component) {
 						"label",
 						null,
 						"Takeout Frequency (per week)"
+					),
+					_react2.default.createElement("input", { type: "text", className: "calc-input" })
+				),
+				_react2.default.createElement(
+					"div",
+					{ className: "caloric-input" },
+					_react2.default.createElement(
+						"label",
+						null,
+						"How tall are you ? (inches)"
 					),
 					_react2.default.createElement("input", { type: "text", className: "calc-input" })
 				),

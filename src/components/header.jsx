@@ -5,6 +5,7 @@ export default class Header extends React.Component {
 		render () {		
 			return (
 				<div className="header">
+					<span className="preview">This site is currently in preview it will be launched March 2018</span>
 					<div className="logo-container">
 						<img id="nav-logo" src="./img/logo.png" />
 					</div>

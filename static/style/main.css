@@ -4,7 +4,17 @@ a {
 	text-decoration:none !important;
 }
 
-
+.preview {
+	color: white;
+	background-color: #FF7021;
+	width: 100%;
+	padding: 1.1em;
+	text-align: center;
+	border-radius: 1.5em;
+	font-family: Arial;
+	font-size: 1em;
+	font-weight: bold;
+}
 
 .header {
 	/*background-color: rgb(247,247,247);*/
@@ -984,7 +994,7 @@ li {
 	.metadata-container
 	.catg-link
 	.recipe-icon {
-		padding: 1em 0em .35em;
+		padding: .20em;
 	}
 
 	.metadata-container 
