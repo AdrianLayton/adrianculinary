@@ -6,7 +6,7 @@ const Display1 = () => {
 		<div className="tool-wrapper">
 				<Link to="svngcalc">
 					<div className="img-container">
-						<img src="./img/moneyVsTime.jpeg" />
+						<img src="./img/timemoney.jpeg" />
 					</div>
 				</Link>
 				<div className="metadata-container">

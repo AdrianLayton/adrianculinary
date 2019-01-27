@@ -100,7 +100,7 @@ var Display1 = function Display1() {
 			_react2.default.createElement(
 				'div',
 				{ className: 'img-container' },
-				_react2.default.createElement('img', { src: './img/moneyVsTime.jpeg' })
+				_react2.default.createElement('img', { src: './img/timemoney.jpeg' })
 			)
 		),
 		_react2.default.createElement(
