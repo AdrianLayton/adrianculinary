@@ -47,7 +47,7 @@ const Footer = () => {
 									<i className="fa fa-facebook fa-2x"></i>
 								</a>
 							</div>
-							<div>
+							<div className="utility-container">
 								<ul className="utility-links">
 									<li><a href="#"></a> Terms of Use</li>
 									<li><a href="#"></a> Privacy Policy</li>

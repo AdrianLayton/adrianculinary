@@ -10,16 +10,18 @@ const Display1 = () => {
 					</div>
 				</Link>
 				<div className="metadata-container">
-					<a href="#" className="catg-link">
-						<span> 
-							<i className="recipe-icon fa fa-wrench" aria-hidden="true"></i>
-						</span>
-						<span className="recipe-category">
-							Tools
-						</span>
-					</a>
+					<div>
+						<a href="#" className="catg-link">
+							<span> 
+								<i className="recipe-icon fa fa-wrench" aria-hidden="true"></i>
+							</span>
+							<span className="recipe-category">
+								Tools
+							</span>
+						</a>
+					</div>
 					<h4 className="metadata-title"> Calculate Saving's from Home Cooking </h4>
-					<p className="metadata-description"> See how much money you would save based on sex,age, weight, acitivity level and cost of living where you live </p>
+					<p className="metadata-description"> Coming Soon currently developing the API. You will be able to see how much money you save based on your state, caloric intake and what level of restaraunts you go too</p>
 				</div>
 			</div>
 			)

@@ -28,14 +28,16 @@ export default class Recipe extends React.Component {
 					<img src="./img/DSC_0225.jpg" />
 				</div>
 				<div className="metadata-container">
-					<a href="#" className="catg-link">
-						<span> 
-							<i className="recipe-icon fa fa-cutlery" aria-hidden="true"></i>
-						</span>
-						<span className="recipe-category">
-							Recipe
-						</span>
-					</a>
+					<div>
+						<a href="#" className="catg-link">
+							<span> 
+								<i className="recipe-icon fa fa-cutlery" aria-hidden="true"></i>
+							</span>
+							<span className="recipe-category">
+								Recipe
+							</span>
+						</a>
+					</div>
 					<h4 className="metadata-title"> Amazing Breakfast Sandwiches </h4>
 					<p className="metadata-description"> Coming Soon </p>
 				</div>

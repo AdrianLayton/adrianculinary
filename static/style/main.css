@@ -7,7 +7,9 @@ a {
 .preview {
 	color: white;
 	background-color: #FF7021;
-	width: 100%;
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
 	padding: 1.1em;
 	text-align: center;
 	border-radius: 1.5em;
@@ -152,7 +154,7 @@ button.button {
 .about {
 	width: 85%;
 	margin: auto;
-	margin-top: 10em;
+	margin-top: 4em;
 	height: 75em;
 }
 
@@ -613,8 +615,8 @@ div.newsletter-row {
 	display: flex;
 	flex-flow: row wrap;
 	height: 6.5em;
-	width: 100%
-
+	width: 100%;
+	align-items: center;
 }
 
 .footer-top
@@ -678,6 +680,14 @@ div.footer-bottom {
 	padding: 1em 14%;
 	border: .40em #000 solid;
 	border-top: none;
+}
+
+.scl-media {
+	text-align: center;
+}
+
+.utility-container {
+	text-align: center;
 }
 
 .utility-links {
@@ -750,7 +760,7 @@ a.sm-icon:visited < i {
     padding-bottom: 1.75em;
     padding-left: 2em;
     padding-right: 2em;
-    min-height: 31.5em;
+    min-height: 33.2em;
 	background-color: rgba(246,250,255,.95);
 	border: .15em solid rgba(250,250,250,1);
 	-moz-box-shadow:    .1225em .1225em .125em .375em #ccc;
@@ -800,6 +810,15 @@ a.sm-icon:visited < i {
 }
 
 .metadata-container
+div {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-end;
+	margin-top: 1em;
+}
+
+.metadata-container
 .catg-link {
 	position: absolute;
 	bottom: 102%;
@@ -811,13 +830,13 @@ a.sm-icon:visited < i {
 	color: white;
 	padding: .55em;
 	background-color: #FF7021;
-	max-height: 38px;
+	max-height: 34px;
 }
 
 .metadata-container
 .catg-link
 .recipe-category{
-	padding: .55em;
+	padding: .44em;
 	margin-left: .085em;
 	background-color: #FF7021;
 	color: white;
@@ -835,9 +854,10 @@ li {
 
 .metadata-container
 .metadata-title {
-	padding: 1.5em 1em .35em;
+	padding: 1.5em .85em .35em;
 	font-size: 130%;
-	font-family: sans-serif;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 400;
 }
 
 .metadata-container 
@@ -847,6 +867,8 @@ li {
 	margin-left: 1.33em;
 	padding-left: 1.15em;
 	padding-right: 1.15em;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 200;
 }
 
 /********************* Media Queries *********************/
@@ -985,7 +1007,6 @@ li {
 
 	.slideshow-container
 	.mySlides > img {
-		min-height: 15em;
 		min-width: 100%;
 	}
 
@@ -1129,5 +1150,6 @@ li {
 	.footer-bottom
 	.scl-media {
 		margin: 0 auto;
+		text-align: center;
 	}
 }

@@ -107,17 +107,21 @@ var Display1 = function Display1() {
 			'div',
 			{ className: 'metadata-container' },
 			_react2.default.createElement(
-				'a',
-				{ href: '#', className: 'catg-link' },
+				'div',
+				null,
 				_react2.default.createElement(
-					'span',
-					null,
-					_react2.default.createElement('i', { className: 'recipe-icon fa fa-wrench', 'aria-hidden': 'true' })
-				),
-				_react2.default.createElement(
-					'span',
-					{ className: 'recipe-category' },
-					'Tools'
+					'a',
+					{ href: '#', className: 'catg-link' },
+					_react2.default.createElement(
+						'span',
+						null,
+						_react2.default.createElement('i', { className: 'recipe-icon fa fa-wrench', 'aria-hidden': 'true' })
+					),
+					_react2.default.createElement(
+						'span',
+						{ className: 'recipe-category' },
+						'Tools'
+					)
 				)
 			),
 			_react2.default.createElement(
@@ -128,7 +132,7 @@ var Display1 = function Display1() {
 			_react2.default.createElement(
 				'p',
 				{ className: 'metadata-description' },
-				' See how much money you would save based on sex,age, weight, acitivity level and cost of living where you live '
+				' Coming Soon currently developing the API. You will be able to see how much money you save based on your state, caloric intake and what level of restaraunts you go too'
 			)
 		)
 	);
@@ -265,7 +269,7 @@ var Footer = function Footer() {
 				),
 				_react2.default.createElement(
 					"div",
-					null,
+					{ className: "utility-container" },
 					_react2.default.createElement(
 						"ul",
 						{ className: "utility-links" },
@@ -559,17 +563,21 @@ var Recipe = function (_React$Component) {
 						"div",
 						{ className: "metadata-container" },
 						_react2.default.createElement(
-							"a",
-							{ href: "#", className: "catg-link" },
+							"div",
+							null,
 							_react2.default.createElement(
-								"span",
-								null,
-								_react2.default.createElement("i", { className: "recipe-icon fa fa-cutlery", "aria-hidden": "true" })
-							),
-							_react2.default.createElement(
-								"span",
-								{ className: "recipe-category" },
-								"Recipe"
+								"a",
+								{ href: "#", className: "catg-link" },
+								_react2.default.createElement(
+									"span",
+									null,
+									_react2.default.createElement("i", { className: "recipe-icon fa fa-cutlery", "aria-hidden": "true" })
+								),
+								_react2.default.createElement(
+									"span",
+									{ className: "recipe-category" },
+									"Recipe"
+								)
 							)
 						),
 						_react2.default.createElement(
