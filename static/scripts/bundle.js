@@ -898,9 +898,128 @@ exports.default = Slideshow;
 /***/ }),
 
 /***/ 108:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module build failed: SyntaxError: Unexpected token, expected , (7:12)\n\n\u001b[0m \u001b[90m  5 | \u001b[39m    \u001b[36msuper\u001b[39m(props)\u001b[33m;\u001b[39m\n \u001b[90m  6 | \u001b[39m    \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mstate \u001b[33m=\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 | \u001b[39m    \tage\u001b[33m:\u001b[39m \u001b[32m''\u001b[39m\u001b[33m;\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m    | \u001b[39m    \t       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 | \u001b[39m    \tactivity\u001b[33m:\u001b[39m \u001b[32m\"\"\u001b[39m\u001b[33m;\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m  9 | \u001b[39m    \theight\u001b[33m:\u001b[39m \u001b[32m\"\"\u001b[39m\u001b[33m;\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 10 | \u001b[39m    \tgender\u001b[33m:\u001b[39m \u001b[32m\"\"\u001b[39m\u001b[33m;\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n");
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var SavingCalc = function (_React$Component) {
+	_inherits(SavingCalc, _React$Component);
+
+	function SavingCalc(props) {
+		_classCallCheck(this, SavingCalc);
+
+		var _this = _possibleConstructorReturn(this, (SavingCalc.__proto__ || Object.getPrototypeOf(SavingCalc)).call(this, props));
+
+		_this.state = {
+			age: '23',
+			activity: '',
+			height: '74',
+			gender: '',
+			weight: '170'
+		};
+
+		_this.handleChange = _this.handleChange.bind(_this);
+		_this.handleSubmit = _this.handleSubmit.bind(_this);
+		return _this;
+	}
+
+	_createClass(SavingCalc, [{
+		key: 'calculateCalories',
+		value: function calculateCalories(age, height, weight) {
+			var ageCalories = age * 6.8;
+			var heightCalories = height * 12.9;
+			var weightCalories = weight * 6.3;
+
+			var caloricIntake = weightCalories + heightCalories - ageCalories;
+			var totalCalories = caloricIntake;
+			return totalCalories;
+		}
+	}, {
+		key: 'handleChange',
+		value: function handleChange(event) {
+			this.setState(_defineProperty({}, evt.target.name, evt.target.value));
+		}
+	}, {
+		key: 'handleSubmit',
+		value: function handleSubmit(event) {
+			this.calculateCalories(this.state.age, this.state.height, this.state.activity);
+			console.log('A name was submitted: ' + this.totalCalories);
+			event.preventDefault();
+		}
+	}, {
+		key: 'render',
+		value: function render() {
+			return _react2.default.createElement(
+				'div',
+				{ className: 'calculator-container' },
+				_react2.default.createElement(
+					'form',
+					{ onSubmit: this.handleSubmit },
+					_react2.default.createElement(
+						'div',
+						{ className: 'caloric-input' },
+						_react2.default.createElement(
+							'label',
+							null,
+							'How tall are you ?'
+						),
+						_react2.default.createElement('input', { type: 'text', className: 'calc-input', value: this.state.height, onChange: this.handleChange }),
+						_react2.default.createElement(
+							'label',
+							null,
+							'How Old are you ?'
+						),
+						_react2.default.createElement('input', { type: 'text', className: 'calc-input', value: this.state.age, onChange: this.handleChange }),
+						_react2.default.createElement(
+							'label',
+							null,
+							'How Active are you ?'
+						),
+						_react2.default.createElement('input', { type: 'text', className: 'calc-input', value: this.state.age, onChange: this.handleChange }),
+						_react2.default.createElement(
+							'label',
+							null,
+							'How Much Do you Weigh'
+						),
+						_react2.default.createElement('input', { type: 'text', className: 'calc-input', value: this.state.activity, onChange: this.handleChange }),
+						_react2.default.createElement(
+							'label',
+							null,
+							'Gender'
+						),
+						_react2.default.createElement('input', { type: 'text', className: 'calc-input', value: this.state.gender, onChange: this.handleChange }),
+						_react2.default.createElement('input', { type: 'submit', value: 'Submit', onsubmit: '' })
+					)
+				)
+			);
+		}
+	}]);
+
+	return SavingCalc;
+}(_react2.default.Component);
+
+exports.default = SavingCalc;
 
 /***/ }),
 
