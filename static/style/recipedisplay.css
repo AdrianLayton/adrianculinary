@@ -1,0 +1,38 @@
+.pencil {
+	padding: 1.2em 1.625em 1.625em 1.625em;
+	outline-color: #FF7021; 
+	border-color: #FF7021;
+	border-style: solid;
+	border-width: 2px;
+}
+
+.rcp-metadata {
+	border-left: 2px solid #FF7021;
+	border-right: 2px solid #FF7021;
+	border-top: 2px solid #FF7021;
+	text-align: center;
+	width: 50%;
+	margin: 1em auto 0em auto;
+}
+
+.rcp-ctn {
+	width: 50%;
+	margin: 0em auto 2.5em;
+	text-align: left;
+}
+
+.rcp-meta-info {
+	line-height: 1.5em;
+	padding-top: .75em;
+	padding-bottom: .75em;
+}
+
+.rcp-meta-info span {
+	padding-left: .5em;
+	padding-right: .5em;
+}
+
+.recipe-list {
+	list-style: none;
+	line-height: 1.625em;
+}

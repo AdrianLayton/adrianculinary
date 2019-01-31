@@ -1,4 +1,6 @@
-@import url("./style/phoneMq.css");
+/*@import url("./style/phoneMq.css");*/
+@import url('./recipedisplay.css');
+
 
 a {
 	text-decoration:none !important;

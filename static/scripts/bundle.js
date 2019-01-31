@@ -420,11 +420,11 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _slideshow = __webpack_require__(106);
+var _slideshow = __webpack_require__(107);
 
 var _slideshow2 = _interopRequireDefault(_slideshow);
 
-var _recipe = __webpack_require__(105);
+var _recipe = __webpack_require__(106);
 
 var _recipe2 = _interopRequireDefault(_recipe);
 
@@ -474,6 +474,112 @@ exports.default = Coming;
 /***/ }),
 
 /***/ 105:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Recipe = function (_React$Component) {
+	_inherits(Recipe, _React$Component);
+
+	function Recipe() {
+		_classCallCheck(this, Recipe);
+
+		return _possibleConstructorReturn(this, (Recipe.__proto__ || Object.getPrototypeOf(Recipe)).apply(this, arguments));
+	}
+
+	_createClass(Recipe, [{
+		key: "render",
+		value: function render() {
+			return _react2.default.createElement(
+				"div",
+				{ className: "recipe-page" },
+				_react2.default.createElement(
+					"div",
+					{ className: "rcp-metadata" },
+					_react2.default.createElement(
+						"div",
+						{ className: "recipie-title pencil" },
+						"The Perfect Person"
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "rcp-meta-info" },
+						_react2.default.createElement("i", { className: "fa fa-clock-o", "aria-hidden": "true" }),
+						_react2.default.createElement(
+							"span",
+							null,
+							"Prep Time: 4 hours"
+						),
+						_react2.default.createElement("i", { className: "fa fa-clock-o", "aria-hidden": "true" }),
+						_react2.default.createElement(
+							"span",
+							null,
+							"Prep Cook: 2 hours"
+						),
+						_react2.default.createElement("i", { className: "fa fa-user", "aria-hidden": "true" }),
+						_react2.default.createElement(
+							"span",
+							null,
+							"Feeds: 3 people"
+						)
+					)
+				),
+				_react2.default.createElement(
+					"div",
+					{ className: "recipe-ingredients pencil rcp-ctn" },
+					_react2.default.createElement(
+						"ul",
+						{ className: "recipe-list" },
+						_react2.default.createElement(
+							"li",
+							null,
+							"1/2 cup of love"
+						),
+						_react2.default.createElement(
+							"li",
+							null,
+							"1 tsp happiness "
+						),
+						_react2.default.createElement(
+							"li",
+							null,
+							"1 gallon of enthusiasm"
+						)
+					)
+				),
+				_react2.default.createElement("div", { className: "recipe-desc" }),
+				_react2.default.createElement("div", { className: "recipe-" })
+			);
+		}
+	}]);
+
+	return Recipe;
+}(_react2.default.Component);
+
+exports.default = Recipe;
+
+/***/ }),
+
+/***/ 106:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -564,7 +670,7 @@ var Recipe = function (_React$Component) {
 						{ className: "metadata-container" },
 						_react2.default.createElement(
 							"div",
-							null,
+							{ className: "tag-container" },
 							_react2.default.createElement(
 								"a",
 								{ href: "#", className: "catg-link" },
@@ -641,7 +747,7 @@ exports.default = Recipe;
 
 /***/ }),
 
-/***/ 106:
+/***/ 107:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -791,96 +897,14 @@ exports.default = Slideshow;
 
 /***/ }),
 
-/***/ 107:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 108:
+/***/ (function(module, exports) {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var SavingCalc = function (_React$Component) {
-	_inherits(SavingCalc, _React$Component);
-
-	function SavingCalc(props) {
-		_classCallCheck(this, SavingCalc);
-
-		return _possibleConstructorReturn(this, (SavingCalc.__proto__ || Object.getPrototypeOf(SavingCalc)).call(this, props));
-	}
-
-	_createClass(SavingCalc, [{
-		key: "render",
-		value: function render() {
-			return _react2.default.createElement(
-				"div",
-				{ className: "calculator-container" },
-				_react2.default.createElement(
-					"div",
-					{ className: "takeout-input" },
-					_react2.default.createElement(
-						"label",
-						null,
-						"Takeout Frequency (per week)"
-					),
-					_react2.default.createElement("input", { type: "text", className: "calc-input" })
-				),
-				_react2.default.createElement(
-					"div",
-					{ className: "caloric-input" },
-					_react2.default.createElement(
-						"label",
-						null,
-						"How tall are you ? (inches)"
-					),
-					_react2.default.createElement("input", { type: "text", className: "calc-input" })
-				),
-				_react2.default.createElement(
-					"div",
-					{ className: "ph" },
-					_react2.default.createElement(
-						"h1",
-						null,
-						" This is the placeholder for the savings calculator-container"
-					),
-					_react2.default.createElement(
-						"h1",
-						null,
-						" This is the placeholder for the savings calculator-container"
-					),
-					_react2.default.createElement(
-						"h1",
-						null,
-						" This is the placeholder for the savings calculator-container"
-					)
-				)
-			);
-		}
-	}]);
-
-	return SavingCalc;
-}(_react2.default.Component);
-
-exports.default = SavingCalc;
+throw new Error("Module build failed: SyntaxError: Unexpected token, expected , (7:12)\n\n\u001b[0m \u001b[90m  5 | \u001b[39m    \u001b[36msuper\u001b[39m(props)\u001b[33m;\u001b[39m\n \u001b[90m  6 | \u001b[39m    \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mstate \u001b[33m=\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 | \u001b[39m    \tage\u001b[33m:\u001b[39m \u001b[32m''\u001b[39m\u001b[33m;\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m    | \u001b[39m    \t       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 | \u001b[39m    \tactivity\u001b[33m:\u001b[39m \u001b[32m\"\"\u001b[39m\u001b[33m;\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m  9 | \u001b[39m    \theight\u001b[33m:\u001b[39m \u001b[32m\"\"\u001b[39m\u001b[33m;\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 10 | \u001b[39m    \tgender\u001b[33m:\u001b[39m \u001b[32m\"\"\u001b[39m\u001b[33m;\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n");
 
 /***/ }),
 
-/***/ 108:
+/***/ 109:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -904,7 +928,7 @@ exports.default = ThankYou;
 
 /***/ }),
 
-/***/ 109:
+/***/ 110:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -968,7 +992,7 @@ var _cookware = __webpack_require__(100);
 
 var _cookware2 = _interopRequireDefault(_cookware);
 
-var _thankyou = __webpack_require__(108);
+var _thankyou = __webpack_require__(109);
 
 var _thankyou2 = _interopRequireDefault(_thankyou);
 
@@ -976,9 +1000,13 @@ var _about = __webpack_require__(99);
 
 var _about2 = _interopRequireDefault(_about);
 
-var _svngcalc = __webpack_require__(107);
+var _svngcalc = __webpack_require__(108);
 
 var _svngcalc2 = _interopRequireDefault(_svngcalc);
+
+var _rcpDisplay = __webpack_require__(105);
+
+var _rcpDisplay2 = _interopRequireDefault(_rcpDisplay);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1013,6 +1041,7 @@ var Content = function (_React$Component) {
 						_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _home2.default }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/about', component: _about2.default }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/cookWare', component: _cookware2.default }),
+						_react2.default.createElement(_reactRouterDom.Route, { path: '/recipe', component: _rcpDisplay2.default }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/thankyou', component: _thankyou2.default }),
 						_react2.default.createElement(_reactRouterDom.Route, { path: '/svngcalc', component: _svngcalc2.default })
 					),
@@ -1158,4 +1187,4 @@ exports.default = About;
 
 /***/ })
 
-},[109]);
+},[110]);

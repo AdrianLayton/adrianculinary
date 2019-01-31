@@ -13,6 +13,7 @@ import CookWare from './components/cookware.jsx';
 import ThankYou from './components/thankyou.jsx';
 import About from './components/about.jsx';
 import SavingCalc from './components/svngcalc.jsx';
+import Recipe from './components/rcp-display.jsx';
 
 
 
@@ -29,6 +30,7 @@ export default class Content extends React.Component {
 					  		<Route exact path="/" component={Home} />
 					  		<Route path="/about" component={About} />
 					  		<Route path="/cookWare" component={CookWare} />
+					  		<Route path="/recipe" component={Recipe} />
 					  		<Route path="/thankyou" component={ThankYou} />
 					  		<Route path="/svngcalc" component={SavingCalc} />
 					  	</Switch>
