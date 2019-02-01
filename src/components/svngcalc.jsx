@@ -22,23 +22,20 @@ export default class SavingCalc extends React.Component {
   	let heightCalories = height * 12.9;
   	let weightCalories = weight * 6.3;
 
-  	let caloricIntake = (weightCalories + heightCalories) - ageCalories;
-  	const totalCalories = caloricIntake;
-  	return totalCalories;
-  };
+  	const caloricIntake = (weightCalories + heightCalories) - ageCalories;
+  	return caloricIntake;
+  }; 
+
+  handleSubmit(event) {
+  	// this.calculateCalories(this.state.age,this.state.height,this.state.activity)
+  	alert(this.state.props.height)
+    console.log('A name was submitted: ' + this.state.age);
+    event.preventDefault();
+  }
 
   handleChange(event) {
     this.setState({ [evt.target.name]: evt.target.value });
   };
-
-
-  
-
-  handleSubmit(event) {
-  	this.calculateCalories(this.state.age,this.state.height,this.state.activity)
-    console.log('A name was submitted: ' + this.totalCalories);
-    event.preventDefault();
-  }
 	render() {
 		return (
 			<div className="calculator-container">

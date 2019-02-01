@@ -1,3 +1,7 @@
+* {
+	font-family: sans-serif;
+}
+
 .pencil {
 	padding: 1.2em 1.625em 1.625em 1.625em;
 	outline-color: #FF7021; 
@@ -25,6 +29,7 @@
 	line-height: 1.5em;
 	padding-top: .75em;
 	padding-bottom: .75em;
+
 }
 
 .rcp-meta-info span {
@@ -32,7 +37,20 @@
 	padding-right: .5em;
 }
 
+
+.ingr-background {
+	background-color: grey;
+	width: 50%;
+}
+
 .recipe-list {
 	list-style: none;
 	line-height: 1.625em;
+	font-family: sans-serif;
+}
+
+.recipe-desc {
+	width: 50%;
+	margin: 0 auto;
+	font-family: sans-serif;
 }

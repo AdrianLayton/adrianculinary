@@ -514,6 +514,16 @@ var Recipe = function (_React$Component) {
 				{ className: "recipe-page" },
 				_react2.default.createElement(
 					"div",
+					{ className: "recipe-highlight" },
+					_react2.default.createElement(
+						"div",
+						{ className: "highlight-image" },
+						_react2.default.createElement("img", { src: "" })
+					),
+					_react2.default.createElement("div", { className: "highlight-text" })
+				),
+				_react2.default.createElement(
+					"div",
 					{ className: "rcp-metadata" },
 					_react2.default.createElement(
 						"div",
@@ -545,7 +555,7 @@ var Recipe = function (_React$Component) {
 				),
 				_react2.default.createElement(
 					"div",
-					{ className: "recipe-ingredients pencil rcp-ctn" },
+					{ className: "recipe-ingredients pencil rcp-ctn ingr-background" },
 					_react2.default.createElement(
 						"ul",
 						{ className: "recipe-list" },
@@ -566,7 +576,15 @@ var Recipe = function (_React$Component) {
 						)
 					)
 				),
-				_react2.default.createElement("div", { className: "recipe-desc" }),
+				_react2.default.createElement(
+					"div",
+					{ className: "recipe-desc" },
+					_react2.default.createElement(
+						"p",
+						null,
+						" Lorem ipsum dolor amet brunch live-edge meggings disrupt. Palo santo migas distillery mustache. Selfies migas locavore disrupt venmo hammock. Migas polaroid brooklyn enamel pin biodiesel hexagon lo-fi post-ironic wayfarers sriracha raclette af cloud bread marfa."
+					)
+				),
 				_react2.default.createElement("div", { className: "recipe-" })
 			);
 		}
@@ -952,20 +970,20 @@ var SavingCalc = function (_React$Component) {
 			var weightCalories = weight * 6.3;
 
 			var caloricIntake = weightCalories + heightCalories - ageCalories;
-			var totalCalories = caloricIntake;
-			return totalCalories;
+			return caloricIntake;
+		}
+	}, {
+		key: 'handleSubmit',
+		value: function handleSubmit(event) {
+			// this.calculateCalories(this.state.age,this.state.height,this.state.activity)
+			alert(this.state.props.height);
+			console.log('A name was submitted: ' + this.state.age);
+			event.preventDefault();
 		}
 	}, {
 		key: 'handleChange',
 		value: function handleChange(event) {
 			this.setState(_defineProperty({}, evt.target.name, evt.target.value));
-		}
-	}, {
-		key: 'handleSubmit',
-		value: function handleSubmit(event) {
-			this.calculateCalories(this.state.age, this.state.height, this.state.activity);
-			console.log('A name was submitted: ' + this.totalCalories);
-			event.preventDefault();
 		}
 	}, {
 		key: 'render',
