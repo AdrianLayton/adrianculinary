@@ -55,6 +55,10 @@ div.logo-container  {
 
 }
 
+div.mob-logo-container {
+	visibility: hidden;
+}
+
 
 
 .nav-primary {
@@ -754,6 +758,7 @@ a.sm-icon:visited < i {
 	padding: .18%;
 	width: 37%;
 	top: 0;
+	border-radius: 4px;
     margin-left: .8%;
     margin-right: .5%;
     flex-basis: 37%;
@@ -777,6 +782,7 @@ a.sm-icon:visited < i {
 	flex-basis: 30%;
 	background-color: rgba(246,250,255,.95);
 	border: .15em solid #fff;
+	border-radius: 4px;
 	-moz-box-shadow:    .1225em .1225em .125em .375em #ccc;
    -webkit-box-shadow: .1225em .1225em .125em .375em #ccc;
    box-shadow: .1225em .1225em .3125em .175em #ccc;
@@ -801,6 +807,7 @@ a.sm-icon:visited < i {
 .img-container > img {
 	width: 100%;
 	height: 15em;
+	border-radius: 4px;
 }
 
 .metadata-container {
@@ -847,7 +854,7 @@ div {
 	font-size: 96%;
 	max-height: 32px;
 }
-
+ 
 .metadata-container
 .catg-link
 li {
@@ -856,19 +863,19 @@ li {
 
 .metadata-container
 .metadata-title {
-	padding: 1.5em .85em .35em;
+	padding: .25em 2.5% .35em 2.5%;
 	font-size: 130%;
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight: 400;
+	margin-bottom: .5em;
+	margin-top: 0;
 }
 
 .metadata-container 
 .metadata-description {
 	display: inline-block;
-	margin
-	margin-left: 1.33em;
-	padding-left: 1.15em;
-	padding-right: 1.15em;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight: 200;
 }
@@ -886,16 +893,62 @@ li {
 	 
 	.header
 	.logo-container {
-
+		visibility: hidden;
+		display: none;
 	}
 
+	div.mob-logo-container {
+		visibility: visible;
+		display: flex;
+		flex-flow: nowrap column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.mob-logo-container
+	.logo
+
+	.mob-nav {
+		
+	}
+
+	.logo-text {
+		color: #FF7021;
+	}
+
+	.container {
+	  display: inline-block;
+	  cursor: pointer;
+	}
+
+	.bar1, .bar2, .bar3 {
+	  width: 35px;
+	  height: 5px;
+	  background-color: #333;
+	  margin: 6px 0;
+	  transition: 0.4s;
+	  color: #FF7021
+	}
+
+	.change .bar1 {
+	  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	  transform: rotate(-45deg) translate(-9px, 6px);
+	}
+
+	.change .bar2 {opacity: 0;}
+
+	.change .bar3 {
+	  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+	  transform: rotate(45deg) translate(-8px, -8px);
+	}
 
 	.nav-primary {
 		position: static;
 		margin-left: 5%;
 		margin-bottom: auto;
-
-
+		visibility: hidden;
+		display: none;
 	}
 	.nav-primary
 	.menu {
@@ -997,7 +1050,7 @@ li {
 		width: 95%;
 		margin-left: 2.5%;
 		margin-right: 2.5%;
-		margin-top: 5.5em;
+		margin-top: 1em;
 		height: auto;
 	}
 
@@ -1010,6 +1063,7 @@ li {
 	.slideshow-container
 	.mySlides > img {
 		min-width: 100%;
+		min-height: auto;
 	}
 
 	.metadata-container {

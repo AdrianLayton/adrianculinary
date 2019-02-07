@@ -41,10 +41,10 @@ const Footer = () => {
 						<div className='footer-bottom'>
 							<div className="scl-media">
 								<a href="https://www.instagram.com/adrianculinary" className="sm-icon">
-									<i className="fa fa-instagram fa-2x"></i>
+									<i className="fab fa-instagram fa-2x"></i>
 								</a>
 								<a href="#" className="sm-icon">
-									<i className="fa fa-facebook fa-2x"></i>
+									<i className="fab fa-facebook-f fa-2x"></i>
 								</a>
 							</div>
 							<div className="utility-container">

@@ -259,12 +259,12 @@ var Footer = function Footer() {
 					_react2.default.createElement(
 						"a",
 						{ href: "https://www.instagram.com/adrianculinary", className: "sm-icon" },
-						_react2.default.createElement("i", { className: "fa fa-instagram fa-2x" })
+						_react2.default.createElement("i", { className: "fab fa-instagram fa-2x" })
 					),
 					_react2.default.createElement(
 						"a",
 						{ href: "#", className: "sm-icon" },
-						_react2.default.createElement("i", { className: "fa fa-facebook fa-2x" })
+						_react2.default.createElement("i", { className: "fab fa-facebook-f fa-2x" })
 					)
 				),
 				_react2.default.createElement(
@@ -351,6 +351,27 @@ var Header = function (_React$Component) {
 					'div',
 					{ className: 'logo-container' },
 					_react2.default.createElement('img', { id: 'nav-logo', src: './img/logo.png' })
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'mob-logo-container' },
+					_react2.default.createElement(
+						'span',
+						{ className: 'logo-left mob-nav' },
+						_react2.default.createElement('i', { className: 'logo-icon fas fa-hamburger' }),
+						_react2.default.createElement(
+							'h2',
+							{ className: 'logo-text' },
+							'AdrianCulinary'
+						)
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'container mob-nav', onclick: 'myFunction(this)' },
+						_react2.default.createElement('div', { className: 'bar1' }),
+						_react2.default.createElement('div', { className: 'bar2' }),
+						_react2.default.createElement('div', { className: 'bar3' })
+					)
 				),
 				_react2.default.createElement(
 					'div',
@@ -649,17 +670,21 @@ var Recipe = function (_React$Component) {
 						"div",
 						{ className: "metadata-container" },
 						_react2.default.createElement(
-							"a",
-							{ href: "#", className: "catg-link" },
+							"div",
+							{ className: "tag-container" },
 							_react2.default.createElement(
-								"span",
-								null,
-								_react2.default.createElement("i", { className: "recipe-icon fa fa-cutlery", "aria-hidden": "true" })
-							),
-							_react2.default.createElement(
-								"span",
-								{ className: "recipe-category" },
-								"Recipe"
+								"a",
+								{ href: "#", className: "catg-link" },
+								_react2.default.createElement(
+									"span",
+									null,
+									_react2.default.createElement("i", { className: "recipe-icon fas fa-utensils" })
+								),
+								_react2.default.createElement(
+									"span",
+									{ className: "recipe-category" },
+									"Recipe"
+								)
 							)
 						),
 						_react2.default.createElement(
@@ -695,7 +720,7 @@ var Recipe = function (_React$Component) {
 								_react2.default.createElement(
 									"span",
 									null,
-									_react2.default.createElement("i", { className: "recipe-icon fa fa-cutlery", "aria-hidden": "true" })
+									_react2.default.createElement("i", { className: "recipe-icon fas fa-utensils" })
 								),
 								_react2.default.createElement(
 									"span",
@@ -729,17 +754,21 @@ var Recipe = function (_React$Component) {
 						"div",
 						{ className: "metadata-container" },
 						_react2.default.createElement(
-							"a",
-							{ href: "#", className: "catg-link" },
+							"div",
+							{ className: "tag-container" },
 							_react2.default.createElement(
-								"span",
-								null,
-								_react2.default.createElement("i", { className: "recipe-icon fa fa-cutlery", "aria-hidden": "true" })
-							),
-							_react2.default.createElement(
-								"span",
-								{ className: "recipe-category" },
-								"Recipe"
+								"a",
+								{ href: "#", className: "catg-link" },
+								_react2.default.createElement(
+									"span",
+									null,
+									_react2.default.createElement("i", { className: "recipe-icon fas fa-utensils" })
+								),
+								_react2.default.createElement(
+									"span",
+									{ className: "recipe-category" },
+									"Recipe"
+								)
 							)
 						),
 						_react2.default.createElement(

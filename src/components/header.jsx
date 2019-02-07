@@ -9,6 +9,17 @@ export default class Header extends React.Component {
 					<div className="logo-container">
 						<img id="nav-logo" src="./img/logo.png" />
 					</div>
+					<div className="mob-logo-container">
+						<span className="logo-left mob-nav">
+							<i className="logo-icon fas fa-hamburger"></i>
+							<h2 className="logo-text">AdrianCulinary</h2>
+						</span>
+						<div className="container mob-nav" onclick="myFunction(this)">
+						  <div className="bar1"></div>
+						  <div className="bar2"></div>
+						  <div className="bar3"></div>
+						</div>
+					</div>
 					<div className="nav-primary">
 						<ul className="menu">
 							<NavLink className="nav-items" exact to="/"> <li > Home </li> </NavLink>
