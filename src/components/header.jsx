@@ -2,6 +2,17 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 export default class Header extends React.Component {
+		constructor(props) {
+        super(props);
+        this.addActiveClass= this.addActiveClass.bind(this);
+        this.state = {
+            active: false,
+        };
+    }
+    	toggleClass() {
+        const currentState = this.state.active;
+        this.setState({ active: !currentState });
+	    };
 		render () {		
 			return (
 				<div className="header">
@@ -15,9 +26,14 @@ export default class Header extends React.Component {
 							<h2 className="logo-text">AdrianCulinary</h2>
 						</span>
 						<div className="container mob-nav" onclick="myFunction(this)">
-						  <div className="bar1"></div>
-						  <div className="bar2"></div>
-						  <div className="bar3"></div>
+						  <div className="bar1">
+							  <NavLink className="nav-items" exact to="/"> <li > Home </li> </NavLink>
+						  </div>
+						  <div className="bar2">
+						  	<NavLink className="nav-items" to="/about"> <li > About </li> </NavLink>
+						  </div>
+						  <div className="bar3">
+						  <NavLink className="nav-items" to="/CookWare"> <li >  Cooking Resources  </li> </NavLink></div>
 						</div>
 					</div>
 					<div className="nav-primary">

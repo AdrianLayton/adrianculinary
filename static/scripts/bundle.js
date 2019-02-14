@@ -86,7 +86,7 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(29);
+var _reactRouterDom = __webpack_require__(39);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -317,7 +317,7 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(29);
+var _reactRouterDom = __webpack_require__(39);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -330,13 +330,25 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Header = function (_React$Component) {
 	_inherits(Header, _React$Component);
 
-	function Header() {
+	function Header(props) {
 		_classCallCheck(this, Header);
 
-		return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
+		var _this = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this, props));
+
+		_this.addActiveClass = _this.addActiveClass.bind(_this);
+		_this.state = {
+			active: false
+		};
+		return _this;
 	}
 
 	_createClass(Header, [{
+		key: 'toggleClass',
+		value: function toggleClass() {
+			var currentState = this.state.active;
+			this.setState({ active: !currentState });
+		}
+	}, {
 		key: 'render',
 		value: function render() {
 			return _react2.default.createElement(
@@ -368,9 +380,51 @@ var Header = function (_React$Component) {
 					_react2.default.createElement(
 						'div',
 						{ className: 'container mob-nav', onclick: 'myFunction(this)' },
-						_react2.default.createElement('div', { className: 'bar1' }),
-						_react2.default.createElement('div', { className: 'bar2' }),
-						_react2.default.createElement('div', { className: 'bar3' })
+						_react2.default.createElement(
+							'div',
+							{ className: 'bar1' },
+							_react2.default.createElement(
+								_reactRouterDom.NavLink,
+								{ className: 'nav-items', exact: true, to: '/' },
+								' ',
+								_react2.default.createElement(
+									'li',
+									null,
+									' Home '
+								),
+								' '
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'bar2' },
+							_react2.default.createElement(
+								_reactRouterDom.NavLink,
+								{ className: 'nav-items', to: '/about' },
+								' ',
+								_react2.default.createElement(
+									'li',
+									null,
+									' About '
+								),
+								' '
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'bar3' },
+							_react2.default.createElement(
+								_reactRouterDom.NavLink,
+								{ className: 'nav-items', to: '/CookWare' },
+								' ',
+								_react2.default.createElement(
+									'li',
+									null,
+									'  Cooking Resources  '
+								),
+								' '
+							)
+						)
 					)
 				),
 				_react2.default.createElement(
@@ -1104,7 +1158,7 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(30);
+var _reactDom = __webpack_require__(29);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -1136,11 +1190,11 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(30);
+var _reactDom = __webpack_require__(29);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactRouterDom = __webpack_require__(29);
+var _reactRouterDom = __webpack_require__(39);
 
 var _header = __webpack_require__(103);
 
