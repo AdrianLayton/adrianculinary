@@ -330,27 +330,30 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Header = function (_React$Component) {
 	_inherits(Header, _React$Component);
 
-	function Header(props) {
+	function Header() {
 		_classCallCheck(this, Header);
 
-		var _this = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this, props));
+		var _this = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this));
 
-		_this.addActiveClass = _this.addActiveClass.bind(_this);
-		_this.state = {
-			active: false
-		};
+		_this.state = { active: false };
+
+		// this.handleClick = this.handleClick.bind();
 		return _this;
 	}
 
 	_createClass(Header, [{
-		key: 'toggleClass',
-		value: function toggleClass() {
-			var currentState = this.state.active;
-			this.setState({ active: !currentState });
+		key: 'handleClick',
+		value: function handleClick(e) {
+			e.preventDefault();
+			console.log(e);
+			console.log("Test Pass");
+			alert("Hey There");
 		}
 	}, {
 		key: 'render',
 		value: function render() {
+			var _this2 = this;
+
 			return _react2.default.createElement(
 				'div',
 				{ className: 'header' },
@@ -379,52 +382,13 @@ var Header = function (_React$Component) {
 					),
 					_react2.default.createElement(
 						'div',
-						{ className: 'container mob-nav', onclick: 'myFunction(this)' },
-						_react2.default.createElement(
-							'div',
-							{ className: 'bar1' },
-							_react2.default.createElement(
-								_reactRouterDom.NavLink,
-								{ className: 'nav-items', exact: true, to: '/' },
-								' ',
-								_react2.default.createElement(
-									'li',
-									null,
-									' Home '
-								),
-								' '
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'bar2' },
-							_react2.default.createElement(
-								_reactRouterDom.NavLink,
-								{ className: 'nav-items', to: '/about' },
-								' ',
-								_react2.default.createElement(
-									'li',
-									null,
-									' About '
-								),
-								' '
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'bar3' },
-							_react2.default.createElement(
-								_reactRouterDom.NavLink,
-								{ className: 'nav-items', to: '/CookWare' },
-								' ',
-								_react2.default.createElement(
-									'li',
-									null,
-									'  Cooking Resources  '
-								),
-								' '
-							)
-						)
+						{ className: 'container mob-nav',
+							onclick: function onclick() {
+								return _this2.handleClick(e);
+							} },
+						_react2.default.createElement('div', { className: 'bar1' }),
+						_react2.default.createElement('div', { className: 'bar2' }),
+						_react2.default.createElement('div', { className: 'bar3' })
 					)
 				),
 				_react2.default.createElement(
@@ -474,6 +438,60 @@ var Header = function (_React$Component) {
 
 	return Header;
 }(_react2.default.Component);
+
+// import React from 'react';
+// import { NavLink } from 'react-router-dom';
+
+// export default class Header extends React.Component {
+// 		constructor(props) {
+//         super(props);
+//         this.addActiveClass= this.addActiveClass.bind(this);
+//         this.state = {
+//             active: false,
+//         };
+//     }
+//     	toggleClass() {
+//         const currentState = this.state.active;
+//         this.setState({ active: !currentState });
+// 	    };
+
+// 	    handleClick() {
+// 	    	this.setState()
+// 	    }
+
+// 		render () {		
+// 			return (
+// 				<div className="header">
+// 					<span className="preview">This site is currently in preview it will be launched March 2018</span>
+// 					<div className="logo-container">
+// 						<img id="nav-logo" src="./img/logo.png" />
+// 					</div>
+// 					<div className="mob-logo-container">
+// 						<span className="logo-left mob-nav">
+// 							<i className="logo-icon fas fa-hamburger"></i>
+// 							<h2 className="logo-text">AdrianCulinary</h2>
+// 						</span>
+// 						<div className="container mob-nav" onclick="myFunction(this)">
+// 						  <div className="bar1">
+// 							  <NavLink className="nav-items" exact to="/"> <li > Home </li> </NavLink>
+// 						  </div>
+// 						  <div className="bar2">
+// 						  	<NavLink className="nav-items" to="/about"> <li > About </li> </NavLink>
+// 						  </div>
+// 						  <div className="bar3">
+// 						  <NavLink className="nav-items" to="/CookWare"> <li >  Cooking Resources  </li> </NavLink></div>
+// 						</div>
+// 					</div>
+// 					<div className="nav-primary">
+// 						<ul className="menu">
+// 							<NavLink className="nav-items hidden" exact to="/"> <li > Home </li> </NavLink>
+// 							<NavLink className="nav-items hidden" to="/about"> <li > About </li> </NavLink>
+// 							<NavLink className="nav-items hidden=" to="/CookWare"> <li >  Cooking Resources  </li> </NavLink>
+// 						</ul>
+// 					</div>
+// 				</div>
+// )}}
+
 
 exports.default = Header;
 
