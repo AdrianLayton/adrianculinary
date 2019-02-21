@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 export default class Header extends React.Component {
 		constructor() {
 		    super();
-		    this.state = {active: false};
+		    this.state = {headerClass: "mob-nav"};
 		    // this.handleClick = this.handleClick.bind();
 		}
 	    
@@ -13,6 +13,20 @@ export default class Header extends React.Component {
 	    	console.log("Test Pass");
 	    	alert("Hey There");
 	    }	
+
+		toggleClass() {
+			this.setState({
+				if (this.state.headerClass = "mob-nav") {
+					headerClass: "mob-nav change"
+				}
+				if (this.state.headerClass = "mob-nav") {
+					headerClass: "mob-nav"
+				}
+			})
+		    // const oldClassName = document.getElementById('mob-nav').className;
+		    // const newClassName = oldClassName === 'red' ? 'blue' : 'red'
+		    // document.getElementById('test').className = newClassName
+		 }
 		render () {		
 			return (
 				<div className="header">
@@ -25,7 +39,7 @@ export default class Header extends React.Component {
 							<i className="logo-icon fas fa-hamburger"></i>
 							<h2 className="logo-text">AdrianCulinary</h2>
 						</span>
-						<div className="container mob-nav"
+					<div className="mob-nav" id="mob-nav"
 						onClick={ () => this.handleClick(event) }>
 						  <div className="bar1"></div>
 						  <div className="bar2"></div>
