@@ -5,13 +5,11 @@ export default class Header extends React.Component {
 		constructor() {
 		    super();
 		    this.state = {active: false};
-
 		    // this.handleClick = this.handleClick.bind();
 		}
 	    
 	    handleClick(e) {
 			e.preventDefault();
-			console.log(e);
 	    	console.log("Test Pass");
 	    	alert("Hey There");
 	    }	
@@ -28,7 +26,7 @@ export default class Header extends React.Component {
 							<h2 className="logo-text">AdrianCulinary</h2>
 						</span>
 						<div className="container mob-nav"
-						onclick={ () => this.handleClick(e) }>
+						onClick={ () => this.handleClick(event) }>
 						  <div className="bar1"></div>
 						  <div className="bar2"></div>
 						  <div className="bar3"></div>
