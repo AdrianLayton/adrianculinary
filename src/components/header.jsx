@@ -4,25 +4,42 @@ import { NavLink } from 'react-router-dom';
 export default class Header extends React.Component {
 		constructor() {
 		    super();
-		    this.state = {headerClass: "mob-nav"};
+		    this.state = {
+		    	headerClass: "mob-nav"
+		    };
 		    // this.handleClick = this.handleClick.bind();
 		}
 	    
 	    handleClick(e) {
 			e.preventDefault();
-	    	console.log("Test Pass");
-	    	alert("Hey There");
+	    	this.toggleClass();
+	    	// console.log("Test Pass");
 	    }	
 
 		toggleClass() {
-			this.setState({
-				if (this.state.headerClass = "mob-nav") {
+			const element = document.getElementById('mob-nav');
+			const elementCl = element.classList
+			const isMobNavActive = element.classList.contains('change');
+			console.log(element);
+			console.log(element.classList.contains('change'))
+			// isMobNavActive ? this.setState({"mob-nav"}) : this.setState({"mob-nav change"})
+			if (!isMobNavActive) {
+				this.setState({
 					headerClass: "mob-nav change"
-				}
-				if (this.state.headerClass = "mob-nav") {
+				})
+			}
+			else if (isMobNavActive) {
+				this.setState({
 					headerClass: "mob-nav"
-				}
-			})
+				})
+			}
+			
+			// this.setState({
+			// 	isMobNavActive ? element.classList.remove("change") : element.classList.add("change");
+			// })
+			// this.setState({
+			// 	element.classList('change') ? element.classList.add("change") : element.classList.remove("change");
+			// })
 		    // const oldClassName = document.getElementById('mob-nav').className;
 		    // const newClassName = oldClassName === 'red' ? 'blue' : 'red'
 		    // document.getElementById('test').className = newClassName
@@ -39,7 +56,7 @@ export default class Header extends React.Component {
 							<i className="logo-icon fas fa-hamburger"></i>
 							<h2 className="logo-text">AdrianCulinary</h2>
 						</span>
-					<div className="mob-nav" id="mob-nav"
+					<div className={this.state.headerClass} id="mob-nav"
 						onClick={ () => this.handleClick(event) }>
 						  <div className="bar1"></div>
 						  <div className="bar2"></div>
