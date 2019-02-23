@@ -918,6 +918,14 @@ li {
 	  cursor: pointer;
 	}
 
+	.mob-menu {
+		display: none;
+	}
+
+	.mb-nav-items {
+		
+	}
+
 	.logo-text {
 		color: #FF7021;
 		display: inline-block;

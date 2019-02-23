@@ -7,13 +7,11 @@ export default class Header extends React.Component {
 		    this.state = {
 		    	headerClass: "mob-nav"
 		    };
-		    // this.handleClick = this.handleClick.bind();
 		}
 	    
 	    handleClick(e) {
 			e.preventDefault();
 	    	this.toggleClass();
-	    	// console.log("Test Pass");
 	    }	
 
 		toggleClass() {
@@ -22,7 +20,6 @@ export default class Header extends React.Component {
 			const isMobNavActive = element.classList.contains('change');
 			console.log(element);
 			console.log(element.classList.contains('change'))
-			// isMobNavActive ? this.setState({"mob-nav"}) : this.setState({"mob-nav change"})
 			if (!isMobNavActive) {
 				this.setState({
 					headerClass: "mob-nav change"
@@ -33,17 +30,14 @@ export default class Header extends React.Component {
 					headerClass: "mob-nav"
 				})
 			}
-			
-			// this.setState({
-			// 	isMobNavActive ? element.classList.remove("change") : element.classList.add("change");
-			// })
-			// this.setState({
-			// 	element.classList('change') ? element.classList.add("change") : element.classList.remove("change");
-			// })
-		    // const oldClassName = document.getElementById('mob-nav').className;
-		    // const newClassName = oldClassName === 'red' ? 'blue' : 'red'
-		    // document.getElementById('test').className = newClassName
+			isMobNavActive ? this.setState({"mob-nav"}) : this.setState({"mob-nav change"})
 		 }
+
+		 toggleMenu() {
+
+		 }
+
+
 		render () {		
 			return (
 				<div className="header">
@@ -58,10 +52,17 @@ export default class Header extends React.Component {
 						</span>
 					<div className={this.state.headerClass} id="mob-nav"
 						onClick={ () => this.handleClick(event) }>
-						  <div className="bar1"></div>
-						  <div className="bar2"></div>
-						  <div className="bar3"></div>
+						<div className="bar1"></div>
+						<div className="bar2"></div>
+						<div className="bar3"></div>
+						<div className="mb-nav-items">
+							<ul className="mob-menu">
+								<li className="mb-nav-items">Home</li>
+								<li className="mb-nav-items">Home</li>
+								<li className="mb-nav-items">Cooking Resources</li>
+							</ul>						 
 						</div>
+					</div>
 					</div>
 					<div className="nav-primary">
 						<ul className="menu">
