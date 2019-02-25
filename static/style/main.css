@@ -1,9 +1,10 @@
-/*@import url("./style/phoneMq.css");*/
+@import url("./style/phoneMq.css");*/
 @import url('./recipedisplay.css');
 
 
 a {
-	text-decoration:none !important;
+	text-decoration: none !important;
+	text-decoration-style: none; 
 }
 
 .preview {
@@ -39,6 +40,10 @@ a {
 	-webkit-box-shadow: inset 0 0 .25em rgb(30,30,30);
 	box-shadow:         inset 0 0 .25em rgb(30,30,30);
 }
+
+.hidden {
+	display: none;
+	visibility: hidden;
 }
 
 .main {
@@ -59,8 +64,13 @@ div.logo-container  {
 
 div.mob-logo-container {
 	visibility: hidden;
+	display: none;
 }
 
+.logo-left {
+	display: none;
+	visibility: hidden;
+}
 
 
 .nav-primary {
@@ -892,6 +902,36 @@ li {
 		padding-bottom: 3em;
 
 	}
+
+	.logo-left {
+		visibility: visible;
+		display: block;
+	}
+
+	.wht-bckgd {
+		background-color: white;
+	}
+
+
+
+	.header::before {
+	    content: "";
+	    position: absolute;
+	    z-index: 0;
+	    top: 0;
+	    left: 0;
+	    width: 200%;
+	    height: 140%;
+	    border-radius: 100%;
+	    background-color: white;
+	    opacity: 0;
+	    -webkit-transform: translate3d(-25%, -55%, 0) scale3d(0.4, 0.4, 0.4);
+	    transform: translate3d(-25%, -55%, 0) scale3d(1, 1, 1);
+	    -webkit-transform-origin: top right;
+	    transform-origin: top right;
+	    transition: -webkit-transform cubic-bezier(0.3, 0.51, 1, 1.1) 300ms, opacity ease 300ms;
+	    transition: transform cubic-bezier(0.3, 0.51, 1, 1.1) 300ms, opacity ease 300ms;
+	}
 	 
 	.header
 	.logo-container {
@@ -899,7 +939,7 @@ li {
 		display: none;
 	}
 
-	div.mob-logo-container {
+	div.mob-header-ctn {
 		visibility: visible;
 		display: flex;
 		flex-flow: nowrap column;
@@ -916,10 +956,35 @@ li {
 	.mob-nav {
 	  display: inline-block;
 	  cursor: pointer;
+
 	}
 
 	.mob-menu {
-		display: none;
+		display: flex;
+		list-style-type: none;
+		flex-flow: column wrap;
+		justify-content: space-between;
+		margin-left: 0;
+	}
+
+	.mb-nav-items {
+		color: #FF7021;
+		font-size: 1.5em;
+		font-weight: 500;
+		padding-top: .5em;
+		padding-bottom: .5em;
+	}
+
+	.mb-nav-items:nth-child(1) {
+		transform: rotate(5deg);
+	}
+
+	.mb-nav-items:nth-child(2) {
+		transform: rotate(-1deg);
+	}
+
+	.mb-nav-items:nth-child(3) {
+		transform: rotate(3deg);
 	}
 
 	.mb-nav-items {
@@ -966,9 +1031,15 @@ li {
 		position: static;
 		margin-left: 5%;
 		margin-bottom: auto;
-		visibility: hidden;
 		display: none;
+		visibility: hidden;
 	}
+
+	.hidden {
+		display: none;
+		visibility: hidden;
+	}
+
 	.nav-primary
 	.menu {
 		display: flex;
@@ -1233,3 +1304,10 @@ li {
 		text-align: center;
 	}
 }
+
+
+	/*toggleState() {
+			this.setState(function(prevState, props){
+				return {headerActive: !prevState.headerActive}
+   				})
+		 }

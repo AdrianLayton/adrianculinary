@@ -86,7 +86,7 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(29);
+var _reactRouterDom = __webpack_require__(39);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -302,10 +302,272 @@ exports.default = Footer;
 /***/ }),
 
 /***/ 103:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-throw new Error("Module build failed: SyntaxError: Unexpected token (33:44)\n\n\u001b[0m \u001b[90m 31 | \u001b[39m\t\t\t\t})\n \u001b[90m 32 | \u001b[39m\t\t\t}\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 33 | \u001b[39m\t\t\tisMobNavActive \u001b[33m?\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msetState({\u001b[32m\"mob-nav\"\u001b[39m}) \u001b[33m:\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msetState({\u001b[32m\"mob-nav change\"\u001b[39m})\n \u001b[90m    | \u001b[39m\t\t\t                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 34 | \u001b[39m\t\t }\n \u001b[90m 35 | \u001b[39m\n \u001b[90m 36 | \u001b[39m\t\t toggleMenu() {\u001b[0m\n");
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(39);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Header = function (_React$Component) {
+	_inherits(Header, _React$Component);
+
+	function Header() {
+		_classCallCheck(this, Header);
+
+		var _this = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this));
+
+		_this.state = {
+			headerClass: "mob-nav",
+			headerActive: false
+		};
+		return _this;
+	}
+
+	_createClass(Header, [{
+		key: 'handleClick',
+		value: function handleClick(e) {
+			e.preventDefault();
+			this.toggleClass();
+		}
+
+		// toggleClass() {
+		// 	const element = document.getElementById('mob-nav');
+		// 	const elementCl = element.classList
+		// 	const isMobNavActive = this.state.headerActive;
+		// 	console.log(element);
+		// 	console.log(element.classList.contains('change'))
+		// 	if (!isMobNavActive) {
+		// 		this.setState({
+		// 			headerClass: "mob-nav change"
+		// 		})
+		// 	}
+		// 	else if (isMobNavActive) {
+		// 		this.setState({
+		// 			headerClass: "mob-nav"
+		// 		})
+		// 	}
+
+		//  }
+
+	}, {
+		key: 'toggleState',
+		value: function toggleState() {
+			this.setState(function (prevState, props) {
+				return { headerActive: !prevState.headerActive };
+			});
+		}
+	}, {
+		key: 'toggleMenu',
+		value: function toggleMenu() {}
+	}, {
+		key: 'render',
+		value: function render() {
+			var _this2 = this;
+
+			return _react2.default.createElement(
+				'div',
+				{ className: this.state.headerActive ? "header wht-bckgd" : "header" },
+				_react2.default.createElement(
+					'span',
+					{ className: 'preview' },
+					'This site is currently in preview it will be launched March 2018'
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'logo-container' },
+					_react2.default.createElement('img', { id: 'nav-logo', src: './img/logo.png' })
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'mob-header-ctn' },
+					_react2.default.createElement(
+						'span',
+						{ className: 'logo-left mob-nav' },
+						_react2.default.createElement('i', { className: 'logo-icon fas fa-hamburger' }),
+						_react2.default.createElement(
+							'h2',
+							{ className: 'logo-text' },
+							'AdrianCulinary'
+						)
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: this.state.headerActive ? "mob-nav change" : "mob-nav", id: 'mob-nav',
+							onClick: function onClick() {
+								return _this2.toggleState();
+							} },
+						_react2.default.createElement('div', { className: 'bar1' }),
+						_react2.default.createElement('div', { className: 'bar2' }),
+						_react2.default.createElement('div', { className: 'bar3' })
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: this.state.headerActive ? "mob-nav-ctn" : "mob-nav-ctn hidden" },
+						_react2.default.createElement(
+							'ul',
+							{ className: 'mob-menu' },
+							_react2.default.createElement(
+								'li',
+								{ className: 'mb-nav-items' },
+								'Home'
+							),
+							_react2.default.createElement(
+								'li',
+								{ className: 'mb-nav-items' },
+								'About'
+							),
+							_react2.default.createElement(
+								'li',
+								{ className: 'mb-nav-items' },
+								'Cooking Resources'
+							)
+						)
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'nav-primary' },
+					_react2.default.createElement(
+						'ul',
+						{ className: 'menu' },
+						_react2.default.createElement(
+							_reactRouterDom.NavLink,
+							{ className: 'nav-items', exact: true, to: '/' },
+							' ',
+							_react2.default.createElement(
+								'li',
+								null,
+								' Home '
+							),
+							' '
+						),
+						_react2.default.createElement(
+							_reactRouterDom.NavLink,
+							{ className: 'nav-items', to: '/about' },
+							' ',
+							_react2.default.createElement(
+								'li',
+								null,
+								' About '
+							),
+							' '
+						),
+						_react2.default.createElement(
+							_reactRouterDom.NavLink,
+							{ className: 'nav-items', to: '/CookWare' },
+							' ',
+							_react2.default.createElement(
+								'li',
+								null,
+								'  Cooking Resources  '
+							),
+							' '
+						)
+					)
+				)
+			);
+		}
+	}]);
+
+	return Header;
+}(_react2.default.Component);
+
+// import React from 'react';
+// import { NavLink } from 'react-router-dom';
+
+// export default class Header extends React.Component {
+// 		constructor() {
+// 		    super();
+// 		    this.state = {
+// 		    	headerClass: "mob-nav"
+// 		    };
+// 		}
+
+// 	    handleClick(e) {
+// 			e.preventDefault();
+// 	    	this.toggleClass();
+// 	    }	
+
+// 		toggleClass() {
+// 			const element = document.getElementById('mob-nav');
+// 			const elementCl = element.classList
+// 			const isMobNavActive = element.classList.contains('change');
+// 			console.log(element);
+// 			console.log(element.classList.contains('change'))
+// 			if (!isMobNavActive) {
+// 				this.setState({
+// 					headerClass: "mob-nav change"
+// 				})
+// 			}
+// 			else if (isMobNavActive) {
+// 				this.setState({
+// 					headerClass: "mob-nav"
+// 				})
+// 			}
+// 		 }
+
+// 		 toggleMenu() {
+
+// 		 }
+
+
+// 		render () {		
+// 			return (
+// 				<div className="header">
+// 					<span className="preview">This site is currently in preview it will be launched March 2018</span>
+// 					<div className="logo-container">
+// 						<img id="nav-logo" src="./img/logo.png" />
+// 					</div>
+// 					<div className="mob-logo-container">
+// 						<span className="logo-left mob-nav">
+// 							<i className="logo-icon fas fa-hamburger"></i>
+// 							<h2 className="logo-text">AdrianCulinary</h2>
+// 						</span>
+// 					<div className={this.state.headerClass} id="mob-nav"
+// 						onClick={ () => this.handleClick(event) }>
+// 						<div className="bar1"></div>
+// 						<div className="bar2"></div>
+// 						<div className="bar3"></div>
+// 						<div className="mb-nav-items">
+// 							<ul className="mob-menu">
+// 								<li className="mb-nav-items">Home</li>
+// 								<li className="mb-nav-items">Home</li>
+// 								<li className="mb-nav-items">Cooking Resources</li>
+// 							</ul>						 
+// 						</div>
+// 					</div>
+// 					</div>
+// 					<div className="nav-primary">
+// 						<ul className="menu">
+// 							<NavLink className="nav-items" exact to="/"> <li > Home </li> </NavLink>
+// 							<NavLink className="nav-items" to="/about"> <li > About </li> </NavLink>
+// 							<NavLink className="nav-items" to="/CookWare"> <li >  Cooking Resources  </li> </NavLink>
+// 						</ul>
+// 					</div>
+// 				</div>
+// )}}
+
+
+exports.default = Header;
 
 /***/ }),
 
@@ -988,7 +1250,7 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(30);
+var _reactDom = __webpack_require__(29);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -1020,11 +1282,11 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(30);
+var _reactDom = __webpack_require__(29);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactRouterDom = __webpack_require__(29);
+var _reactRouterDom = __webpack_require__(39);
 
 var _header = __webpack_require__(103);
 
