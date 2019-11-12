@@ -7,7 +7,7 @@ export default class Recipe extends React.Component {
 			<div className="recipe-wrapper">
 				<a href="#"></a>
 				<div className="img-container">
-					<img src="./img/IMG_0239.JPG" />
+					<img src="./img/IMG_0239.JPG"/>
 				</div>
 				<div className="metadata-container">
 					<div className="tag-container">

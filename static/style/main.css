@@ -7,6 +7,11 @@ a {
 	text-decoration-style: none; 
 }
 
+a:-webkit-any-link {
+	text-decoration: none !important;
+	text-decoration-style: none; 
+}
+
 .preview {
 	color: white;
 	background-color: #FF7021;
@@ -129,7 +134,8 @@ div.mob-logo-container {
 
 .header
 .logo-container {
-	border-radius: 5em;
+	border-radius: 7%;
+	background: #fffeeb;
 }
 
 .header
@@ -909,6 +915,7 @@ li {
 	}
 
 	.wht-bckgd {
+		transition: 250ms;
 		background-color: white;
 	}
 
@@ -969,8 +976,8 @@ li {
 
 	.mb-nav-items {
 		color: #FF7021;
-		font-size: 1.5em;
-		font-weight: 500;
+		font-size: 2em;
+		font-weight: 700;
 		padding-top: .5em;
 		padding-bottom: .5em;
 	}

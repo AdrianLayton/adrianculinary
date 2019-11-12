@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 100:
+/***/ 83:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10,7 +10,240 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _react = __webpack_require__(4);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"react\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(24);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _reactRouterDom = __webpack_require__(23);
+
+var _header = __webpack_require__(89);
+
+var _header2 = _interopRequireDefault(_header);
+
+var _home = __webpack_require__(90);
+
+var _home2 = _interopRequireDefault(_home);
+
+var _footer = __webpack_require__(88);
+
+var _footer2 = _interopRequireDefault(_footer);
+
+var _cookware = __webpack_require__(86);
+
+var _cookware2 = _interopRequireDefault(_cookware);
+
+var _thankyou = __webpack_require__(95);
+
+var _thankyou2 = _interopRequireDefault(_thankyou);
+
+var _about = __webpack_require__(85);
+
+var _about2 = _interopRequireDefault(_about);
+
+var _svngcalc = __webpack_require__(94);
+
+var _svngcalc2 = _interopRequireDefault(_svngcalc);
+
+var _rcpDisplay = __webpack_require__(91);
+
+var _rcpDisplay2 = _interopRequireDefault(_rcpDisplay);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Content = function (_React$Component) {
+	_inherits(Content, _React$Component);
+
+	function Content(props) {
+		_classCallCheck(this, Content);
+
+		return _possibleConstructorReturn(this, (Content.__proto__ || Object.getPrototypeOf(Content)).call(this, props));
+	}
+
+	_createClass(Content, [{
+		key: 'render',
+		value: function render() {
+			return _react2.default.createElement(
+				_reactRouterDom.BrowserRouter,
+				null,
+				_react2.default.createElement(
+					'div',
+					{ className: 'main' },
+					_react2.default.createElement(_header2.default, null),
+					_react2.default.createElement(
+						_reactRouterDom.Switch,
+						null,
+						_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _home2.default }),
+						_react2.default.createElement(_reactRouterDom.Route, { path: '/about', component: _about2.default }),
+						_react2.default.createElement(_reactRouterDom.Route, { path: '/cookWare', component: _cookware2.default }),
+						_react2.default.createElement(_reactRouterDom.Route, { path: '/recipe', component: _rcpDisplay2.default }),
+						_react2.default.createElement(_reactRouterDom.Route, { path: '/thankyou', component: _thankyou2.default }),
+						_react2.default.createElement(_reactRouterDom.Route, { path: '/svngcalc', component: _svngcalc2.default })
+					),
+					_react2.default.createElement(_footer2.default, null)
+				)
+			);
+		}
+	}]);
+
+	return Content;
+}(_react2.default.Component);
+
+exports.default = Content;
+
+/***/ }),
+
+/***/ 85:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"react\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var About = function About() {
+	return _react2.default.createElement(
+		'div',
+		{ className: 'about' },
+		_react2.default.createElement(
+			'div',
+			{ id: 'abt-desc' },
+			_react2.default.createElement(
+				'h2',
+				{ className: 'lead-title lead-underline' },
+				'Reasons to cook'
+			),
+			_react2.default.createElement(
+				'div',
+				{ id: 'container' },
+				_react2.default.createElement(
+					'div',
+					{ className: 'desc-section' },
+					_react2.default.createElement('i', { className: 'fa fa-money fa-3x about-icon' }),
+					_react2.default.createElement(
+						'h3',
+						{ className: 'under-title' },
+						' Savings'
+					),
+					_react2.default.createElement(
+						'p',
+						{ className: 'lead-desc' },
+						'I want to use this website to empower people through cooking, and open people\'s eyes to the vast benefits it offers '
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'desc-section' },
+					_react2.default.createElement('i', { className: 'fa fa-heartbeat fa-3x about-icon' }),
+					_react2.default.createElement(
+						'h3',
+						{ className: 'under-title' },
+						' Health'
+					),
+					_react2.default.createElement(
+						'p',
+						{ className: 'lead-desc' },
+						' You will save anywhere from 50%-70% on food. For a savings of up to $3000 per year. '
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'desc-section' },
+					_react2.default.createElement('i', { className: 'fa fa-th fa-3x about-icon' }),
+					_react2.default.createElement(
+						'h3',
+						{ className: 'under-title' },
+						' Variety and Excitmemt'
+					),
+					_react2.default.createElement(
+						'p',
+						{ className: 'lead-desc' },
+						' Your food is infintely more customizable then when you go out to eat '
+					),
+					_react2.default.createElement(
+						'p',
+						{ className: 'lead-desc' },
+						'  You\'ll become healthier. Resteraunts often use the cheaper ingredients(canola,soybean oil, malodextrin, MSG, sugar) to get the maximum profits. By cutting these out you can see the pounds drop, skin look healthier and more energy during the day.  '
+					)
+				)
+			),
+			_react2.default.createElement(
+				'div',
+				{ className: 'container-2' },
+				_react2.default.createElement(
+					'div',
+					{ className: 'desc-section-2' },
+					_react2.default.createElement('i', { className: 'fa fa-money fa-3x about-icon' }),
+					_react2.default.createElement(
+						'h2',
+						{ className: 'under-title' },
+						'The Mission'
+					),
+					_react2.default.createElement(
+						'h3',
+						{ className: 'under-title' },
+						' Whimsical Origins'
+					),
+					_react2.default.createElement(
+						'p',
+						{ className: 'lead-desc' },
+						'I want to use this website to empower people through cooking, and open people\'s eyes to the vast benefits it offers '
+					)
+				),
+				_react2.default.createElement(
+					'div',
+					{ className: 'desc-section-2' },
+					_react2.default.createElement('i', { className: 'fa fa-money fa-3x about-icon' }),
+					_react2.default.createElement(
+						'h2',
+						{ className: 'under-title' },
+						'The Mission'
+					),
+					_react2.default.createElement(
+						'p',
+						{ className: 'lead-desc' },
+						'I want to use this website to empower people through cooking, and open people\'s eyes to the vast benefits it offers '
+					)
+				)
+			)
+		)
+	);
+};
+
+exports.default = About;
+
+/***/ }),
+
+/***/ 86:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"react\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -72,7 +305,7 @@ exports.default = CookWare;
 
 /***/ }),
 
-/***/ 101:
+/***/ 87:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -82,11 +315,11 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _react = __webpack_require__(4);
+var _react = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"react\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(39);
+var _reactRouterDom = __webpack_require__(23);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -142,7 +375,7 @@ exports.default = Display1;
 
 /***/ }),
 
-/***/ 102:
+/***/ 88:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -152,7 +385,7 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _react = __webpack_require__(4);
+var _react = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"react\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -301,7 +534,7 @@ exports.default = Footer;
 
 /***/ }),
 
-/***/ 103:
+/***/ 89:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -313,11 +546,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(4);
+var _react = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"react\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(39);
+var _reactRouterDom = __webpack_require__(23);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -348,26 +581,6 @@ var Header = function (_React$Component) {
 			e.preventDefault();
 			this.toggleClass();
 		}
-
-		// toggleClass() {
-		// 	const element = document.getElementById('mob-nav');
-		// 	const elementCl = element.classList
-		// 	const isMobNavActive = this.state.headerActive;
-		// 	console.log(element);
-		// 	console.log(element.classList.contains('change'))
-		// 	if (!isMobNavActive) {
-		// 		this.setState({
-		// 			headerClass: "mob-nav change"
-		// 		})
-		// 	}
-		// 	else if (isMobNavActive) {
-		// 		this.setState({
-		// 			headerClass: "mob-nav"
-		// 		})
-		// 	}
-
-		//  }
-
 	}, {
 		key: 'toggleState',
 		value: function toggleState() {
@@ -389,7 +602,7 @@ var Header = function (_React$Component) {
 				_react2.default.createElement(
 					'span',
 					{ className: 'preview' },
-					'This site is currently in preview it will be launched March 2018'
+					'This site is currently in preview it will be launched December 15th, 2019'
 				),
 				_react2.default.createElement(
 					'div',
@@ -491,87 +704,11 @@ var Header = function (_React$Component) {
 	return Header;
 }(_react2.default.Component);
 
-// import React from 'react';
-// import { NavLink } from 'react-router-dom';
-
-// export default class Header extends React.Component {
-// 		constructor() {
-// 		    super();
-// 		    this.state = {
-// 		    	headerClass: "mob-nav"
-// 		    };
-// 		}
-
-// 	    handleClick(e) {
-// 			e.preventDefault();
-// 	    	this.toggleClass();
-// 	    }	
-
-// 		toggleClass() {
-// 			const element = document.getElementById('mob-nav');
-// 			const elementCl = element.classList
-// 			const isMobNavActive = element.classList.contains('change');
-// 			console.log(element);
-// 			console.log(element.classList.contains('change'))
-// 			if (!isMobNavActive) {
-// 				this.setState({
-// 					headerClass: "mob-nav change"
-// 				})
-// 			}
-// 			else if (isMobNavActive) {
-// 				this.setState({
-// 					headerClass: "mob-nav"
-// 				})
-// 			}
-// 		 }
-
-// 		 toggleMenu() {
-
-// 		 }
-
-
-// 		render () {		
-// 			return (
-// 				<div className="header">
-// 					<span className="preview">This site is currently in preview it will be launched March 2018</span>
-// 					<div className="logo-container">
-// 						<img id="nav-logo" src="./img/logo.png" />
-// 					</div>
-// 					<div className="mob-logo-container">
-// 						<span className="logo-left mob-nav">
-// 							<i className="logo-icon fas fa-hamburger"></i>
-// 							<h2 className="logo-text">AdrianCulinary</h2>
-// 						</span>
-// 					<div className={this.state.headerClass} id="mob-nav"
-// 						onClick={ () => this.handleClick(event) }>
-// 						<div className="bar1"></div>
-// 						<div className="bar2"></div>
-// 						<div className="bar3"></div>
-// 						<div className="mb-nav-items">
-// 							<ul className="mob-menu">
-// 								<li className="mb-nav-items">Home</li>
-// 								<li className="mb-nav-items">Home</li>
-// 								<li className="mb-nav-items">Cooking Resources</li>
-// 							</ul>						 
-// 						</div>
-// 					</div>
-// 					</div>
-// 					<div className="nav-primary">
-// 						<ul className="menu">
-// 							<NavLink className="nav-items" exact to="/"> <li > Home </li> </NavLink>
-// 							<NavLink className="nav-items" to="/about"> <li > About </li> </NavLink>
-// 							<NavLink className="nav-items" to="/CookWare"> <li >  Cooking Resources  </li> </NavLink>
-// 						</ul>
-// 					</div>
-// 				</div>
-// )}}
-
-
 exports.default = Header;
 
 /***/ }),
 
-/***/ 104:
+/***/ 90:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -583,19 +720,19 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(4);
+var _react = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"react\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 var _react2 = _interopRequireDefault(_react);
 
-var _slideshow = __webpack_require__(107);
+var _slideshow = __webpack_require__(93);
 
 var _slideshow2 = _interopRequireDefault(_slideshow);
 
-var _recipe = __webpack_require__(106);
+var _recipe = __webpack_require__(92);
 
 var _recipe2 = _interopRequireDefault(_recipe);
 
-var _dR = __webpack_require__(101);
+var _dR = __webpack_require__(87);
 
 var _dR2 = _interopRequireDefault(_dR);
 
@@ -640,7 +777,7 @@ exports.default = Coming;
 
 /***/ }),
 
-/***/ 105:
+/***/ 91:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -652,7 +789,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(4);
+var _react = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"react\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -764,7 +901,7 @@ exports.default = Recipe;
 
 /***/ }),
 
-/***/ 106:
+/***/ 92:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -776,7 +913,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(4);
+var _react = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"react\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -940,7 +1077,7 @@ exports.default = Recipe;
 
 /***/ }),
 
-/***/ 107:
+/***/ 93:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -952,7 +1089,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(4);
+var _react = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"react\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -1090,7 +1227,7 @@ exports.default = Slideshow;
 
 /***/ }),
 
-/***/ 108:
+/***/ 94:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1102,7 +1239,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(4);
+var _react = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"react\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -1216,7 +1353,7 @@ exports.default = SavingCalc;
 
 /***/ }),
 
-/***/ 109:
+/***/ 95:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1226,7 +1363,7 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _react = __webpack_require__(4);
+var _react = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"react\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -1240,21 +1377,21 @@ exports.default = ThankYou;
 
 /***/ }),
 
-/***/ 110:
+/***/ 96:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _react = __webpack_require__(4);
+var _react = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"react\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(29);
+var _reactDom = __webpack_require__(24);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _app = __webpack_require__(97);
+var _app = __webpack_require__(83);
 
 var _app2 = _interopRequireDefault(_app);
 
@@ -1264,239 +1401,6 @@ var contentNode = document.getElementById('contents');
 
 _reactDom2.default.render(_react2.default.createElement(_app2.default, null), contentNode);
 
-/***/ }),
-
-/***/ 97:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(29);
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-var _reactRouterDom = __webpack_require__(39);
-
-var _header = __webpack_require__(103);
-
-var _header2 = _interopRequireDefault(_header);
-
-var _home = __webpack_require__(104);
-
-var _home2 = _interopRequireDefault(_home);
-
-var _footer = __webpack_require__(102);
-
-var _footer2 = _interopRequireDefault(_footer);
-
-var _cookware = __webpack_require__(100);
-
-var _cookware2 = _interopRequireDefault(_cookware);
-
-var _thankyou = __webpack_require__(109);
-
-var _thankyou2 = _interopRequireDefault(_thankyou);
-
-var _about = __webpack_require__(99);
-
-var _about2 = _interopRequireDefault(_about);
-
-var _svngcalc = __webpack_require__(108);
-
-var _svngcalc2 = _interopRequireDefault(_svngcalc);
-
-var _rcpDisplay = __webpack_require__(105);
-
-var _rcpDisplay2 = _interopRequireDefault(_rcpDisplay);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Content = function (_React$Component) {
-	_inherits(Content, _React$Component);
-
-	function Content(props) {
-		_classCallCheck(this, Content);
-
-		return _possibleConstructorReturn(this, (Content.__proto__ || Object.getPrototypeOf(Content)).call(this, props));
-	}
-
-	_createClass(Content, [{
-		key: 'render',
-		value: function render() {
-			return _react2.default.createElement(
-				_reactRouterDom.BrowserRouter,
-				null,
-				_react2.default.createElement(
-					'div',
-					{ className: 'main' },
-					_react2.default.createElement(_header2.default, null),
-					_react2.default.createElement(
-						_reactRouterDom.Switch,
-						null,
-						_react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _home2.default }),
-						_react2.default.createElement(_reactRouterDom.Route, { path: '/about', component: _about2.default }),
-						_react2.default.createElement(_reactRouterDom.Route, { path: '/cookWare', component: _cookware2.default }),
-						_react2.default.createElement(_reactRouterDom.Route, { path: '/recipe', component: _rcpDisplay2.default }),
-						_react2.default.createElement(_reactRouterDom.Route, { path: '/thankyou', component: _thankyou2.default }),
-						_react2.default.createElement(_reactRouterDom.Route, { path: '/svngcalc', component: _svngcalc2.default })
-					),
-					_react2.default.createElement(_footer2.default, null)
-				)
-			);
-		}
-	}]);
-
-	return Content;
-}(_react2.default.Component);
-
-exports.default = Content;
-
-/***/ }),
-
-/***/ 99:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var About = function About() {
-	return _react2.default.createElement(
-		'div',
-		{ className: 'about' },
-		_react2.default.createElement(
-			'div',
-			{ id: 'abt-desc' },
-			_react2.default.createElement(
-				'h2',
-				{ className: 'lead-title lead-underline' },
-				'Reasons to cook'
-			),
-			_react2.default.createElement(
-				'div',
-				{ id: 'container' },
-				_react2.default.createElement(
-					'div',
-					{ className: 'desc-section' },
-					_react2.default.createElement('i', { className: 'fa fa-money fa-3x about-icon' }),
-					_react2.default.createElement(
-						'h3',
-						{ className: 'under-title' },
-						' Savings'
-					),
-					_react2.default.createElement(
-						'p',
-						{ className: 'lead-desc' },
-						'I want to use this website to empower people through cooking, and open people\'s eyes to the vast benefits it offers '
-					)
-				),
-				_react2.default.createElement(
-					'div',
-					{ className: 'desc-section' },
-					_react2.default.createElement('i', { className: 'fa fa-heartbeat fa-3x about-icon' }),
-					_react2.default.createElement(
-						'h3',
-						{ className: 'under-title' },
-						' Health'
-					),
-					_react2.default.createElement(
-						'p',
-						{ className: 'lead-desc' },
-						' You will save anywhere from 50%-70% on food. For a savings of up to $3000 per year. '
-					)
-				),
-				_react2.default.createElement(
-					'div',
-					{ className: 'desc-section' },
-					_react2.default.createElement('i', { className: 'fa fa-th fa-3x about-icon' }),
-					_react2.default.createElement(
-						'h3',
-						{ className: 'under-title' },
-						' Variety and Excitmemt'
-					),
-					_react2.default.createElement(
-						'p',
-						{ className: 'lead-desc' },
-						' Your food is infintely more customizable then when you go out to eat '
-					),
-					_react2.default.createElement(
-						'p',
-						{ className: 'lead-desc' },
-						'  You\'ll become healthier. Resteraunts often use the cheaper ingredients(canola,soybean oil, malodextrin, MSG, sugar) to get the maximum profits. By cutting these out you can see the pounds drop, skin look healthier and more energy during the day.  '
-					)
-				)
-			),
-			_react2.default.createElement(
-				'div',
-				{ className: 'container-2' },
-				_react2.default.createElement(
-					'div',
-					{ className: 'desc-section-2' },
-					_react2.default.createElement('i', { className: 'fa fa-money fa-3x about-icon' }),
-					_react2.default.createElement(
-						'h2',
-						{ className: 'under-title' },
-						'The Mission'
-					),
-					_react2.default.createElement(
-						'h3',
-						{ className: 'under-title' },
-						' Whimsical Origins'
-					),
-					_react2.default.createElement(
-						'p',
-						{ className: 'lead-desc' },
-						'I want to use this website to empower people through cooking, and open people\'s eyes to the vast benefits it offers '
-					)
-				),
-				_react2.default.createElement(
-					'div',
-					{ className: 'desc-section-2' },
-					_react2.default.createElement('i', { className: 'fa fa-money fa-3x about-icon' }),
-					_react2.default.createElement(
-						'h2',
-						{ className: 'under-title' },
-						'The Mission'
-					),
-					_react2.default.createElement(
-						'p',
-						{ className: 'lead-desc' },
-						'I want to use this website to empower people through cooking, and open people\'s eyes to the vast benefits it offers '
-					)
-				)
-			)
-		)
-	);
-};
-
-exports.default = About;
-
 /***/ })
 
-},[110]);
+},[96]);

@@ -15,24 +15,6 @@ export default class Header extends React.Component {
 	    	this.toggleClass();
 	    }	
 
-		// toggleClass() {
-		// 	const element = document.getElementById('mob-nav');
-		// 	const elementCl = element.classList
-		// 	const isMobNavActive = this.state.headerActive;
-		// 	console.log(element);
-		// 	console.log(element.classList.contains('change'))
-		// 	if (!isMobNavActive) {
-		// 		this.setState({
-		// 			headerClass: "mob-nav change"
-		// 		})
-		// 	}
-		// 	else if (isMobNavActive) {
-		// 		this.setState({
-		// 			headerClass: "mob-nav"
-		// 		})
-		// 	}
-
-		//  }
 
 		toggleState() {
 			this.setState(function(prevState, props){
@@ -48,7 +30,7 @@ export default class Header extends React.Component {
 		render () {		
 			return (
 				<div className={this.state.headerActive ? "header wht-bckgd" : "header"}>
-					<span className="preview">This site is currently in preview it will be launched March 2018</span>
+					<span className="preview">This site is currently in preview it will be launched December 15th, 2019</span>
 					<div className="logo-container">
 						<img id="nav-logo" src="./img/logo.png" />
 					</div>
@@ -81,81 +63,4 @@ export default class Header extends React.Component {
 				</div>
 )}}
 
-
-
-
-// import React from 'react';
-// import { NavLink } from 'react-router-dom';
-
-// export default class Header extends React.Component {
-// 		constructor() {
-// 		    super();
-// 		    this.state = {
-// 		    	headerClass: "mob-nav"
-// 		    };
-// 		}
-	    
-// 	    handleClick(e) {
-// 			e.preventDefault();
-// 	    	this.toggleClass();
-// 	    }	
-
-// 		toggleClass() {
-// 			const element = document.getElementById('mob-nav');
-// 			const elementCl = element.classList
-// 			const isMobNavActive = element.classList.contains('change');
-// 			console.log(element);
-// 			console.log(element.classList.contains('change'))
-// 			if (!isMobNavActive) {
-// 				this.setState({
-// 					headerClass: "mob-nav change"
-// 				})
-// 			}
-// 			else if (isMobNavActive) {
-// 				this.setState({
-// 					headerClass: "mob-nav"
-// 				})
-// 			}
-// 		 }
-
-// 		 toggleMenu() {
-
-// 		 }
-
-
-// 		render () {		
-// 			return (
-// 				<div className="header">
-// 					<span className="preview">This site is currently in preview it will be launched March 2018</span>
-// 					<div className="logo-container">
-// 						<img id="nav-logo" src="./img/logo.png" />
-// 					</div>
-// 					<div className="mob-logo-container">
-// 						<span className="logo-left mob-nav">
-// 							<i className="logo-icon fas fa-hamburger"></i>
-// 							<h2 className="logo-text">AdrianCulinary</h2>
-// 						</span>
-// 					<div className={this.state.headerClass} id="mob-nav"
-// 						onClick={ () => this.handleClick(event) }>
-// 						<div className="bar1"></div>
-// 						<div className="bar2"></div>
-// 						<div className="bar3"></div>
-// 						<div className="mb-nav-items">
-// 							<ul className="mob-menu">
-// 								<li className="mb-nav-items">Home</li>
-// 								<li className="mb-nav-items">Home</li>
-// 								<li className="mb-nav-items">Cooking Resources</li>
-// 							</ul>						 
-// 						</div>
-// 					</div>
-// 					</div>
-// 					<div className="nav-primary">
-// 						<ul className="menu">
-// 							<NavLink className="nav-items" exact to="/"> <li > Home </li> </NavLink>
-// 							<NavLink className="nav-items" to="/about"> <li > About </li> </NavLink>
-// 							<NavLink className="nav-items" to="/CookWare"> <li >  Cooking Resources  </li> </NavLink>
-// 						</ul>
-// 					</div>
-// 				</div>
-// )}}
 
